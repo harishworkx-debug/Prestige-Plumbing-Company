@@ -1,11 +1,14 @@
+export const SITE_URL = "https://prestigeplumbingcompany.com";
+
 export const business = {
   name: "Prestige Plumbing Company",
   legalType: "Licensed Plumbing Contractor",
   established: 2005,
+  url: SITE_URL,
   phoneDisplay: "+1 (480) 215-0629",
   phoneHref: "tel:+14802150629",
   whatsapp: "https://wa.me/14802150629",
-  email: "raul@prestigeplumbingco.com",
+  email: "info@prestigeplumbingcompany.com",
   street: "1120 E Jarvis Ave",
   city: "Mesa",
   state: "AZ",
@@ -14,9 +17,17 @@ export const business = {
   hours: "Open 24 Hours — Emergency Plumbing Available 24/7",
   lat: 33.4099434,
   lng: -111.8093683,
+  mapLink: "https://maps.google.com/?q=1120+E+Jarvis+Ave,+Mesa,+AZ+85204",
   mapEmbed:
     "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3330.5100902307227!2d-111.80936828869199!3d33.40994337329464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872ba70be73a5803%3A0x56e9aa95dc356cab!2sPrestige%20Plumbing%20Company!5e0!3m2!1sen!2sin!4v1784982688252!5m2!1sen!2sin",
 };
+
+export const socials = [
+  { label: "Facebook", href: "https://facebook.com/prestigeplumbingcompany" },
+  { label: "Instagram", href: "https://instagram.com/prestigeplumbingcompany" },
+  { label: "LinkedIn", href: "https://linkedin.com/company/prestigeplumbingcompany" },
+  { label: "YouTube", href: "https://youtube.com/@prestigeplumbingcompany" },
+];
 
 export const stats = [
   { value: "20+", label: "Years In Business" },
@@ -34,15 +45,60 @@ export const trustBadges = [
   "Free Estimates",
 ];
 
+/** Top-level navigation. Service and location dropdown items are derived from data. */
 export const nav = [
   { label: "Home", to: "/" },
-  { label: "Services", to: "/services" },
-  { label: "Service Areas", to: "/service-areas" },
   { label: "About", to: "/about" },
+  { label: "Services", to: "/services" },
   { label: "Reviews", to: "/reviews" },
   { label: "Blog", to: "/blog" },
   { label: "Contact", to: "/contact" },
 ] as const;
+
+/** Services promoted into the header dropdown. */
+export const navServiceSlugs = [
+  "emergency-plumber",
+  "drain-cleaning",
+  "leak-detection",
+  "water-heater-repair",
+  "water-heater-installation",
+  "hydro-jetting",
+  "sewer-line-repair",
+  "pipe-repair",
+  "repiping",
+  "commercial-plumbing",
+  "residential-plumbing",
+  "gas-line-installation",
+  "plumbing-maintenance",
+];
+
+export const industries = [
+  {
+    title: "Single-Family Homes",
+    text: "Repairs, replacements and whole-home repipes for owner-occupied houses across Mesa and the East Valley.",
+  },
+  {
+    title: "Rental & Property Management",
+    text: "Documented, photo-verified work orders across multi-address portfolios with invoices that match the estimate.",
+  },
+  {
+    title: "HOA & Multi-Family",
+    text: "Shared-wall leak isolation, common-line jetting and scheduled maintenance for condominium and apartment communities.",
+  },
+  {
+    title: "Restaurants & Food Service",
+    text: "Grease line jetting, floor drain service, and off-hours scheduling so your kitchen never loses a service period.",
+  },
+  {
+    title: "Retail & Office Buildings",
+    text: "Restroom fixture programs, backflow assemblies, water heater plant work and after-hours commercial repairs.",
+  },
+  {
+    title: "New Construction & Remodels",
+    text: "Permitted rough-in, gas piping and finish plumbing coordinated with your general contractor's schedule.",
+  },
+];
+
 
 export const allServices = [
   "Emergency Plumbing",
