@@ -195,7 +195,7 @@ function Home() {
             {services.map((s, i) => (
               <Reveal key={s.slug} delay={(i % 3) * 0.07}>
                 <Link
-                  to="/services/$slug"
+                  to="/$slug"
                   params={{ slug: s.slug }}
                   className="group block h-full overflow-hidden rounded-2xl border border-border bg-card shadow-card hover-lift"
                 >
@@ -309,7 +309,7 @@ function Home() {
             {areas.map((a, i) => (
               <Reveal key={a.slug} delay={(i % 5) * 0.05}>
                 <Link
-                  to="/service-areas/$slug"
+                  to="/$slug"
                   params={{ slug: a.slug }}
                   className="flex h-full items-center gap-3 rounded-2xl border border-border bg-card p-5 font-semibold shadow-card transition-colors hover:border-primary hover:text-primary"
                 >

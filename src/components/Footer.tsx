@@ -38,7 +38,7 @@ export function Footer() {
               {services.slice(0, 9).map((s) => (
                 <li key={s.slug}>
                   <Link
-                    to="/services/$slug"
+                    to="/$slug"
                     params={{ slug: s.slug }}
                     className="transition-colors hover:text-accent"
                   >
@@ -60,7 +60,7 @@ export function Footer() {
               {areas.map((a) => (
                 <li key={a.slug}>
                   <Link
-                    to="/service-areas/$slug"
+                    to="/$slug"
                     params={{ slug: a.slug }}
                     className="transition-colors hover:text-accent"
                   >

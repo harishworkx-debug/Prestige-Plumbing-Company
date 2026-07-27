@@ -49,7 +49,7 @@ function ServicesIndex() {
             {services.map((s, i) => (
               <Reveal key={s.slug} delay={(i % 3) * 0.06}>
                 <Link
-                  to="/services/$slug"
+                  to="/$slug"
                   params={{ slug: s.slug }}
                   className="group block h-full overflow-hidden rounded-2xl border border-border bg-card shadow-card hover-lift"
                 >
