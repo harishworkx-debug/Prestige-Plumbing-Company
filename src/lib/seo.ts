@@ -1,23 +1,55 @@
-import { business } from "@/data/site";
+import { business, socials, SITE_URL } from "@/data/site";
+import { testimonials } from "@/data/site";
+
+/** Absolute URL for a site-relative path. */
+export const abs = (path: string) => `${SITE_URL}${path === "/" ? "/" : path.replace(/\/$/, "")}`;
+
+const postalAddress = {
+  "@type": "PostalAddress",
+  streetAddress: business.street,
+  addressLocality: business.city,
+  addressRegion: business.state,
+  postalCode: business.zip,
+  addressCountry: "US",
+};
+
+const areaServed = [
+  "Mesa AZ",
+  "Gilbert AZ",
+  "Chandler AZ",
+  "Tempe AZ",
+  "Scottsdale AZ",
+  "Phoenix AZ",
+  "Apache Junction AZ",
+  "Queen Creek AZ",
+  "Fountain Hills AZ",
+  "Paradise Valley AZ",
+  "San Tan Valley AZ",
+  "Glendale AZ",
+  "Ahwatukee AZ",
+  "East Valley AZ",
+];
+
+export const aggregateRating = {
+  "@type": "AggregateRating",
+  ratingValue: "4.9",
+  reviewCount: "487",
+};
 
 export const localBusinessSchema = {
   "@context": "https://schema.org",
-  "@type": "Plumber",
+  "@type": ["LocalBusiness", "Plumber", "PlumbingBusiness" as string],
+  "@id": `${SITE_URL}/#localbusiness`,
   name: business.name,
-  image: "/favicon.ico",
+  image: abs("/favicon.ico"),
   telephone: business.phoneDisplay,
   email: business.email,
-  url: "/",
+  url: abs("/"),
+  hasMap: business.mapLink,
   priceRange: "$$",
   foundingDate: "2005",
-  address: {
-    "@type": "PostalAddress",
-    streetAddress: business.street,
-    addressLocality: business.city,
-    addressRegion: business.state,
-    postalCode: business.zip,
-    addressCountry: "US",
-  },
+  sameAs: socials.map((s) => s.href),
+  address: postalAddress,
   geo: { "@type": "GeoCoordinates", latitude: business.lat, longitude: business.lng },
   openingHoursSpecification: [
     {
@@ -27,20 +59,42 @@ export const localBusinessSchema = {
       closes: "23:59",
     },
   ],
-  areaServed: [
-    "Mesa AZ",
-    "Phoenix AZ",
-    "Chandler AZ",
-    "Gilbert AZ",
-    "Tempe AZ",
-    "Scottsdale AZ",
-    "Glendale AZ",
-    "Queen Creek AZ",
-    "San Tan Valley AZ",
-    "Ahwatukee AZ",
-  ],
-  aggregateRating: { "@type": "AggregateRating", ratingValue: "4.9", reviewCount: "487" },
+  areaServed,
+  aggregateRating,
 };
+
+export const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": `${SITE_URL}/#organization`,
+  name: business.name,
+  url: abs("/"),
+  logo: abs("/favicon.ico"),
+  telephone: business.phoneDisplay,
+  email: business.email,
+  address: postalAddress,
+  sameAs: socials.map((s) => s.href),
+};
+
+export const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": `${SITE_URL}/#website`,
+  name: business.name,
+  url: abs("/"),
+  publisher: { "@id": `${SITE_URL}/#organization` },
+};
+
+export const webPageSchema = (name: string, description: string, path: string) => ({
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": `${abs(path)}#webpage`,
+  name,
+  description,
+  url: abs(path),
+  isPartOf: { "@id": `${SITE_URL}/#website` },
+  about: { "@id": `${SITE_URL}/#localbusiness` },
+});
 
 export const faqSchema = (faqs: { q: string; a: string }[]) => ({
   "@context": "https://schema.org",
@@ -52,14 +106,26 @@ export const faqSchema = (faqs: { q: string; a: string }[]) => ({
   })),
 });
 
-export const serviceSchema = (name: string, description: string, path: string) => ({
+export const serviceSchema = (
+  name: string,
+  description: string,
+  path: string,
+  city = "Mesa",
+) => ({
   "@context": "https://schema.org",
   "@type": "Service",
   serviceType: name,
+  name: `${name} in ${city}, AZ`,
   description,
-  url: path,
-  provider: { "@type": "Plumber", name: business.name, telephone: business.phoneDisplay },
-  areaServed: { "@type": "City", name: "Mesa, Arizona" },
+  url: abs(path),
+  provider: {
+    "@type": "Plumber",
+    "@id": `${SITE_URL}/#localbusiness`,
+    name: business.name,
+    telephone: business.phoneDisplay,
+    address: postalAddress,
+  },
+  areaServed: { "@type": "City", name: `${city}, Arizona` },
 });
 
 export const breadcrumbSchema = (items: { name: string; path: string }[]) => ({
@@ -69,8 +135,37 @@ export const breadcrumbSchema = (items: { name: string; path: string }[]) => ({
     "@type": "ListItem",
     position: i + 1,
     name: it.name,
-    item: it.path,
+    item: abs(it.path),
   })),
+});
+
+export const reviewSchema = () => ({
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "@id": `${SITE_URL}/#localbusiness`,
+  name: business.name,
+  image: abs("/favicon.ico"),
+  telephone: business.phoneDisplay,
+  address: postalAddress,
+  aggregateRating,
+  review: testimonials.map((t) => ({
+    "@type": "Review",
+    author: { "@type": "Person", name: t.name },
+    reviewRating: { "@type": "Rating", ratingValue: String(t.rating), bestRating: "5" },
+    reviewBody: t.text,
+    itemReviewed: { "@id": `${SITE_URL}/#localbusiness` },
+  })),
+});
+
+export const articleSchema = (title: string, description: string, path: string, date: string) => ({
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: title,
+  description,
+  datePublished: date,
+  mainEntityOfPage: abs(path),
+  author: { "@type": "Organization", name: business.name },
+  publisher: { "@id": `${SITE_URL}/#organization` },
 });
 
 export const meta = (title: string, description: string, path: string, type = "website") => [
@@ -79,7 +174,9 @@ export const meta = (title: string, description: string, path: string, type = "w
   { property: "og:title", content: title },
   { property: "og:description", content: description },
   { property: "og:type", content: type },
-  { property: "og:url", content: path },
+  { property: "og:url", content: abs(path) },
+  { property: "og:site_name", content: business.name },
+  { property: "og:locale", content: "en_US" },
   { name: "twitter:card", content: "summary_large_image" },
   { name: "twitter:title", content: title },
   { name: "twitter:description", content: description },
