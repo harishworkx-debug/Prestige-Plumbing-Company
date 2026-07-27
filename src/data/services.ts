@@ -25,7 +25,7 @@ export interface Service {
 
 export const services: Service[] = [
   {
-    slug: "emergency-plumbing",
+    slug: "emergency-plumber",
     name: "Emergency Plumbing",
     tagline: "24/7 emergency plumbers across Mesa and the Phoenix metro",
     metaTitle: "24/7 Emergency Plumber Mesa AZ | Prestige Plumbing Company",
@@ -184,7 +184,7 @@ export const services: Service[] = [
       { q: "Can you repair a leaking water heater?", a: "If the leak is at a fitting, valve, or relief line, yes. If the tank body itself is leaking, the glass lining has failed and no repair is possible — replacement is required." },
       { q: "Do you service tankless water heaters?", a: "Yes, including Navien, Rinnai, Noritz and Rheem tankless systems: error code diagnosis, descaling, gas sizing correction, and venting repair." },
     ],
-    related: ["water-heater-installation", "emergency-plumbing", "leak-detection", "residential-plumbing"],
+    related: ["water-heater-installation", "emergency-plumber", "leak-detection", "residential-plumbing"],
   },
   {
     slug: "water-heater-installation",
@@ -262,7 +262,7 @@ export const services: Service[] = [
       { q: "Will a tankless water heater save me money?", a: "It eliminates standby loss and typically lasts twice as long as a tank, but savings depend on usage and maintenance. We will show you realistic numbers for your household rather than a marketing claim." },
       { q: "Do you offer financing on water heater replacement?", a: "Yes. Financing options are available so a failed heater does not have to wait for payday. Ask when you call for your free estimate." },
     ],
-    related: ["water-heater-repair", "residential-plumbing", "gas-line-installation", "emergency-plumbing"],
+    related: ["water-heater-repair", "residential-plumbing", "gas-line-installation", "emergency-plumber"],
   },
   {
     slug: "drain-cleaning",
@@ -340,7 +340,7 @@ export const services: Service[] = [
       { q: "Do you clean drains for restaurants and commercial buildings?", a: "Yes. We service grease interceptors, commercial kitchen lines and multi-tenant main lines, and we schedule around your operating hours." },
       { q: "Will you camera my line?", a: "Camera inspection is included on recurring and main-line blockages so you see exactly what we see before approving any repair." },
     ],
-    related: ["hydro-jetting", "sewer-line-repair", "emergency-plumbing", "kitchen-plumbing"],
+    related: ["hydro-jetting", "sewer-line-repair", "emergency-plumber", "kitchen-plumbing"],
   },
   {
     slug: "hydro-jetting",
@@ -418,7 +418,7 @@ export const services: Service[] = [
       { q: "How often should a commercial kitchen be jetted?", a: "Most kitchens should be jetted quarterly. Heavy fryer operations sometimes need it every two months to stay ahead of grease." },
       { q: "Can jetting remove tree roots?", a: "Root-cutting nozzles shear fine and moderate intrusion effectively. Heavy structural root damage requires sewer line repair or replacement, which we will show you on camera." },
     ],
-    related: ["drain-cleaning", "sewer-line-repair", "commercial-plumbing", "emergency-plumbing"],
+    related: ["drain-cleaning", "sewer-line-repair", "commercial-plumbing", "emergency-plumber"],
   },
   {
     slug: "leak-detection",
@@ -497,7 +497,7 @@ export const services: Service[] = [
       { q: "Does homeowners insurance cover slab leaks?", a: "Many policies cover resulting damage and access costs even when the pipe itself is excluded. Our written report and photographs are prepared with claims in mind." },
       { q: "Can you find pool and irrigation leaks?", a: "Yes. We pressure-isolate pool supply, return and irrigation lines and locate underground failures without excavating the whole yard." },
     ],
-    related: ["pipe-repair", "emergency-plumbing", "residential-plumbing", "sewer-line-repair"],
+    related: ["pipe-repair", "emergency-plumber", "residential-plumbing", "sewer-line-repair"],
   },
   {
     slug: "pipe-repair",
@@ -575,7 +575,7 @@ export const services: Service[] = [
       { q: "Do you repair the drywall afterward?", a: "Yes. We patch access openings and coordinate texture and paint matching so your home is not left with holes in the wall." },
       { q: "What causes low water pressure throughout my house?", a: "Most often internal scale in galvanized piping, a failing pressure regulator, or a partially closed main valve. We diagnose before recommending anything." },
     ],
-    related: ["leak-detection", "residential-plumbing", "emergency-plumbing", "bathroom-plumbing"],
+    related: ["leak-detection", "residential-plumbing", "emergency-plumber", "bathroom-plumbing"],
   },
   {
     slug: "gas-line-installation",
@@ -654,7 +654,7 @@ export const services: Service[] = [
       { q: "What should I do if I smell gas?", a: "Leave the building immediately without operating switches, call your gas utility from outside, and then call us at +1 (480) 215-0629 for repair once the area is safe." },
       { q: "Do you work with propane as well as natural gas?", a: "Yes. We install and service both natural gas and LP systems, including appliance conversion where the manufacturer supports it." },
     ],
-    related: ["emergency-plumbing", "water-heater-installation", "residential-plumbing", "commercial-plumbing"],
+    related: ["emergency-plumber", "water-heater-installation", "residential-plumbing", "commercial-plumbing"],
   },
   {
     slug: "sewer-line-repair",
@@ -733,7 +733,7 @@ export const services: Service[] = [
       { q: "How long does a sewer replacement take?", a: "Trenchless work is often completed in one to two days. Open-cut replacement typically takes two to four days including restoration." },
       { q: "Do you handle the permits?", a: "Yes. Sewer work requires permitting and inspection in Valley jurisdictions, and we manage the entire process." },
     ],
-    related: ["hydro-jetting", "drain-cleaning", "emergency-plumbing", "commercial-plumbing"],
+    related: ["hydro-jetting", "drain-cleaning", "emergency-plumber", "commercial-plumbing"],
   },
   {
     slug: "bathroom-plumbing",
@@ -968,7 +968,7 @@ export const services: Service[] = [
       { q: "What brands of fixtures do you install?", a: "Moen, Delta, Kohler, American Standard, Rheem, A.O. Smith, Bradford White and more — plus customer-supplied fixtures." },
       { q: "Are your technicians background checked?", a: "Every technician is background checked, uniformed, and arrives in a marked company vehicle." },
     ],
-    related: ["emergency-plumbing", "water-heater-repair", "bathroom-plumbing", "leak-detection"],
+    related: ["emergency-plumber", "water-heater-repair", "bathroom-plumbing", "leak-detection"],
   },
   {
     slug: "commercial-plumbing",
@@ -1046,7 +1046,7 @@ export const services: Service[] = [
       { q: "Do you perform backflow testing?", a: "Yes, including testing, repair and coordination of certification with the local water authority." },
       { q: "How fast is your commercial emergency response?", a: "Commercial emergencies are dispatched immediately, 24 hours a day. We know an hour of downtime costs more than the repair." },
     ],
-    related: ["hydro-jetting", "sewer-line-repair", "emergency-plumbing", "gas-line-installation"],
+    related: ["hydro-jetting", "sewer-line-repair", "emergency-plumber", "gas-line-installation"],
   },
 ];
 

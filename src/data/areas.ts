@@ -15,7 +15,7 @@ export interface Area {
 
 export const areas: Area[] = [
   {
-    slug: "mesa-az",
+    slug: "plumber-mesa-az",
     city: "Mesa",
     zips: "85201, 85202, 85203, 85204, 85205, 85206, 85207, 85208, 85209, 85210, 85212, 85213, 85215",
     metaTitle: "Plumber Mesa AZ | 24/7 Licensed Plumbing | Prestige Plumbing Company",
@@ -78,7 +78,7 @@ export const areas: Area[] = [
     ],
   },
   {
-    slug: "phoenix-az",
+    slug: "plumber-phoenix-az",
     city: "Phoenix",
     zips: "85008, 85016, 85018, 85028, 85032, 85044, 85048, 85050, 85054",
     metaTitle: "Plumber Phoenix AZ | Emergency Plumbing 24/7 | Prestige Plumbing Company",
@@ -141,7 +141,7 @@ export const areas: Area[] = [
     ],
   },
   {
-    slug: "chandler-az",
+    slug: "plumber-chandler-az",
     city: "Chandler",
     zips: "85224, 85225, 85226, 85248, 85249, 85286",
     metaTitle: "Plumber Chandler AZ | Water Heaters & Drain Cleaning | Prestige Plumbing",
@@ -203,7 +203,7 @@ export const areas: Area[] = [
     ],
   },
   {
-    slug: "gilbert-az",
+    slug: "plumber-gilbert-az",
     city: "Gilbert",
     zips: "85233, 85234, 85295, 85296, 85297, 85298",
     metaTitle: "Plumber Gilbert AZ | Emergency & Residential Plumbing | Prestige Plumbing",
@@ -266,7 +266,7 @@ export const areas: Area[] = [
     ],
   },
   {
-    slug: "tempe-az",
+    slug: "plumber-tempe-az",
     city: "Tempe",
     zips: "85281, 85282, 85283, 85284",
     metaTitle: "Plumber Tempe AZ | Rentals, Repairs & Emergency Service | Prestige Plumbing",
@@ -328,7 +328,7 @@ export const areas: Area[] = [
     ],
   },
   {
-    slug: "scottsdale-az",
+    slug: "plumber-scottsdale-az",
     city: "Scottsdale",
     zips: "85250, 85251, 85254, 85255, 85257, 85258, 85259, 85260, 85262",
     metaTitle: "Plumber Scottsdale AZ | Luxury Home Plumbing | Prestige Plumbing Company",
@@ -391,7 +391,7 @@ export const areas: Area[] = [
     ],
   },
   {
-    slug: "glendale-az",
+    slug: "plumber-glendale-az",
     city: "Glendale",
     zips: "85301, 85302, 85303, 85304, 85305, 85306, 85307, 85308, 85310",
     metaTitle: "Plumber Glendale AZ | Water Heaters & Drain Service | Prestige Plumbing",
@@ -452,7 +452,7 @@ export const areas: Area[] = [
     ],
   },
   {
-    slug: "queen-creek-az",
+    slug: "plumber-queen-creek-az",
     city: "Queen Creek",
     zips: "85142, 85140, 85143",
     metaTitle: "Plumber Queen Creek AZ | New Build & Emergency Plumbing | Prestige Plumbing",
@@ -514,7 +514,7 @@ export const areas: Area[] = [
     ],
   },
   {
-    slug: "san-tan-valley-az",
+    slug: "plumber-san-tan-valley-az",
     city: "San Tan Valley",
     zips: "85140, 85142, 85143",
     metaTitle: "Plumber San Tan Valley AZ | 24/7 Plumbing Service | Prestige Plumbing",
@@ -576,7 +576,7 @@ export const areas: Area[] = [
     ],
   },
   {
-    slug: "ahwatukee-az",
+    slug: "plumber-ahwatukee-az",
     city: "Ahwatukee",
     zips: "85044, 85045, 85048",
     metaTitle: "Plumber Ahwatukee AZ | Foothills Plumbing Experts | Prestige Plumbing",
