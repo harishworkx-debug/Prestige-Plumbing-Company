@@ -23,7 +23,7 @@ export interface Service {
   related: string[];
 }
 
-export const services: Service[] = [
+const coreServices: Service[] = [
   {
     slug: "emergency-plumber",
     name: "Emergency Plumbing",
@@ -1049,5 +1049,9 @@ export const services: Service[] = [
     related: ["hydro-jetting", "sewer-line-repair", "emergency-plumber", "gas-line-installation"],
   },
 ];
+
+import { extraServices } from "./services-extra";
+
+export const services: Service[] = [...coreServices, ...extraServices];
 
 export const serviceBySlug = (slug: string) => services.find((s) => s.slug === slug);
