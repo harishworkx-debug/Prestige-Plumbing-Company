@@ -11,6 +11,7 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as ServiceAreasRouteImport } from './routes/service-areas'
+import { Route as ReviewsRouteImport } from './routes/reviews'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as SlugRouteImport } from './routes/$slug'
@@ -25,6 +26,11 @@ const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
 const ServiceAreasRoute = ServiceAreasRouteImport.update({
   id: '/service-areas',
   path: '/service-areas',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ReviewsRoute = ReviewsRouteImport.update({
+  id: '/reviews',
+  path: '/reviews',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ContactRoute = ContactRouteImport.update({
@@ -58,6 +64,7 @@ export interface FileRoutesByFullPath {
   '/$slug': typeof SlugRoute
   '/about': typeof AboutRoute
   '/contact': typeof ContactRoute
+  '/reviews': typeof ReviewsRoute
   '/service-areas': typeof ServiceAreasRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/services/': typeof ServicesIndexRoute
@@ -67,6 +74,7 @@ export interface FileRoutesByTo {
   '/$slug': typeof SlugRoute
   '/about': typeof AboutRoute
   '/contact': typeof ContactRoute
+  '/reviews': typeof ReviewsRoute
   '/service-areas': typeof ServiceAreasRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/services': typeof ServicesIndexRoute
@@ -77,6 +85,7 @@ export interface FileRoutesById {
   '/$slug': typeof SlugRoute
   '/about': typeof AboutRoute
   '/contact': typeof ContactRoute
+  '/reviews': typeof ReviewsRoute
   '/service-areas': typeof ServiceAreasRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/services/': typeof ServicesIndexRoute
@@ -88,6 +97,7 @@ export interface FileRouteTypes {
     | '/$slug'
     | '/about'
     | '/contact'
+    | '/reviews'
     | '/service-areas'
     | '/sitemap.xml'
     | '/services/'
@@ -97,6 +107,7 @@ export interface FileRouteTypes {
     | '/$slug'
     | '/about'
     | '/contact'
+    | '/reviews'
     | '/service-areas'
     | '/sitemap.xml'
     | '/services'
@@ -106,6 +117,7 @@ export interface FileRouteTypes {
     | '/$slug'
     | '/about'
     | '/contact'
+    | '/reviews'
     | '/service-areas'
     | '/sitemap.xml'
     | '/services/'
@@ -116,6 +128,7 @@ export interface RootRouteChildren {
   SlugRoute: typeof SlugRoute
   AboutRoute: typeof AboutRoute
   ContactRoute: typeof ContactRoute
+  ReviewsRoute: typeof ReviewsRoute
   ServiceAreasRoute: typeof ServiceAreasRoute
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
   ServicesIndexRoute: typeof ServicesIndexRoute
@@ -135,6 +148,13 @@ declare module '@tanstack/react-router' {
       path: '/service-areas'
       fullPath: '/service-areas'
       preLoaderRoute: typeof ServiceAreasRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/reviews': {
+      id: '/reviews'
+      path: '/reviews'
+      fullPath: '/reviews'
+      preLoaderRoute: typeof ReviewsRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/contact': {
@@ -180,6 +200,7 @@ const rootRouteChildren: RootRouteChildren = {
   SlugRoute: SlugRoute,
   AboutRoute: AboutRoute,
   ContactRoute: ContactRoute,
+  ReviewsRoute: ReviewsRoute,
   ServiceAreasRoute: ServiceAreasRoute,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
   ServicesIndexRoute: ServicesIndexRoute,
