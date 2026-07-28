@@ -22,7 +22,7 @@ export const Route = createFileRoute("/")({
   head: () => ({
     meta: meta(
       "Plumber Mesa AZ | Prestige Plumbing Company | 24/7 Licensed Plumbers",
-      "Trusted Mesa & Phoenix plumbing company since 2005. Emergency plumbing, water heaters, drain cleaning, leak detection & repiping. Licensed, bonded, insured. Call +1 (480) 215-0629.",
+      "Trusted Mesa & Phoenix plumbing company since 2005. Emergency plumbing, water heaters, drain cleaning, leak detection & repiping. Licensed, bonded, insured. Call (480) 215-0629.",
       "/",
     ),
     links: [{ rel: "canonical", href: "/" }],
@@ -208,11 +208,10 @@ function Home() {
                     className="h-44 w-full object-cover transition-transform duration-700 group-hover:scale-105"
                   />
                   <div className="p-6">
-                    <h3 className="font-display text-xl font-bold">{s.name}</h3>
+                    <h3 className="font-display text-xl font-bold text-primary group-hover:underline">
+                      {s.name}
+                    </h3>
                     <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{s.tagline}</p>
-                    <span className="mt-4 inline-flex items-center gap-1 text-sm font-bold text-primary">
-                      Learn more <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
-                    </span>
                   </div>
                 </Link>
               </Reveal>

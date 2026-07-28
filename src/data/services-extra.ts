@@ -29,7 +29,7 @@ export const buildService = (spec: ServiceSpec): Service => ({
   metaTitle: spec.metaTitle ?? `${spec.name} in Mesa, AZ | Prestige Plumbing Company`,
   metaDescription:
     spec.metaDescription ??
-    `Professional ${spec.name.toLowerCase()} services in Mesa, AZ by Prestige Plumbing Company. Fast response, licensed plumbers, honest pricing and reliable workmanship. Call +1 (480) 215-0629 today.`,
+    `Professional ${spec.name.toLowerCase()} services in Mesa, AZ by Prestige Plumbing Company. Fast response, licensed plumbers, honest pricing and reliable workmanship. Call (480) 215-0629 today.`,
 });
 
 const specs: ServiceSpec[] = [
