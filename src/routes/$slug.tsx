@@ -233,23 +233,7 @@ function ServicePage({ s }: { s: Service }) {
               </div>
             </Reveal>
 
-            <Reveal>
-              <h2 className="mt-14 font-display text-3xl font-bold">
-                {s.name} Across The East Valley
-              </h2>
-              <div className="mt-6 flex flex-wrap gap-2">
-                {areas.map((a) => (
-                  <Link
-                    key={a.slug}
-                    to="/$slug"
-                    params={{ slug: a.slug }}
-                    className="rounded-full border border-border px-4 py-2 text-sm font-semibold text-muted-foreground hover:text-primary"
-                  >
-                    {s.name} in {a.city}, AZ
-                  </Link>
-                ))}
-              </div>
-            </Reveal>
+
           </div>
 
           <aside className="lg:sticky lg:top-32 lg:self-start">

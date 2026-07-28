@@ -54,21 +54,20 @@ export const nav = [
   { label: "Contact", to: "/contact" },
 ] as const;
 
-/** Services promoted into the header dropdown. */
 export const navServiceSlugs = [
-  "emergency-plumber",
-  "drain-cleaning",
-  "leak-detection",
-  "water-heater-repair",
-  "water-heater-installation",
-  "hydro-jetting",
-  "sewer-line-repair",
-  "pipe-repair",
-  "repiping",
-  "commercial-plumbing",
-  "residential-plumbing",
-  "gas-line-installation",
-  "plumbing-maintenance",
+  "emergency-plumber-mesa-az",
+  "drain-cleaning-mesa-az",
+  "leak-detection-mesa-az",
+  "water-heater-repair-mesa-az",
+  "water-heater-installation-mesa-az",
+  "hydro-jetting-mesa-az",
+  "sewer-line-repair-mesa-az",
+  "pipe-repair-mesa-az",
+  "repiping-mesa-az",
+  "commercial-plumbing-mesa-az",
+  "residential-plumbing-mesa-az",
+  "gas-line-installation-mesa-az",
+  "plumbing-maintenance-mesa-az",
 ];
 
 export const industries = [
