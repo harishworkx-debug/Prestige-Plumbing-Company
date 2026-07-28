@@ -6,8 +6,8 @@ export const business = {
   established: 2005,
   url: SITE_URL,
   phoneDisplay: "(480) 215-0629",
-  phoneHref: "tel:+14802150629",
-  whatsapp: "https://wa.me/14802150629",
+  phoneHref: "tel:4802150629",
+  whatsapp: "https://wa.me/4802150629",
   email: "info@prestigeplumbingcompany.com",
   street: "1120 E Jarvis Ave",
   city: "Mesa",
@@ -33,12 +33,11 @@ export const stats = [
   { value: "20+", label: "Years In Business" },
   { value: "18,400+", label: "Projects Completed" },
   { value: "9,200+", label: "Emergency Calls Answered" },
-  { value: "12,000+", label: "Happy Customers" },
+  { value: "1,000+", label: "Happy Customers" },
 ];
 
 export const trustBadges = [
   "Licensed",
-  "Bonded",
   "Insured",
   "Family Owned",
   "24 Hour Emergency",

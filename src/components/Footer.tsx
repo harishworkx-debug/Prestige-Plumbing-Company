@@ -81,12 +81,6 @@ export function Footer() {
                 </a>
               </li>
               <li className="flex gap-3">
-                <MessageCircle className="mt-0.5 h-4 w-4 shrink-0 text-accent" />
-                <a href={business.whatsapp} target="_blank" rel="noopener noreferrer" className="hover:text-accent">
-                  WhatsApp Us
-                </a>
-              </li>
-              <li className="flex gap-3">
                 <Mail className="mt-0.5 h-4 w-4 shrink-0 text-accent" />
                 <a href={`mailto:${business.email}`} className="hover:text-accent">
                   {business.email}

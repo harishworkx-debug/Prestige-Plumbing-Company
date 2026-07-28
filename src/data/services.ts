@@ -947,7 +947,7 @@ const coreServices: Service[] = [
       },
     ],
     steps: [
-      { title: "Schedule At Your Convenience", text: "Book by phone or WhatsApp with an arrival window that works around your day, including evenings." },
+      { title: "Schedule At Your Convenience", text: "Book by phone with an arrival window that works around your day, including evenings." },
       { title: "Arrival & Protection", text: "Marked vehicle, uniformed technician, shoe covers and drop cloths before anything is touched." },
       { title: "Genuine Diagnosis", text: "We test rather than guess, and we look at the surrounding system, not just the reported symptom." },
       { title: "Written Options", text: "Flat-rate pricing with good, better and best paths where they exist, explained plainly." },

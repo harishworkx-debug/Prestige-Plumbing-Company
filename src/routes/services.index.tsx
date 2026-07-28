@@ -64,7 +64,7 @@ function ServicesIndex() {
                   <div className="p-6">
                     <h2 className="font-display text-xl font-bold">{s.name}</h2>
                     <p className="mt-2 text-sm text-muted-foreground">{s.tagline}</p>
-                    <p className="mt-4 text-sm font-bold text-primary">View service →</p>
+                    <p className="mt-4 text-sm font-bold text-primary">{s.name} →</p>
                   </div>
                 </Link>
               </Reveal>

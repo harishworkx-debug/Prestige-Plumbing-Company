@@ -10,18 +10,6 @@ export function CTAButtons({ label = "Call Now", dark = false }: { label?: strin
       >
         <Phone className="h-4 w-4" /> {label} · {business.phoneDisplay}
       </a>
-      <a
-        href={business.whatsapp}
-        target="_blank"
-        rel="noopener noreferrer"
-        className={`inline-flex items-center gap-2 rounded-full border px-7 py-4 text-sm font-bold transition-colors ${
-          dark
-            ? "border-white/30 text-secondary-foreground hover:bg-white/10"
-            : "border-border text-foreground hover:bg-muted"
-        }`}
-      >
-        <MessageCircle className="h-4 w-4" /> WhatsApp Us
-      </a>
     </div>
   );
 }

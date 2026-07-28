@@ -22,7 +22,7 @@ export const Route = createFileRoute("/")({
   head: () => ({
     meta: meta(
       "Plumber Mesa AZ | Prestige Plumbing Company | 24/7 Licensed Plumbers",
-      "Trusted Mesa & Phoenix plumbing company since 2005. Emergency plumbing, water heaters, drain cleaning, leak detection & repiping. Licensed, bonded, insured. Call (480) 215-0629.",
+      "Trusted Mesa & Phoenix plumbing company since 2005. Emergency plumbing, water heaters, drain cleaning, leak detection & repiping. Licensed and insured. Call (480) 215-0629.",
       "/",
     ),
     links: [{ rel: "canonical", href: "/" }],
@@ -59,13 +59,13 @@ function Home() {
             className="max-w-3xl text-secondary-foreground"
           >
             <span className="inline-flex items-center gap-2 rounded-full border border-white/25 bg-white/10 px-4 py-2 text-xs font-bold tracking-[0.18em] uppercase backdrop-blur">
-              <ShieldCheck className="h-4 w-4 text-accent" /> Licensed · Bonded · Insured Since 2005
+              <ShieldCheck className="h-4 w-4 text-accent" /> Licensed · Insured Since 2005
             </span>
             <h1 className="mt-6 font-display text-4xl leading-[1.05] font-bold sm:text-5xl lg:text-6xl">
               Trusted Plumbing Experts Serving Mesa & Phoenix Metro
             </h1>
             <p className="mt-6 max-w-2xl text-lg leading-relaxed text-secondary-foreground/80">
-              Licensed, Bonded & Insured Plumbing Company Providing Residential & Commercial
+              Licensed & Insured Plumbing Company Providing Residential & Commercial
               Plumbing Services Since 2005. Emergency plumbers answering 24 hours a day, every day.
             </p>
             <div className="mt-9">
@@ -120,7 +120,7 @@ function Home() {
                 when water is where it should not be.
               </p>
               <p>
-                We are a fully licensed, bonded and insured Arizona plumbing contractor handling
+                We are a fully licensed and insured Arizona plumbing contractor handling
                 every discipline in the trade — emergency plumbing, water heaters, drain and sewer
                 work, leak detection, repiping, gas lines, and complete residential and commercial
                 installation. Our technicians are background checked, uniformed, and trained to
@@ -380,7 +380,7 @@ function Home() {
 
       <CTABand
         title="Get Fast Plumbing Help Today"
-        text="Call, WhatsApp or request a free estimate. Licensed, bonded and insured plumbers standing by 24 hours a day across Mesa and the Phoenix metro."
+        text="Call or request a free estimate. Licensed and insured plumbers standing by 24 hours a day across Mesa and the Phoenix metro."
       />
     </>
   );
