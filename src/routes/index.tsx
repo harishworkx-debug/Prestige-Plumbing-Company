@@ -22,7 +22,7 @@ export const Route = createFileRoute("/")({
   head: () => ({
     meta: meta(
       "Plumber Mesa AZ | Prestige Plumbing Company | 24/7 Licensed Plumbers",
-      "Trusted Mesa & Phoenix plumbing company since 2005. Emergency plumbing, water heaters, drain cleaning, leak detection & repiping. Licensed, bonded, insured. Call +1 (480) 215-0629.",
+      "Trusted Mesa & Phoenix plumbing company since 2005. Emergency plumbing, water heaters, drain cleaning, leak detection & repiping. Licensed, bonded, insured. Call (480) 215-0629.",
       "/",
     ),
     links: [{ rel: "canonical", href: "/" }],

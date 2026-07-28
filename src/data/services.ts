@@ -30,7 +30,7 @@ const coreServices: Service[] = [
     tagline: "24/7 emergency plumbers across Mesa and the Phoenix metro",
     metaTitle: "24/7 Emergency Plumber Mesa AZ | Prestige Plumbing Company",
     metaDescription:
-      "Emergency plumber in Mesa & Phoenix metro, available 24 hours. Burst pipes, sewage backups, water heater failures and gas leaks. Call +1 (480) 215-0629 now.",
+      "Emergency plumber in Mesa & Phoenix metro, available 24 hours. Burst pipes, sewage backups, water heater failures and gas leaks. Call (480) 215-0629 now.",
     image: "hero",
     intro: [
       "A plumbing emergency does not schedule itself around business hours. Water travels fast, drywall absorbs it faster, and in Arizona's dry climate a hidden leak can quietly destroy framing and flooring long before you smell it. Prestige Plumbing Company has answered emergency calls across Mesa, Phoenix, Chandler, Gilbert, Tempe and Scottsdale since 2005, and we still answer the phone the same way we did on day one: with a licensed plumbing professional, not a call center.",
@@ -111,7 +111,7 @@ const coreServices: Service[] = [
     tagline: "Fast hot water restoration for tank and tankless systems",
     metaTitle: "Water Heater Repair Mesa AZ | Same-Day Hot Water | Prestige Plumbing",
     metaDescription:
-      "Water heater repair in Mesa, Gilbert, Chandler & Phoenix. No hot water, leaking tank, pilot issues or sediment noise fixed same day. Call +1 (480) 215-0629.",
+      "Water heater repair in Mesa, Gilbert, Chandler & Phoenix. No hot water, leaking tank, pilot issues or sediment noise fixed same day. Call (480) 215-0629.",
     image: "waterHeater",
     intro: [
       "A water heater rarely fails without warning — it just fails without warning that most homeowners recognize. Rumbling sounds, water that runs lukewarm halfway through a shower, rusty discoloration, or a damp ring around the base are all early signals that the appliance is asking for attention. Prestige Plumbing Company repairs tank, tankless, gas and electric water heaters throughout Mesa and the Phoenix metro, usually the same day you call.",
@@ -192,7 +192,7 @@ const coreServices: Service[] = [
     tagline: "Code-compliant tank and tankless installation done right the first time",
     metaTitle: "Water Heater Installation Mesa AZ | Tank & Tankless | Prestige Plumbing",
     metaDescription:
-      "Professional water heater installation in Mesa, Chandler, Gilbert & Phoenix. Tank, tankless, gas & electric. Free estimates. Call +1 (480) 215-0629.",
+      "Professional water heater installation in Mesa, Chandler, Gilbert & Phoenix. Tank, tankless, gas & electric. Free estimates. Call (480) 215-0629.",
     image: "waterHeater",
     intro: [
       "Installing a water heater is not simply swapping a cylinder. It is a combustion appliance, a pressure vessel, and a code-regulated part of your home's mechanical system all at once. Prestige Plumbing Company installs tank and tankless water heaters across Mesa, Phoenix, Chandler, Gilbert and Scottsdale to full Arizona code, with permits pulled where jurisdictions require them.",
@@ -270,7 +270,7 @@ const coreServices: Service[] = [
     tagline: "Professional drain clearing that solves the cause, not just the symptom",
     metaTitle: "Drain Cleaning Mesa AZ | Clogged Drain Repair | Prestige Plumbing",
     metaDescription:
-      "Drain cleaning and unclogging in Mesa, Tempe, Chandler & Phoenix. Cabling, camera inspection and hydro jetting. Free estimates. Call +1 (480) 215-0629.",
+      "Drain cleaning and unclogging in Mesa, Tempe, Chandler & Phoenix. Cabling, camera inspection and hydro jetting. Free estimates. Call (480) 215-0629.",
     image: "drain",
     intro: [
       "A slow drain is a warning; a backed-up drain is the consequence of ignoring it. Prestige Plumbing Company clears kitchen, bathroom, laundry and main line drains throughout Mesa and the Phoenix metro using professional cabling machines, camera inspection and, where appropriate, high-pressure hydro jetting.",
@@ -348,7 +348,7 @@ const coreServices: Service[] = [
     tagline: "High-pressure pipe scouring that restores lines to full diameter",
     metaTitle: "Hydro Jetting Mesa AZ | Sewer & Drain Jetting | Prestige Plumbing",
     metaDescription:
-      "Hydro jetting in Mesa, Phoenix, Gilbert & Chandler. Remove grease, scale and roots and restore full pipe diameter. Call +1 (480) 215-0629 for a free quote.",
+      "Hydro jetting in Mesa, Phoenix, Gilbert & Chandler. Remove grease, scale and roots and restore full pipe diameter. Call (480) 215-0629 for a free quote.",
     image: "drain",
     intro: [
       "Hydro jetting is the most thorough drain cleaning method available to a residential or commercial property. Rather than boring a channel through a blockage, a specialized nozzle propels water at pressures up to 4,000 PSI in a controlled backward spray pattern, stripping grease, scale, sludge and root hair from the entire inner circumference of the pipe.",
@@ -426,7 +426,7 @@ const coreServices: Service[] = [
     tagline: "Non-invasive location of slab, wall and underground leaks",
     metaTitle: "Leak Detection Mesa AZ | Slab Leak Specialists | Prestige Plumbing",
     metaDescription:
-      "Non-invasive leak detection in Mesa, Gilbert, Chandler & Phoenix. Slab leaks, hidden pipe leaks and pool line leaks located precisely. Call +1 (480) 215-0629.",
+      "Non-invasive leak detection in Mesa, Gilbert, Chandler & Phoenix. Slab leaks, hidden pipe leaks and pool line leaks located precisely. Call (480) 215-0629.",
     image: "leak",
     intro: [
       "The most expensive plumbing leaks are the ones you never see. Water escaping beneath a concrete slab, inside a wall cavity, or under a landscaped yard can run for months, inflating water bills, undermining soil, and saturating structure before a single visible sign appears. Prestige Plumbing Company locates those leaks precisely, without demolishing your home to find them.",
@@ -505,7 +505,7 @@ const coreServices: Service[] = [
     tagline: "Repair, reroute and repipe solutions for failing water lines",
     metaTitle: "Pipe Repair & Repiping Mesa AZ | Burst & Pinhole Leaks | Prestige Plumbing",
     metaDescription:
-      "Pipe repair and whole-home repiping in Mesa, Phoenix & the East Valley. Burst pipes, pinhole leaks, low pressure and corroded galvanized lines. Call +1 (480) 215-0629.",
+      "Pipe repair and whole-home repiping in Mesa, Phoenix & the East Valley. Burst pipes, pinhole leaks, low pressure and corroded galvanized lines. Call (480) 215-0629.",
     image: "hero",
     intro: [
       "Pipes fail for reasons that are entirely predictable: age, water chemistry, excessive pressure, poor original workmanship, and soil movement. Prestige Plumbing Company repairs and replaces water supply and drain piping throughout Mesa, Phoenix, Tempe, Chandler and Scottsdale — from a single failed section to a complete whole-home repipe.",
@@ -583,7 +583,7 @@ const coreServices: Service[] = [
     tagline: "Permitted gas piping for appliances, fire pits and outdoor kitchens",
     metaTitle: "Gas Line Installation Mesa AZ | Fire Pit & Grill Lines | Prestige Plumbing",
     metaDescription:
-      "Licensed gas line installation in Mesa, Gilbert, Chandler & Scottsdale. Appliance lines, fire pits, outdoor grills and gas leak repair. Call +1 (480) 215-0629.",
+      "Licensed gas line installation in Mesa, Gilbert, Chandler & Scottsdale. Appliance lines, fire pits, outdoor grills and gas leak repair. Call (480) 215-0629.",
     image: "gasLine",
     intro: [
       "Gas work is the least forgiving discipline in plumbing. A drain mistake makes a mess; a gas mistake endangers a family. Prestige Plumbing Company installs, extends, repairs and pressure-tests natural gas and propane piping across Mesa, Gilbert, Chandler, Tempe and Scottsdale — always permitted, always tested, always to code.",
@@ -651,7 +651,7 @@ const coreServices: Service[] = [
       { q: "Do I need a permit for a gas line in Mesa?", a: "Yes. New gas lines and extensions require a permit and inspection in virtually every Valley jurisdiction. We handle the entire process for you." },
       { q: "How long does gas line installation take?", a: "A simple appliance extension takes half a day. Fire pits, outdoor kitchens and underground runs typically take one to two days plus inspection scheduling." },
       { q: "Can you run a gas line for my fire pit and grill?", a: "Yes — fire pits, built-in grills, side burners, patio heaters and pool heaters, all sized for simultaneous operation with a code-required emergency shut-off." },
-      { q: "What should I do if I smell gas?", a: "Leave the building immediately without operating switches, call your gas utility from outside, and then call us at +1 (480) 215-0629 for repair once the area is safe." },
+      { q: "What should I do if I smell gas?", a: "Leave the building immediately without operating switches, call your gas utility from outside, and then call us at (480) 215-0629 for repair once the area is safe." },
       { q: "Do you work with propane as well as natural gas?", a: "Yes. We install and service both natural gas and LP systems, including appliance conversion where the manufacturer supports it." },
     ],
     related: ["emergency-plumber", "water-heater-installation", "residential-plumbing", "commercial-plumbing"],
@@ -662,7 +662,7 @@ const coreServices: Service[] = [
     tagline: "Camera-verified sewer diagnosis, spot repair and full replacement",
     metaTitle: "Sewer Line Repair Mesa AZ | Camera Inspection | Prestige Plumbing",
     metaDescription:
-      "Sewer line repair and replacement in Mesa, Phoenix & the East Valley. Root intrusion, collapsed pipe and bellied lines. Camera inspection. Call +1 (480) 215-0629.",
+      "Sewer line repair and replacement in Mesa, Phoenix & the East Valley. Root intrusion, collapsed pipe and bellied lines. Camera inspection. Call (480) 215-0629.",
     image: "commercial",
     intro: [
       "Your sewer lateral is the single pipe carrying everything your household discharges to the municipal main. When it fails, nothing else in the plumbing system matters. Prestige Plumbing Company diagnoses, repairs and replaces sewer lines across Mesa, Phoenix, Tempe, Chandler and Queen Creek, always beginning with camera inspection so you see the evidence before spending a dollar.",
@@ -741,7 +741,7 @@ const coreServices: Service[] = [
     tagline: "Fixture installation, repairs and full remodel rough-in",
     metaTitle: "Bathroom Plumbing Mesa AZ | Remodel & Fixture Install | Prestige Plumbing",
     metaDescription:
-      "Bathroom plumbing in Mesa, Gilbert & Chandler. Toilet, faucet, shower and tub installation plus complete remodel rough-in. Call +1 (480) 215-0629.",
+      "Bathroom plumbing in Mesa, Gilbert & Chandler. Toilet, faucet, shower and tub installation plus complete remodel rough-in. Call (480) 215-0629.",
     image: "bathroom",
     intro: [
       "Bathrooms concentrate more plumbing into less square footage than any other room in the house, which is why small mistakes there produce large consequences. Prestige Plumbing Company handles everything from a leaking shower valve to complete remodel rough-in across Mesa, Gilbert, Chandler, Tempe and Scottsdale.",
@@ -820,7 +820,7 @@ const coreServices: Service[] = [
     tagline: "Sinks, faucets, disposals, ice makers and kitchen drain lines",
     metaTitle: "Kitchen Plumbing Mesa AZ | Disposals, Faucets & Drains | Prestige Plumbing",
     metaDescription:
-      "Kitchen plumbing services in Mesa, Chandler & Gilbert. Faucet and sink installation, garbage disposals, dishwasher lines and drain repair. Call +1 (480) 215-0629.",
+      "Kitchen plumbing services in Mesa, Chandler & Gilbert. Faucet and sink installation, garbage disposals, dishwasher lines and drain repair. Call (480) 215-0629.",
     image: "hero",
     intro: [
       "The kitchen is the hardest-working plumbing zone in any home. Between the sink, dishwasher, garbage disposal, ice maker and pot filler, more connections and more grease pass through this room than anywhere else. Prestige Plumbing Company services and installs kitchen plumbing across Mesa, Phoenix, Gilbert, Chandler and Tempe.",
@@ -897,7 +897,7 @@ const coreServices: Service[] = [
     tagline: "Complete home plumbing service, repair and maintenance",
     metaTitle: "Residential Plumbing Mesa AZ | Home Plumber | Prestige Plumbing Company",
     metaDescription:
-      "Residential plumbing in Mesa, Gilbert, Chandler, Tempe & Phoenix. Repairs, repipes, fixtures, water heaters and whole-home inspections. Call +1 (480) 215-0629.",
+      "Residential plumbing in Mesa, Gilbert, Chandler, Tempe & Phoenix. Repairs, repipes, fixtures, water heaters and whole-home inspections. Call (480) 215-0629.",
     image: "van",
     intro: [
       "Prestige Plumbing Company has been the family plumber for East Valley households since 2005. Residential plumbing is our foundation: the leaking faucet, the failed water heater, the repipe, the remodel, and the annual inspection that catches the problem before it becomes an emergency.",
@@ -976,7 +976,7 @@ const coreServices: Service[] = [
     tagline: "Plumbing service and installation that respects your operating hours",
     metaTitle: "Commercial Plumbing Mesa AZ | Restaurants & Retail | Prestige Plumbing",
     metaDescription:
-      "Commercial plumbing in Mesa, Phoenix, Tempe & Chandler. Restaurants, retail, offices and multi-family. Grease lines, jetting, backflow & installs. Call +1 (480) 215-0629.",
+      "Commercial plumbing in Mesa, Phoenix, Tempe & Chandler. Restaurants, retail, offices and multi-family. Grease lines, jetting, backflow & installs. Call (480) 215-0629.",
     image: "commercial",
     intro: [
       "Commercial plumbing failures cost revenue, not just repair dollars. A restaurant with a backed-up kitchen line stops serving. An office with a failed restroom sends staff home. A multi-family property with a riser leak faces angry tenants and liability. Prestige Plumbing Company services commercial properties across Mesa, Phoenix, Tempe, Chandler and Scottsdale with the response speed that reality requires.",

@@ -10,7 +10,7 @@ export const Route = createFileRoute("/services/")({
   head: () => ({
     meta: meta(
       "Plumbing Services Mesa AZ | Residential & Commercial | Prestige Plumbing",
-      "Full-service plumbing in Mesa & Phoenix: emergency plumbing, water heaters, drain cleaning, hydro jetting, leak detection, gas lines & repiping. Call +1 (480) 215-0629.",
+      "Full-service plumbing in Mesa & Phoenix: emergency plumbing, water heaters, drain cleaning, hydro jetting, leak detection, gas lines & repiping. Call (480) 215-0629.",
       "/services",
     ),
     links: [{ rel: "canonical", href: "/services" }],
