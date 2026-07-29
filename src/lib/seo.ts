@@ -47,7 +47,7 @@ export const localBusinessSchema = {
   url: abs("/"),
   hasMap: business.mapLink,
   priceRange: "$$",
-  foundingDate: "2005",
+
   sameAs: socials.map((s) => s.href),
   address: postalAddress,
   geo: { "@type": "GeoCoordinates", latitude: business.lat, longitude: business.lng },

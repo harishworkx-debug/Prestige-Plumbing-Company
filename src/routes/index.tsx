@@ -22,7 +22,7 @@ export const Route = createFileRoute("/")({
   head: () => ({
     meta: meta(
       "Plumber Mesa AZ | Prestige Plumbing Company | 24/7 Licensed Plumbers",
-      "Trusted Mesa & Phoenix plumbing company since 2005. Emergency plumbing, water heaters, drain cleaning, leak detection & repiping. Licensed and insured. Call (480) 215-0629.",
+      "Trusted Mesa & Phoenix plumbing company. Emergency plumbing, water heaters, drain cleaning, leak detection & repiping. Licensed and insured. Call (480) 215-0629.",
       "/",
     ),
     links: [{ rel: "canonical", href: "/" }],
@@ -59,14 +59,14 @@ function Home() {
             className="max-w-3xl text-secondary-foreground"
           >
             <span className="inline-flex items-center gap-2 rounded-full border border-white/25 bg-white/10 px-4 py-2 text-xs font-bold tracking-[0.18em] uppercase backdrop-blur">
-              <ShieldCheck className="h-4 w-4 text-accent" /> Licensed · Insured Since 2005
+              <ShieldCheck className="h-4 w-4 text-accent" /> Licensed · Insured
             </span>
             <h1 className="mt-6 font-display text-4xl leading-[1.05] font-bold sm:text-5xl lg:text-6xl">
               Trusted Plumbing Experts Serving Mesa & Phoenix Metro
             </h1>
             <p className="mt-6 max-w-2xl text-lg leading-relaxed text-secondary-foreground/80">
               Licensed & Insured Plumbing Company Providing Residential & Commercial
-              Plumbing Services Since 2005. Emergency plumbers answering 24 hours a day, every day.
+              Plumbing Services. Emergency plumbers answering 24 hours a day, every day.
             </p>
             <div className="mt-9">
               <CTAButtons dark label="Call Now" />
@@ -109,13 +109,13 @@ function Home() {
               Family Owned Plumbing Company
             </span>
             <h2 className="mt-3 font-display text-3xl font-bold sm:text-4xl">
-              Twenty Years Of Plumbing The East Valley, One Neighbor At A Time
+              Plumbing The East Valley, One Neighbor At A Time
             </h2>
             <div className="mt-5 space-y-4 leading-relaxed text-muted-foreground">
               <p>
-                Prestige Plumbing Company opened its doors in Mesa in 2005 with a single truck and a
+                Prestige Plumbing Company opened its doors in Mesa with a single truck and a
                 straightforward promise: answer the phone, tell the truth, and do the work properly
-                the first time. Two decades later we are still family owned and operated, still
+                the first time. Today we are still family owned and operated, still
                 based at 1120 E Jarvis Ave, and still the company thousands of Arizona families call
                 when water is where it should not be.
               </p>

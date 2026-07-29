@@ -38,7 +38,7 @@ function ServicesIndex() {
             eyebrow="Our Plumbing Services"
             center={false}
             title="Every Plumbing Service Your Home Or Business Needs"
-            text="Prestige Plumbing Company has served Mesa and the Phoenix metro since 2005 as a licensed, bonded and insured contractor. Whatever the fixture, pipe, drain or appliance, one company handles it — with flat-rate pricing quoted before work begins and a documented workmanship warranty afterward."
+            text="Prestige Plumbing Company has served Mesa and the Phoenix metro as a licensed, bonded and insured contractor. Whatever the fixture, pipe, drain or appliance, one company handles it — with flat-rate pricing quoted before work begins and a documented workmanship warranty afterward."
           />
         </div>
       </section>

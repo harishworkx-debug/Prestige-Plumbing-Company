@@ -7,7 +7,6 @@ export const business = {
   url: SITE_URL,
   phoneDisplay: "(480) 215-0629",
   phoneHref: "tel:4802150629",
-  whatsapp: "https://wa.me/4802150629",
   email: "info@prestigeplumbingcompany.com",
   street: "1120 E Jarvis Ave",
   city: "Mesa",

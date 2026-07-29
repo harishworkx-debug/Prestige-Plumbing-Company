@@ -197,7 +197,7 @@ function ServicePage({ s }: { s: Service }) {
               </h2>
               <p className="mt-5 leading-relaxed text-muted-foreground">
                 We have been a family owned, licensed, bonded and insured plumbing contractor in
-                Mesa since 2005. Every {s.name.toLowerCase()} job is quoted flat-rate in writing
+                Mesa. Every {s.name.toLowerCase()} job is quoted flat-rate in writing
                 before we begin, performed to Arizona plumbing code, documented with photographs, and
                 backed by a workmanship warranty. We serve{" "}
                 <Link to="/service-areas" className="font-semibold text-primary hover:underline">

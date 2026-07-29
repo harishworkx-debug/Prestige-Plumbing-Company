@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { Phone, Mail, MapPin, Clock, Droplets, MessageCircle } from "lucide-react";
+import { Phone, Mail, MapPin, Clock, Droplets } from "lucide-react";
 import { business, nav } from "@/data/site";
 import { services } from "@/data/services";
 import { areas } from "@/data/areas";
@@ -18,7 +18,7 @@ export function Footer() {
             </div>
             <p className="mt-4 text-sm leading-relaxed text-secondary-foreground/70">
               Family owned, licensed, bonded and insured plumbing contractor serving Mesa and the
-              Phoenix metro since 2005. Residential and commercial plumbing, 24 hours a day.
+              Phoenix metro. Residential and commercial plumbing, 24 hours a day.
             </p>
             <div className="mt-5 flex flex-wrap gap-2">
               {["Licensed", "Bonded", "Insured", "24/7"].map((b) => (

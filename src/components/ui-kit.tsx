@@ -1,4 +1,4 @@
-import { Phone, MessageCircle } from "lucide-react";
+import { Phone } from "lucide-react";
 import { business } from "@/data/site";
 
 export function CTAButtons({ label = "Call Now", dark = false }: { label?: string; dark?: boolean }) {

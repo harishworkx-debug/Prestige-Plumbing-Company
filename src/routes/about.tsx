@@ -8,7 +8,7 @@ import { meta, breadcrumbSchema, webPageSchema, abs } from "@/lib/seo";
 
 const title = "About Prestige Plumbing Company | Licensed Plumbers in Mesa, AZ";
 const description =
-  "Family owned since 2005, Prestige Plumbing Company is a licensed, bonded and insured plumbing contractor in Mesa, AZ serving the entire East Valley. Call (480) 215-0629.";
+  "Family owned, Prestige Plumbing Company is a licensed, bonded and insured plumbing contractor in Mesa, AZ serving the entire East Valley. Call (480) 215-0629.";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
@@ -38,8 +38,8 @@ function AboutPage() {
           <SectionHeading
             eyebrow="About Us"
             center={false}
-            title="A Family Owned Mesa Plumbing Company Since 2005"
-            text={`${business.name} has served Mesa and the Phoenix metro for two decades from our shop at ${business.street}, ${business.city}, ${business.state}. Licensed, bonded and insured — with the same family name on the truck, the invoice and the warranty.`}
+            title="A Family Owned Mesa Plumbing Company"
+            text={`${business.name} has served Mesa and the Phoenix metro from our shop at ${business.street}, ${business.city}, ${business.state}. Licensed, bonded and insured — with the same family name on the truck, the invoice and the warranty.`}
           />
           <div className="mt-8">
             <CTAButtons label="Talk To A Plumber" />
@@ -63,9 +63,9 @@ function AboutPage() {
             <h2 className="font-display text-3xl font-bold">Our Story</h2>
             <div className="mt-4 space-y-4 leading-relaxed text-muted-foreground">
               <p>
-                We started in 2005 with one truck, one licensed plumber and a simple promise: quote
-                the price before the work, do the work right, and stand behind it. Twenty years
-                later that promise still runs the business — we have just added more trucks,
+                We started with one truck, one licensed plumber and a simple promise: quote
+                the price before the work, do the work right, and stand behind it. Today
+                that promise still runs the business — we have just added more trucks,
                 sewer cameras, acoustic leak detection gear and hydro jetting trailers.
               </p>
               <p>
