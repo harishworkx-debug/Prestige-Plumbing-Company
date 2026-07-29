@@ -38,7 +38,7 @@ export function Navbar() {
                 Prestige Plumbing
               </span>
               <span className="block text-[11px] tracking-[0.18em] text-muted-foreground uppercase">
-                Mesa · Since 2005
+                Mesa
               </span>
             </span>
           </Link>
