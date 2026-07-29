@@ -48,6 +48,7 @@ export const nav = [
   { label: "Home", to: "/" },
   { label: "About", to: "/about" },
   { label: "Services", to: "/services" },
+  { label: "Service Areas", to: "/service-areas" },
   { label: "Reviews", to: "/reviews" },
   { label: "Blog", to: "/blog" },
   { label: "Contact", to: "/contact" },

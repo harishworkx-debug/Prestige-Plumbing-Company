@@ -1,7 +1,9 @@
 import { Link } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
-import { Menu, X, Phone, Droplets } from "lucide-react";
+import { Menu, X, Phone, Droplets, ChevronDown } from "lucide-react";
 import { business, nav } from "@/data/site";
+import { services } from "@/data/services";
+import { areas } from "@/data/areas";
 
 export function Navbar() {
   const [open, setOpen] = useState(false);
@@ -45,17 +47,75 @@ export function Navbar() {
 
           <div className="flex items-center gap-2">
             <nav className="hidden items-center gap-1 lg:flex">
-              {nav.map((item) => (
-                <Link
-                  key={item.to}
-                  to={item.to}
-                  activeProps={{ className: "text-primary" }}
-                  activeOptions={{ exact: item.to === "/" }}
-                  className="rounded-full px-3 py-2 text-sm font-semibold text-foreground/80 transition-colors hover:bg-muted hover:text-primary"
-                >
-                  {item.label}
-                </Link>
-              ))}
+              {nav.map((item) => {
+                if (item.label === "Services") {
+                  return (
+                    <div key={item.to} className="group relative">
+                      <Link
+                        to={item.to}
+                        activeProps={{ className: "text-primary" }}
+                        className="flex items-center gap-1 rounded-full px-3 py-2 text-sm font-semibold text-foreground/80 transition-colors hover:bg-muted hover:text-primary group-hover:text-primary"
+                      >
+                        {item.label}
+                        <ChevronDown className="h-4 w-4 transition-transform group-hover:rotate-180" />
+                      </Link>
+                      <div className="absolute left-0 top-full hidden w-64 pt-2 group-hover:block">
+                        <div className="rounded-xl border border-border bg-card p-2 shadow-xl">
+                          {services.map((service) => (
+                            <a
+                              key={service.slug}
+                              href={`/${service.slug}/`}
+                              className="block rounded-lg px-4 py-2 text-sm font-medium text-muted-foreground hover:bg-muted hover:text-primary"
+                            >
+                              {service.name}
+                            </a>
+                          ))}
+                        </div>
+                      </div>
+                    </div>
+                  );
+                }
+
+                if (item.label === "Service Areas") {
+                  return (
+                    <div key={item.to} className="group relative">
+                      <Link
+                        to={item.to}
+                        activeProps={{ className: "text-primary" }}
+                        className="flex items-center gap-1 rounded-full px-3 py-2 text-sm font-semibold text-foreground/80 transition-colors hover:bg-muted hover:text-primary group-hover:text-primary"
+                      >
+                        {item.label}
+                        <ChevronDown className="h-4 w-4 transition-transform group-hover:rotate-180" />
+                      </Link>
+                      <div className="absolute left-0 top-full hidden w-48 pt-2 group-hover:block">
+                        <div className="rounded-xl border border-border bg-card p-2 shadow-xl">
+                          {areas.map((area) => (
+                            <a
+                              key={area.slug}
+                              href={`/${area.slug}/`}
+                              className="block rounded-lg px-4 py-2 text-sm font-medium text-muted-foreground hover:bg-muted hover:text-primary"
+                            >
+                              {area.city}
+                            </a>
+                          ))}
+                        </div>
+                      </div>
+                    </div>
+                  );
+                }
+
+                return (
+                  <Link
+                    key={item.to}
+                    to={item.to}
+                    activeProps={{ className: "text-primary" }}
+                    activeOptions={{ exact: item.to === "/" }}
+                    className="rounded-full px-3 py-2 text-sm font-semibold text-foreground/80 transition-colors hover:bg-muted hover:text-primary"
+                  >
+                    {item.label}
+                  </Link>
+                );
+              })}
             </nav>
             <a
               href={business.phoneHref}
@@ -76,16 +136,70 @@ export function Navbar() {
 
         {open && (
           <nav className="border-t border-border bg-background px-4 pb-5 lg:hidden">
-            {nav.map((item) => (
-              <Link
-                key={item.to}
-                to={item.to}
-                onClick={() => setOpen(false)}
-                className="block border-b border-border py-3 text-sm font-semibold"
-              >
-                {item.label}
-              </Link>
-            ))}
+            {nav.map((item) => {
+              if (item.label === "Services") {
+                return (
+                  <div key={item.to}>
+                    <Link
+                      to={item.to}
+                      onClick={() => setOpen(false)}
+                      className="block border-b border-border py-3 text-sm font-semibold"
+                    >
+                      {item.label}
+                    </Link>
+                    <div className="pl-4">
+                      {services.map((service) => (
+                        <a
+                          key={service.slug}
+                          href={`/${service.slug}/`}
+                          onClick={() => setOpen(false)}
+                          className="block border-b border-border py-3 text-sm font-medium text-muted-foreground"
+                        >
+                          {service.name}
+                        </a>
+                      ))}
+                    </div>
+                  </div>
+                );
+              }
+
+              if (item.label === "Service Areas") {
+                return (
+                  <div key={item.to}>
+                    <Link
+                      to={item.to}
+                      onClick={() => setOpen(false)}
+                      className="block border-b border-border py-3 text-sm font-semibold"
+                    >
+                      {item.label}
+                    </Link>
+                    <div className="pl-4">
+                      {areas.map((area) => (
+                        <a
+                          key={area.slug}
+                          href={`/${area.slug}/`}
+                          onClick={() => setOpen(false)}
+                          className="block border-b border-border py-3 text-sm font-medium text-muted-foreground"
+                        >
+                          {area.city}
+                        </a>
+                      ))}
+                    </div>
+                  </div>
+                );
+              }
+
+              return (
+                <Link
+                  key={item.to}
+                  to={item.to}
+                  onClick={() => setOpen(false)}
+                  className="block border-b border-border py-3 text-sm font-semibold"
+                >
+                  {item.label}
+                </Link>
+              );
+            })}
           </nav>
         )}
       </div>
