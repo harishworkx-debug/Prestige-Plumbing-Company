@@ -1,5 +1,5 @@
 import type { ImageKey } from "./images";
-
+import { extraServices } from "./services-extra";
 export interface ServiceFaq {
   q: string;
   a: string;
@@ -633,6 +633,6 @@ const coreServices: Service[] = [
   },
 ];
 
-export const services: Service[] = coreServices;
+export const services: Service[] = [...coreServices, ...extraServices];
 
 export const serviceBySlug = (slug: string) => services.find((s) => s.slug === slug);
