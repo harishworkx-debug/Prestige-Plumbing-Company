@@ -20,10 +20,10 @@ export const areas: Area[] = [
     zips: "85201, 85202, 85203, 85204, 85205, 85206, 85207, 85208, 85209, 85210, 85212, 85213, 85215",
     metaTitle: "Plumber Mesa AZ | 24/7 Licensed Plumbing | Prestige Plumbing Company",
     metaDescription:
-      "Trusted Mesa AZ plumber since 2005. Emergency plumbing, water heaters, drain cleaning, leak detection & repiping. Licensed, bonded, insured. Call (480) 215-0629.",
-    headline: "Mesa's Family-Owned Plumbing Company Since 2005",
+      "Trusted Mesa AZ plumber. Emergency plumbing, water heaters, drain cleaning, leak detection & repiping. Licensed, bonded, insured. Call (480) 215-0629.",
+    headline: "Mesa's Family-Owned Plumbing Company",
     intro: [
-      "Mesa is home. Our shop sits at 1120 E Jarvis Ave, and the majority of the families we serve live within a fifteen-minute drive of that address. Since 2005 we have repaired, repiped and rescued plumbing systems in nearly every corner of this city — from the mid-century ranch homes near Main Street to the newer subdivisions stretching toward Signal Butte.",
+      "Mesa is home. Our shop sits at 1120 E Jarvis Ave, and the majority of the families we serve live within a fifteen-minute drive of that address. We have repaired, repiped and rescued plumbing systems in nearly every corner of this city — from the mid-century ranch homes near Main Street to the newer subdivisions stretching toward Signal Butte.",
       "Mesa's housing stock spans seventy years of construction practice, and each era carries its own plumbing signature. Homes built in the 1950s and 1960s around downtown and the Fraser Fields area often still contain galvanized steel supply lines and cast iron drainage, both of which corrode from the inside and eventually strangle flow. The 1970s and 1980s brought copper, which in Mesa's mineral-heavy water frequently develops pinhole pitting after three decades. The 1990s and 2000s expansion east of Power Road introduced widespread under-slab copper — the primary source of the slab leaks we locate almost daily.",
       "Water chemistry is the constant. Mesa's municipal supply blends Colorado River and Salt River water, both notably hard. That hardness is why Mesa water heaters accumulate sediment faster than the national average, why faucet cartridges fail early here, and why we recommend annual water heater flushing to every homeowner in the city rather than the manufacturer's suggested schedule.",
     ],
@@ -68,7 +68,7 @@ export const areas: Area[] = [
       "Twenty years of familiarity with Mesa's construction eras, soil behavior and water chemistry",
       "Permitting experience with the City of Mesa building safety department",
       "Truck stock selected for the fixtures and equipment most common in Mesa homes",
-      "Thousands of Mesa neighbors served and referred since 2005",
+      "Thousands of Mesa neighbors served and referred",
     ],
     faqs: [
       { q: "How fast can you reach my Mesa home?", a: "We are based in Mesa at 1120 E Jarvis Ave, and most addresses in the city see a technician within 45 to 75 minutes. Emergencies are dispatched immediately, 24 hours a day." },
@@ -83,7 +83,7 @@ export const areas: Area[] = [
     zips: "85008, 85016, 85018, 85028, 85032, 85044, 85048, 85050, 85054",
     metaTitle: "Plumber Phoenix AZ | Emergency Plumbing 24/7 | Prestige Plumbing Company",
     metaDescription:
-      "Licensed Phoenix plumber for emergency repairs, water heaters, drains, leaks and repiping. Family owned since 2005. Free estimates. Call (480) 215-0629.",
+      "Licensed Phoenix plumber for emergency repairs, water heaters, drains, leaks and repiping. Family owned. Free estimates. Call (480) 215-0629.",
     headline: "Licensed Phoenix Plumbers For Homes And Businesses",
     intro: [
       "Phoenix is the largest and most architecturally varied city we serve, and plumbing here means adapting to whatever the neighborhood was built with. A 1940s bungalow in the Coronado Historic District, a 1960s block home in Arcadia, a 1990s Ahwatukee two-story and a 2020 high-rise condo downtown share almost nothing except the water utility.",
@@ -208,7 +208,7 @@ export const areas: Area[] = [
     zips: "85233, 85234, 85295, 85296, 85297, 85298",
     metaTitle: "Plumber Gilbert AZ | Emergency & Residential Plumbing | Prestige Plumbing",
     metaDescription:
-      "Gilbert AZ plumbers for water heaters, slab leaks, drain cleaning and repipes. Family owned since 2005. Licensed & insured. Call (480) 215-0629.",
+      "Gilbert AZ plumbers for water heaters, slab leaks, drain cleaning and repipes. Family owned. Licensed & insured. Call (480) 215-0629.",
     headline: "Gilbert Plumbing Services You Can Actually Trust",
     intro: [
       "Gilbert transformed from a farming town of five thousand people into one of the fastest-growing communities in America, and nearly all of its housing was built during that expansion. That means an enormous concentration of homes constructed between 1995 and 2015 — and a very predictable maintenance curve arriving all at once.",
@@ -581,7 +581,7 @@ export const areas: Area[] = [
     zips: "85044, 85045, 85048",
     metaTitle: "Plumber Ahwatukee AZ | Foothills Plumbing Experts | Prestige Plumbing",
     metaDescription:
-      "Ahwatukee plumbing services for water heaters, slab leaks, drains and emergencies. Licensed & family owned since 2005. Call (480) 215-0629.",
+      "Ahwatukee plumbing services for water heaters, slab leaks, drains and emergencies. Licensed & family owned. Call (480) 215-0629.",
     headline: "Ahwatukee Foothills Plumbing Done Properly",
     intro: [
       "Ahwatukee sits against South Mountain in its own distinct pocket of the Valley, and its housing reflects a concentrated building period — largely 1980s through late 1990s, with a strong stock of custom and semi-custom homes in the Foothills. That construction window puts most of Ahwatukee squarely in the age range where under-slab copper begins to fail and original water heaters have long since been replaced once.",

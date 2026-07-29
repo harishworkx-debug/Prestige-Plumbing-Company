@@ -103,7 +103,7 @@ function Home() {
 
       {/* INTRO */}
       <section className="py-20">
-        <div className="mx-auto grid max-w-7xl gap-12 px-4 lg:grid-cols-2 lg:items-center lg:px-8">
+        <div className="mx-auto grid max-w-7xl gap-12 px-4 lg:grid-cols-1 lg:px-8">
           <Reveal>
             <span className="text-xs font-bold tracking-[0.22em] text-primary uppercase">
               Family Owned Plumbing Company
@@ -136,24 +136,6 @@ function Home() {
             </div>
             <div className="mt-8">
               <CTAButtons label="Free Plumbing Estimate" />
-            </div>
-          </Reveal>
-          <Reveal delay={0.15}>
-            <div className="relative">
-              <img
-                src={images.van}
-                alt="Prestige Plumbing Company service van parked outside a Mesa Arizona home"
-                width={1280}
-                height={853}
-                loading="lazy"
-                className="rounded-3xl object-cover shadow-float"
-              />
-              <div className="glass-card absolute -bottom-8 left-6 hidden rounded-2xl p-5 sm:block">
-                <p className="flex items-center gap-2 font-display text-2xl font-bold">
-                  <Star className="h-5 w-5 fill-accent text-accent" /> 4.9 / 5
-                </p>
-                <p className="text-xs text-muted-foreground">487+ verified customer reviews</p>
-              </div>
             </div>
           </Reveal>
         </div>

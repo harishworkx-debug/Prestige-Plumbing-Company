@@ -51,8 +51,8 @@ function AboutPage() {
         <div className="mx-auto grid max-w-7xl gap-12 px-4 lg:grid-cols-2 lg:px-8">
           <Reveal>
             <img
-              src={images.van}
-              alt="Prestige Plumbing Company service van in Mesa, Arizona"
+              src={images.aboutTeam}
+              alt="Prestige Plumbing Company team in Mesa, Arizona"
               width={1280}
               height={853}
               loading="lazy"

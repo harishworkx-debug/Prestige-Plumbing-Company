@@ -3,7 +3,7 @@ export const SITE_URL = "https://prestigeplumbingcompany.com";
 export const business = {
   name: "Prestige Plumbing Company",
   legalType: "Licensed Plumbing Contractor",
-  established: 2005,
+
   url: SITE_URL,
   phoneDisplay: "(480) 215-0629",
   phoneHref: "tel:4802150629",
@@ -235,8 +235,8 @@ export const process = [
 
 export const whyChoose = [
   {
-    title: "Family Owned Since 2005",
-    text: "Two decades of East Valley plumbing under one family name. The person who answers your call is accountable to the person who turns the wrench.",
+    title: "Family Owned",
+    text: "East Valley plumbing under one family name. The person who answers your call is accountable to the person who turns the wrench.",
   },
   {
     title: "Licensed, Bonded & Insured",

@@ -1,21 +1,47 @@
 import hero from "@/assets/hero-plumber.jpg";
-import waterHeater from "@/assets/water-heater.jpg";
-import drain from "@/assets/drain-cleaning.jpg";
-import bathroom from "@/assets/bathroom.jpg";
-import van from "@/assets/service-van.jpg";
-import commercial from "@/assets/commercial.jpg";
-import gasLine from "@/assets/gas-line.jpg";
-import leak from "@/assets/leak-detection.jpg";
+import waterHeaterOld from "@/assets/water-heater.jpg";
+import drainOld from "@/assets/drain-cleaning.jpg";
+import bathroomOld from "@/assets/bathroom.jpg";
+import commercialOld from "@/assets/commercial.jpg";
+import gasLineOld from "@/assets/gas-line.jpg";
+import leakOld from "@/assets/leak-detection.jpg";
+
+import emergencyPlumbing from "@/assets/emergency-plumbing.png";
+import waterHeaters from "@/assets/water-heaters.png";
+import drainAndSewer from "@/assets/drain-and-sewer.png";
+import leakDetection from "@/assets/leak-detection.png";
+import repiping from "@/assets/repiping.png";
+import gasLine from "@/assets/gas-line.png";
+import bathroomPlumbing from "@/assets/bathroom-plumbing.png";
+import kitchenPlumbing from "@/assets/kitchen-plumbing.png";
+import residentialPlumbing from "@/assets/residential-plumbing.png";
+import commercialPlumbing from "@/assets/commercial-plumbing.png";
+
+import aboutTeam from "@/assets/about-team.png";
+import areaHero from "@/assets/area-hero.png";
+import blogDrain from "@/assets/blog-drain.png";
 
 export const images = {
   hero,
-  waterHeater,
-  drain,
-  bathroom,
-  van,
-  commercial,
+  waterHeaterOld,
+  drainOld,
+  bathroomOld,
+  commercialOld,
+  gasLineOld,
+  leakOld,
+  emergencyPlumbing,
+  waterHeaters,
+  drainAndSewer,
+  leakDetection,
+  repiping,
   gasLine,
-  leak,
+  bathroomPlumbing,
+  kitchenPlumbing,
+  residentialPlumbing,
+  commercialPlumbing,
+  aboutTeam,
+  areaHero,
+  blogDrain,
 } as const;
 
 export type ImageKey = keyof typeof images;

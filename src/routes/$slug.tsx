@@ -288,8 +288,8 @@ function AreaPage({ a }: { a: Area }) {
     <>
       <section className="relative isolate overflow-hidden">
         <img
-          src={images.van}
-          alt={`Prestige Plumbing Company service van in ${a.city}, Arizona`}
+          src={images.areaHero}
+          alt={`Suburban homes in ${a.city}, Arizona`}
           width={1920}
           height={1280}
           className="absolute inset-0 h-full w-full object-cover"

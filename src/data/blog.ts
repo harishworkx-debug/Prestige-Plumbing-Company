@@ -26,7 +26,7 @@ export const posts: Post[] = [
     date: "2026-06-18",
     readTime: "7 min read",
     category: "Drains",
-    image: "drain",
+    image: "blogDrain",
     sections: [
       {
         heading: "1. Water Pools Around Your Feet In The Shower",
@@ -105,7 +105,7 @@ export const posts: Post[] = [
     date: "2026-06-04",
     readTime: "8 min read",
     category: "Water Heaters",
-    image: "waterHeater",
+    image: "waterHeaterOld",
     sections: [
       {
         heading: "Cause One: Sediment Accumulation",
@@ -174,7 +174,7 @@ export const posts: Post[] = [
     date: "2026-05-22",
     readTime: "7 min read",
     category: "Prevention",
-    image: "hero",
+    image: "emergencyPlumbing",
     sections: [
       {
         heading: "Know Your Shut-Offs Before You Need Them",
@@ -240,7 +240,7 @@ export const posts: Post[] = [
     date: "2026-05-09",
     readTime: "6 min read",
     category: "Drains",
-    image: "drain",
+    image: "drainOld",
     sections: [
       {
         heading: "What Hydro Jetting Actually Does",
@@ -293,13 +293,13 @@ export const posts: Post[] = [
     title: "The Most Common Plumbing Problems In Mesa Homes",
     metaTitle: "Common Plumbing Problems In Mesa AZ Homes | Prestige Plumbing",
     metaDescription:
-      "Hard water, slab leaks, root intrusion and galvanized pipe — the plumbing issues Mesa homeowners face most, explained by local plumbers since 2005.",
+      "Hard water, slab leaks, root intrusion and galvanized pipe — the plumbing issues Mesa homeowners face most, explained by local plumbers.",
     excerpt:
       "Twenty years of service calls in one city produces clear patterns. These are the plumbing problems Mesa homes actually have.",
     date: "2026-04-27",
     readTime: "8 min read",
     category: "Local",
-    image: "van",
+    image: "commercialOld",
     sections: [
       {
         heading: "Hard Water Damage — The Universal Mesa Problem",
@@ -353,7 +353,7 @@ export const posts: Post[] = [
       },
     ],
     takeaway:
-      "We have worked on Mesa plumbing since 2005 and we know what your house is likely hiding. Call Prestige Plumbing Company at (480) 215-0629 for a whole-home inspection.",
+      "We have worked on Mesa plumbing and we know what your house is likely hiding. Call Prestige Plumbing Company at (480) 215-0629 for a whole-home inspection.",
   },
   {
     slug: "residential-plumbing-maintenance-tips",
@@ -366,7 +366,7 @@ export const posts: Post[] = [
     date: "2026-04-11",
     readTime: "7 min read",
     category: "Maintenance",
-    image: "bathroom",
+    image: "residentialPlumbing",
     sections: [
       {
         heading: "Monthly: Five Minutes That Matter",
@@ -442,7 +442,7 @@ export const posts: Post[] = [
     date: "2026-03-28",
     readTime: "6 min read",
     category: "Gas",
-    image: "gasLine",
+    image: "gasLineOld",
     sections: [
       {
         heading: "Recognizing A Gas Leak",
@@ -503,7 +503,7 @@ export const posts: Post[] = [
     date: "2026-03-14",
     readTime: "7 min read",
     category: "Fixtures",
-    image: "bathroom",
+    image: "waterHeaters",
     sections: [
       {
         heading: "The Running Toilet",
@@ -565,7 +565,7 @@ export const posts: Post[] = [
     date: "2026-02-26",
     readTime: "6 min read",
     category: "Water Heaters",
-    image: "waterHeater",
+    image: "leakOld",
     sections: [
       {
         heading: "Why The Standard Schedule Is Not Enough Here",
@@ -625,7 +625,7 @@ export const posts: Post[] = [
     date: "2026-02-10",
     readTime: "7 min read",
     category: "Leaks",
-    image: "leak",
+    image: "bathroomOld",
     sections: [
       {
         heading: "The Meter Test: Ten Minutes, Definitive Answer",
