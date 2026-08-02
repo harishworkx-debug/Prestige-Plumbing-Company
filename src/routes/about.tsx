@@ -8,7 +8,7 @@ import { meta, breadcrumbSchema, webPageSchema, abs } from "@/lib/seo";
 
 const title = "About Prestige Plumbing Company | Licensed Plumbers in Mesa, AZ";
 const description =
-  "Family owned, Prestige Plumbing Company is a licensed, bonded and insured plumbing contractor in Mesa, AZ serving the entire East Valley. Call (480) 215-0629.";
+  "Family owned, Prestige Plumbing Company is a licensed, bonded and insured plumbing contractor in Mesa, AZ serving the entire East Valley. Call (480) 863-0564.";
 
 export const Route = createFileRoute("/about")({
   head: () => ({

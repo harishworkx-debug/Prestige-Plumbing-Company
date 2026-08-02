@@ -20,7 +20,7 @@ export const areas: Area[] = [
     zips: "85201, 85202, 85203, 85204, 85205, 85206, 85207, 85208, 85209, 85210, 85212, 85213, 85215",
     metaTitle: "Plumber Mesa AZ | 24/7 Licensed Plumbing | Prestige Plumbing Company",
     metaDescription:
-      "Trusted Mesa AZ plumber. Emergency plumbing, water heaters, drain cleaning, leak detection & repiping. Licensed, bonded, insured. Call (480) 215-0629.",
+      "Trusted Mesa AZ plumber. Emergency plumbing, water heaters, drain cleaning, leak detection & repiping. Licensed, bonded, insured. Call (480) 863-0564.",
     headline: "Mesa's Family-Owned Plumbing Company",
     intro: [
       "Mesa is home. Our shop sits at 1120 E Jarvis Ave, and the majority of the families we serve live within a fifteen-minute drive of that address. We have repaired, repiped and rescued plumbing systems in nearly every corner of this city — from the mid-century ranch homes near Main Street to the newer subdivisions stretching toward Signal Butte.",
@@ -83,7 +83,7 @@ export const areas: Area[] = [
     zips: "85008, 85016, 85018, 85028, 85032, 85044, 85048, 85050, 85054",
     metaTitle: "Plumber Phoenix AZ | Emergency Plumbing 24/7 | Prestige Plumbing Company",
     metaDescription:
-      "Licensed Phoenix plumber for emergency repairs, water heaters, drains, leaks and repiping. Family owned. Free estimates. Call (480) 215-0629.",
+      "Licensed Phoenix plumber for emergency repairs, water heaters, drains, leaks and repiping. Family owned. Free estimates. Call (480) 863-0564.",
     headline: "Licensed Phoenix Plumbers For Homes And Businesses",
     intro: [
       "Phoenix is the largest and most architecturally varied city we serve, and plumbing here means adapting to whatever the neighborhood was built with. A 1940s bungalow in the Coronado Historic District, a 1960s block home in Arcadia, a 1990s Ahwatukee two-story and a 2020 high-rise condo downtown share almost nothing except the water utility.",
@@ -146,7 +146,7 @@ export const areas: Area[] = [
     zips: "85224, 85225, 85226, 85248, 85249, 85286",
     metaTitle: "Plumber Chandler AZ | Water Heaters & Drain Cleaning | Prestige Plumbing",
     metaDescription:
-      "Chandler AZ plumbing company for emergency repairs, water heater install, drain cleaning and leak detection. Licensed & insured. Call (480) 215-0629.",
+      "Chandler AZ plumbing company for emergency repairs, water heater install, drain cleaning and leak detection. Licensed & insured. Call (480) 863-0564.",
     headline: "Chandler's Trusted Plumbing Contractor",
     intro: [
       "Chandler grew from farmland to a technology hub in a single generation, and its plumbing infrastructure reflects that timeline precisely. The historic downtown core contains genuinely old systems, while Ocotillo, Fulton Ranch and south Chandler are dominated by homes built after 1995 with copper or early PEX supply and PVC drainage.",
@@ -208,7 +208,7 @@ export const areas: Area[] = [
     zips: "85233, 85234, 85295, 85296, 85297, 85298",
     metaTitle: "Plumber Gilbert AZ | Emergency & Residential Plumbing | Prestige Plumbing",
     metaDescription:
-      "Gilbert AZ plumbers for water heaters, slab leaks, drain cleaning and repipes. Family owned. Licensed & insured. Call (480) 215-0629.",
+      "Gilbert AZ plumbers for water heaters, slab leaks, drain cleaning and repipes. Family owned. Licensed & insured. Call (480) 863-0564.",
     headline: "Gilbert Plumbing Services You Can Actually Trust",
     intro: [
       "Gilbert transformed from a farming town of five thousand people into one of the fastest-growing communities in America, and nearly all of its housing was built during that expansion. That means an enormous concentration of homes constructed between 1995 and 2015 — and a very predictable maintenance curve arriving all at once.",
@@ -271,7 +271,7 @@ export const areas: Area[] = [
     zips: "85281, 85282, 85283, 85284",
     metaTitle: "Plumber Tempe AZ | Rentals, Repairs & Emergency Service | Prestige Plumbing",
     metaDescription:
-      "Tempe AZ plumbing for homeowners, landlords and businesses. Drain cleaning, water heaters, leak repair and 24/7 emergencies. Call (480) 215-0629.",
+      "Tempe AZ plumbing for homeowners, landlords and businesses. Drain cleaning, water heaters, leak repair and 24/7 emergencies. Call (480) 863-0564.",
     headline: "Tempe Plumbing For Homes, Rentals And Businesses",
     intro: [
       "Tempe's plumbing profile is unlike any other city in the Valley because of its density and its rental market. A large share of the housing near Arizona State University is investor-owned and heavily occupied, which means fixtures endure far more cycles per year than in an owner-occupied home, and small problems escalate fast when nobody reports them early.",
@@ -333,7 +333,7 @@ export const areas: Area[] = [
     zips: "85250, 85251, 85254, 85255, 85257, 85258, 85259, 85260, 85262",
     metaTitle: "Plumber Scottsdale AZ | Luxury Home Plumbing | Prestige Plumbing Company",
     metaDescription:
-      "Scottsdale plumbing for luxury homes: leak detection, tankless water heaters, remodel plumbing and gas lines. Licensed & insured. Call (480) 215-0629.",
+      "Scottsdale plumbing for luxury homes: leak detection, tankless water heaters, remodel plumbing and gas lines. Licensed & insured. Call (480) 863-0564.",
     headline: "Precision Plumbing For Scottsdale Homes",
     intro: [
       "Scottsdale properties raise the stakes on every plumbing decision. Custom homes contain imported fixtures, specialty valves, resort-scale water features, multi-zone recirculation systems and finishes where exploratory demolition is simply not acceptable. Our work here is defined as much by precision and cleanliness as by technical skill.",
@@ -396,7 +396,7 @@ export const areas: Area[] = [
     zips: "85301, 85302, 85303, 85304, 85305, 85306, 85307, 85308, 85310",
     metaTitle: "Plumber Glendale AZ | Water Heaters & Drain Service | Prestige Plumbing",
     metaDescription:
-      "Glendale AZ plumbing repairs, water heater installation, drain cleaning and emergency service. Licensed, bonded, insured. Call (480) 215-0629.",
+      "Glendale AZ plumbing repairs, water heater installation, drain cleaning and emergency service. Licensed, bonded, insured. Call (480) 863-0564.",
     headline: "Dependable Plumbing Service In Glendale",
     intro: [
       "Glendale spans a wide range of housing ages, from the historic homes near downtown and Catlin Court to the extensive 1970s and 1980s neighborhoods around Arrowhead and the newer development along the Loop 101 corridor. Each brings its own plumbing considerations, and we approach a Glendale service call by first identifying what era we are working in.",
@@ -457,7 +457,7 @@ export const areas: Area[] = [
     zips: "85142, 85140, 85143",
     metaTitle: "Plumber Queen Creek AZ | New Build & Emergency Plumbing | Prestige Plumbing",
     metaDescription:
-      "Queen Creek AZ plumber for water heaters, drain cleaning, leak detection and 24/7 emergencies. Licensed & family owned. Call (480) 215-0629.",
+      "Queen Creek AZ plumber for water heaters, drain cleaning, leak detection and 24/7 emergencies. Licensed & family owned. Call (480) 863-0564.",
     headline: "Queen Creek's Growing Community Deserves A Real Plumber",
     intro: [
       "Queen Creek has grown faster than almost anywhere in Arizona, and with growth comes a very particular mix of plumbing needs: brand-new homes with builder-grade components and warranty questions, semi-rural properties on wells and septic systems, and older ranch parcels with plumbing that predates the subdivisions entirely.",
@@ -519,7 +519,7 @@ export const areas: Area[] = [
     zips: "85140, 85142, 85143",
     metaTitle: "Plumber San Tan Valley AZ | 24/7 Plumbing Service | Prestige Plumbing",
     metaDescription:
-      "San Tan Valley plumbing services: emergency repairs, water heaters, drain cleaning and leak detection. Licensed, bonded & insured. Call (480) 215-0629.",
+      "San Tan Valley plumbing services: emergency repairs, water heaters, drain cleaning and leak detection. Licensed, bonded & insured. Call (480) 863-0564.",
     headline: "Reliable Plumbing Service Across San Tan Valley",
     intro: [
       "San Tan Valley residents know the frustration of contractors who quote a service area and then decline the address. We do not do that. San Tan Valley has been part of our regular route for years, and we dispatch there for emergencies at any hour just as we would for a Mesa address.",
@@ -581,7 +581,7 @@ export const areas: Area[] = [
     zips: "85044, 85045, 85048",
     metaTitle: "Plumber Ahwatukee AZ | Foothills Plumbing Experts | Prestige Plumbing",
     metaDescription:
-      "Ahwatukee plumbing services for water heaters, slab leaks, drains and emergencies. Licensed & family owned. Call (480) 215-0629.",
+      "Ahwatukee plumbing services for water heaters, slab leaks, drains and emergencies. Licensed & family owned. Call (480) 863-0564.",
     headline: "Ahwatukee Foothills Plumbing Done Properly",
     intro: [
       "Ahwatukee sits against South Mountain in its own distinct pocket of the Valley, and its housing reflects a concentrated building period — largely 1980s through late 1990s, with a strong stock of custom and semi-custom homes in the Foothills. That construction window puts most of Ahwatukee squarely in the age range where under-slab copper begins to fail and original water heaters have long since been replaced once.",

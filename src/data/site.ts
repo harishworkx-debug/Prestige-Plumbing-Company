@@ -5,7 +5,7 @@ export const business = {
   legalType: "Licensed Plumbing Contractor",
 
   url: SITE_URL,
-  phoneDisplay: "(480) 215-0629",
+  phoneDisplay: "(480) 863-0564",
   phoneHref: "tel:4802150629",
   email: "info@prestigeplumbingcompany.com",
   street: "1120 E Jarvis Ave",
@@ -169,7 +169,7 @@ export const testimonials = [
 export const homeFaqs = [
   {
     q: "Do you offer 24 hour emergency plumbing in Mesa and Phoenix?",
-    a: "Yes. Prestige Plumbing Company answers the phone 24 hours a day, 365 days a year. Burst pipes, sewage backups, gas odors, and failed water heaters are dispatched immediately with a live technician ETA. Call (480) 215-0629 and you will speak to a person, not a call center script.",
+    a: "Yes. Prestige Plumbing Company answers the phone 24 hours a day, 365 days a year. Burst pipes, sewage backups, gas odors, and failed water heaters are dispatched immediately with a live technician ETA. Call (480) 863-0564 and you will speak to a person, not a call center script.",
   },
   {
     q: "Are your plumbers licensed, bonded and insured in Arizona?",

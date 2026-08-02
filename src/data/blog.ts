@@ -92,7 +92,7 @@ export const posts: Post[] = [
       },
     ],
     takeaway:
-      "Address slow drains while they are still merely slow. Prestige Plumbing Company clears and cameras drains across Mesa, Gilbert, Chandler and the Phoenix metro — call (480) 215-0629 for flat-rate pricing before we start.",
+      "Address slow drains while they are still merely slow. Prestige Plumbing Company clears and cameras drains across Mesa, Gilbert, Chandler and the Phoenix metro — call (480) 863-0564 for flat-rate pricing before we start.",
   },
   {
     slug: "why-water-heaters-fail",
@@ -161,7 +161,7 @@ export const posts: Post[] = [
       },
     ],
     takeaway:
-      "A maintained water heater in Arizona can reach twelve to fifteen years; a neglected one often fails at seven. Book a flush and anode inspection with Prestige Plumbing Company at (480) 215-0629.",
+      "A maintained water heater in Arizona can reach twelve to fifteen years; a neglected one often fails at seven. Book a flush and anode inspection with Prestige Plumbing Company at (480) 863-0564.",
   },
   {
     slug: "how-to-prevent-plumbing-emergencies",
@@ -227,7 +227,7 @@ export const posts: Post[] = [
       },
     ],
     takeaway:
-      "Prevention costs a fraction of restoration. Book a whole-home plumbing inspection with Prestige Plumbing Company at (480) 215-0629 and get ahead of the failure.",
+      "Prevention costs a fraction of restoration. Book a whole-home plumbing inspection with Prestige Plumbing Company at (480) 863-0564 and get ahead of the failure.",
   },
   {
     slug: "benefits-of-hydro-jetting",
@@ -286,7 +286,7 @@ export const posts: Post[] = [
       },
     ],
     takeaway:
-      "If you have had the same line cleared more than once this year, jetting is the conversation worth having. Call Prestige Plumbing Company at (480) 215-0629 for a camera inspection first.",
+      "If you have had the same line cleared more than once this year, jetting is the conversation worth having. Call Prestige Plumbing Company at (480) 863-0564 for a camera inspection first.",
   },
   {
     slug: "common-plumbing-problems-in-mesa",
@@ -353,7 +353,7 @@ export const posts: Post[] = [
       },
     ],
     takeaway:
-      "We have worked on Mesa plumbing and we know what your house is likely hiding. Call Prestige Plumbing Company at (480) 215-0629 for a whole-home inspection.",
+      "We have worked on Mesa plumbing and we know what your house is likely hiding. Call Prestige Plumbing Company at (480) 863-0564 for a whole-home inspection.",
   },
   {
     slug: "residential-plumbing-maintenance-tips",
@@ -429,7 +429,7 @@ export const posts: Post[] = [
       },
     ],
     takeaway:
-      "If the annual items feel like more than you want to take on, we do all of them in a single visit. Call Prestige Plumbing Company at (480) 215-0629.",
+      "If the annual items feel like more than you want to take on, we do all of them in a single visit. Call Prestige Plumbing Company at (480) 863-0564.",
   },
   {
     slug: "gas-line-safety-guide",
@@ -490,7 +490,7 @@ export const posts: Post[] = [
       },
     ],
     takeaway:
-      "Gas work belongs with licensed, permitted professionals. Prestige Plumbing Company installs and repairs gas piping throughout the East Valley — call (480) 215-0629.",
+      "Gas work belongs with licensed, permitted professionals. Prestige Plumbing Company installs and repairs gas piping throughout the East Valley — call (480) 863-0564.",
   },
   {
     slug: "toilet-repair-guide",
@@ -552,7 +552,7 @@ export const posts: Post[] = [
       },
     ],
     takeaway:
-      "Simple parts are worth trying yourself. For anything involving the flange, the drain line, or water where it should not be, call Prestige Plumbing Company at (480) 215-0629.",
+      "Simple parts are worth trying yourself. For anything involving the flange, the drain line, or water where it should not be, call Prestige Plumbing Company at (480) 863-0564.",
   },
   {
     slug: "water-heater-maintenance-checklist",
@@ -612,7 +612,7 @@ export const posts: Post[] = [
       },
     ],
     takeaway:
-      "We perform the full checklist in one visit, including anode inspection and relief valve testing. Book water heater service with Prestige Plumbing Company at (480) 215-0629.",
+      "We perform the full checklist in one visit, including anode inspection and relief valve testing. Book water heater service with Prestige Plumbing Company at (480) 863-0564.",
   },
   {
     slug: "how-to-detect-hidden-leaks",
@@ -673,7 +673,7 @@ export const posts: Post[] = [
       },
     ],
     takeaway:
-      "If your meter is moving with everything off, do not wait. Prestige Plumbing Company locates hidden and slab leaks across Mesa and the Phoenix metro — call (480) 215-0629.",
+      "If your meter is moving with everything off, do not wait. Prestige Plumbing Company locates hidden and slab leaks across Mesa and the Phoenix metro — call (480) 863-0564.",
   },
 ];
 

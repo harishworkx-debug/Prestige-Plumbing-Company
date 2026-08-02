@@ -5,9 +5,9 @@ import { Reveal } from "@/components/Reveal";
 import { CTAButtons, FAQList, MapEmbed, SectionHeading } from "@/components/ui-kit";
 import { meta, breadcrumbSchema, webPageSchema, faqSchema, abs } from "@/lib/seo";
 
-const title = "Contact Prestige Plumbing Company | Mesa AZ Plumbers | (480) 215-0629";
+const title = "Contact Prestige Plumbing Company | Mesa AZ Plumbers | (480) 863-0564";
 const description =
-  "Contact Prestige Plumbing Company at 1120 E Jarvis Ave, Mesa, AZ 85204. Open 24 hours for emergency plumbing across Mesa, Phoenix and the East Valley. Call (480) 215-0629.";
+  "Contact Prestige Plumbing Company at 1120 E Jarvis Ave, Mesa, AZ 85204. Open 24 hours for emergency plumbing across Mesa, Phoenix and the East Valley. Call (480) 863-0564.";
 
 export const Route = createFileRoute("/contact")({
   head: () => ({
