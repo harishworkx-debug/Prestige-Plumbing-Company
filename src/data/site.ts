@@ -2,7 +2,7 @@ export const SITE_URL = "https://prestigeplumbingcompany.com";
 
 export const business = {
   name: "Prestige Plumbing Company",
-  legalType: "Licensed Plumbing Contractor",
+  legalType: "Homeowner Connection Service",
 
   url: SITE_URL,
   phoneDisplay: "(480) 863-0564",
@@ -13,7 +13,7 @@ export const business = {
   state: "AZ",
   zip: "85204",
   country: "United States",
-  hours: "Open 24 Hours — Emergency Plumbing Available 24/7",
+  hours: "Open 24 Hours — Residential Providers Available 24/7",
   lat: 33.4099434,
   lng: -111.8093683,
   mapLink: "https://maps.google.com/?q=1120+E+Jarvis+Ave,+Mesa,+AZ+85204",
@@ -29,18 +29,17 @@ export const socials = [
 ];
 
 export const stats = [
-  { value: "20+", label: "Years In Business" },
-  { value: "18,400+", label: "Projects Completed" },
-  { value: "9,200+", label: "Emergency Calls Answered" },
-  { value: "1,000+", label: "Happy Customers" },
+  { value: "24/7", label: "Availability" },
+  { value: "Fast", label: "Connection Times" },
+  { value: "AZ", label: "Local Providers" },
+  { value: "100%", label: "Residential" },
 ];
 
 export const trustBadges = [
-  "Licensed",
-  "Insured",
-  "Family Owned",
-  "24 Hour Emergency",
-  "Free Estimates",
+  "Local Independent Providers",
+  "Residential Plumbing",
+  "24/7 Availability",
+  "Upfront Estimates",
 ];
 
 /** Top-level navigation. Service and location dropdown items are derived from data. */
@@ -64,44 +63,17 @@ export const navServiceSlugs = [
   "sewer-line-repair-mesa-az",
   "pipe-repair-mesa-az",
   "repiping-mesa-az",
-  "commercial-plumbing-mesa-az",
   "residential-plumbing-mesa-az",
   "gas-line-installation-mesa-az",
   "plumbing-maintenance-mesa-az",
 ];
 
-export const industries = [
-  {
-    title: "Single-Family Homes",
-    text: "Repairs, replacements and whole-home repipes for owner-occupied houses across Mesa and the East Valley.",
-  },
-  {
-    title: "Rental & Property Management",
-    text: "Documented, photo-verified work orders across multi-address portfolios with invoices that match the estimate.",
-  },
-  {
-    title: "HOA & Multi-Family",
-    text: "Shared-wall leak isolation, common-line jetting and scheduled maintenance for condominium and apartment communities.",
-  },
-  {
-    title: "Restaurants & Food Service",
-    text: "Grease line jetting, floor drain service, and off-hours scheduling so your kitchen never loses a service period.",
-  },
-  {
-    title: "Retail & Office Buildings",
-    text: "Restroom fixture programs, backflow assemblies, water heater plant work and after-hours commercial repairs.",
-  },
-  {
-    title: "New Construction & Remodels",
-    text: "Permitted rough-in, gas piping and finish plumbing coordinated with your general contractor's schedule.",
-  },
-];
+export const industries = [];
 
 
 export const allServices = [
   "Emergency Plumbing",
   "Residential Plumbing",
-  "Commercial Plumbing",
   "Water Heater Repair",
   "Water Heater Installation",
   "Water Heater Maintenance",
@@ -122,82 +94,40 @@ export const allServices = [
   "Bathroom Plumbing",
   "Kitchen Plumbing",
   "Bathroom Remodeling Plumbing",
-  "Commercial Plumbing Installation",
   "Preventative Plumbing Maintenance",
   "Whole Home Plumbing Inspection",
 ];
 
-export const testimonials = [
-  {
-    name: "Marcus Delgado",
-    city: "Mesa, AZ",
-    rating: 5,
-    text: "Our water heater failed at 11pm the night before a family visit. Raul's team answered on the second ring and had a new 50-gallon unit installed before noon the next day. Clean work, honest pricing, no upsell games.",
-  },
-  {
-    name: "Priya Raman",
-    city: "Gilbert, AZ",
-    rating: 5,
-    text: "We had a slab leak that two other companies wanted to jackhammer immediately. Prestige used acoustic leak detection, isolated it to a single line, and rerouted it overhead. Saved us thousands and three days of demolition.",
-  },
-  {
-    name: "Karen Whitfield",
-    city: "Chandler, AZ",
-    rating: 5,
-    text: "Twenty years in this house and I have never had a plumber explain things so clearly. Camera footage of the sewer line, options in writing, and hydro jetting that finally solved the recurring kitchen backup.",
-  },
-  {
-    name: "Doug Ferreira",
-    city: "Scottsdale, AZ",
-    rating: 5,
-    text: "They plumbed the gas line for our outdoor kitchen and fire pit. Permits pulled, inspection passed first time, and the trench was restored so well you cannot tell where they dug.",
-  },
-  {
-    name: "Alicia Nunez",
-    city: "Tempe, AZ",
-    rating: 5,
-    text: "We manage four rental properties around ASU. Prestige is the only company we call now. Fast dispatch, photo documentation for every job, and invoices that actually match the estimate.",
-  },
-  {
-    name: "Brian Okafor",
-    city: "Queen Creek, AZ",
-    rating: 5,
-    text: "Whole-home repipe on a 1998 build. Six days start to finish, drywall patched, water pressure is night-and-day better. Family owned companies still do it right.",
-  },
-];
+export const testimonials: any[] = [];
 
 export const homeFaqs = [
   {
-    q: "Do you offer 24 hour emergency plumbing in Mesa and Phoenix?",
-    a: "Yes. Prestige Plumbing Company answers the phone 24 hours a day, 365 days a year. Burst pipes, sewage backups, gas odors, and failed water heaters are dispatched immediately with a live technician ETA. Call (480) 863-0564 and you will speak to a person, not a call center script.",
+    q: "How does this plumbing connection service work?",
+    a: "We help homeowners in Mesa and Phoenix connect with independent, local plumbing professionals. When you call our number, we take down your information and immediately route you to an available provider in your area.",
   },
   {
-    q: "Are your plumbers licensed, bonded and insured in Arizona?",
-    a: "Every job we perform is completed under our Arizona plumbing contractor license and backed by full bonding and liability insurance. Our technicians carry credentials on the truck, arrive in marked vehicles, and pull permits whenever code requires them — including gas line and sewer work.",
+    q: "Do you offer 24 hour emergency plumbing in Mesa and Phoenix?",
+    a: "Yes, our phone line is open 24 hours a day, 365 days a year. We aim to connect you with independent local professionals who offer emergency response for burst pipes, sewage backups, and failed water heaters. Please note that same-day and 24/7 availability depends on technician availability and demand in your market.",
+  },
+  {
+    q: "Are the plumbers licensed, bonded and insured in Arizona?",
+    a: "It is the responsibility of the homeowner to verify that the independent contractor they hire furnishes the necessary license and insurance required for the work being performed in Arizona. We recommend always asking the provider for their credentials before any work begins.",
   },
   {
     q: "How much does a plumbing repair cost?",
-    a: "We provide flat-rate pricing in writing before any work begins, so you approve the number before a wrench is turned. Diagnostic visits, camera inspections, and estimates on replacement work are free for most residential customers across Mesa, Gilbert, Chandler, Tempe and the wider Phoenix metro.",
+    a: "Pricing is set directly by the independent service providers you are connected with. Most providers offer estimates before beginning work, so you can approve the cost ahead of time.",
   },
   {
-    q: "How quickly can a plumber get to my home?",
-    a: "Most Mesa, Gilbert, Chandler and Tempe addresses are reached within 60 to 90 minutes. Outlying areas such as Queen Creek, San Tan Valley and Glendale are typically same day. Emergency calls always jump the queue.",
+    q: "How quickly can a provider get to my home?",
+    a: "Arrival times vary depending on the independent provider's schedule, traffic, and your exact location. During your call with the local contractor, they will provide you with an estimated time of arrival.",
   },
   {
-    q: "Do you charge extra for nights, weekends or holidays?",
-    a: "Emergency response is priced fairly and quoted up front. You will never receive a surprise after-hours line item on your invoice — the price we quote on the phone or at the door is the price you pay.",
+    q: "What areas do you serve?",
+    a: "We assist homeowners in finding local professionals across Mesa, Phoenix, Chandler, Gilbert, Tempe, Scottsdale, Glendale, Queen Creek, San Tan Valley, and Ahwatukee.",
   },
   {
-    q: "Do you offer free estimates and financing?",
-    a: "Yes. Free written estimates are standard on water heaters, repipes, sewer replacements, and remodel plumbing. Financing options are available on larger projects so a failed sewer line or water heater does not have to wait.",
-  },
-  {
-    q: "What areas does Prestige Plumbing Company serve?",
-    a: "We serve Mesa, Phoenix, Chandler, Gilbert, Tempe, Scottsdale, Glendale, Queen Creek, San Tan Valley and Ahwatukee, plus the surrounding East Valley communities.",
-  },
-  {
-    q: "Do you guarantee your plumbing work?",
-    a: "All labor is warrantied and manufacturer warranties on the equipment we install are registered on your behalf. If something we touched is not right, we come back — that is how a family business survives twenty years in one valley.",
+    q: "Do you guarantee the plumbing work?",
+    a: "Prestige Plumbing Company is a free service to assist homeowners in connecting with local service providers. All contractors are independent, and we do not warrant or guarantee any work performed. Any warranties or guarantees are provided solely by the contractor you hire.",
   },
 ];
 
@@ -205,58 +135,58 @@ export const process = [
   {
     step: "01",
     title: "Call Or Message Us",
-    text: "Speak with a real plumbing professional 24/7. We capture the symptoms, the property type, and the urgency, then dispatch the right technician with the right truck stock the first time.",
+    text: "Speak with our connection service representatives 24/7. We capture your symptoms and property location to help find an available local professional.",
   },
   {
     step: "02",
-    title: "On-Site Diagnosis",
-    text: "Your technician arrives in a marked vehicle, protects your flooring, and performs a genuine diagnosis using cameras, pressure tests, and acoustic equipment — not guesswork.",
+    title: "Get Connected",
+    text: "You will be connected with an independent local plumber serving your area. They will answer your questions and arrange a visit.",
   },
   {
     step: "03",
-    title: "Transparent Written Options",
-    text: "You receive flat-rate pricing in writing with good, better and best options explained in plain English. Nothing proceeds until you approve it.",
+    title: "Provider Arrival",
+    text: "The local service provider arrives at your home to evaluate your plumbing issues using professional diagnostic techniques.",
   },
   {
     step: "04",
-    title: "Expert Repair Or Installation",
-    text: "Work is performed to Arizona plumbing code with premium parts, permits when required, and the job site left cleaner than we found it.",
+    title: "Review Estimates",
+    text: "You discuss the repair or replacement options directly with the provider, reviewing any estimates and pricing they provide.",
   },
   {
     step: "05",
-    title: "Testing & Walkthrough",
-    text: "We pressure test, run fixtures, confirm drainage, and walk you through what changed, what to watch for, and how to keep it healthy.",
+    title: "Expert Repair",
+    text: "The independent provider completes the work, restoring your home's plumbing systems.",
   },
   {
     step: "06",
-    title: "Warranty & Follow-Up",
-    text: "Your workmanship warranty is documented, manufacturer registrations are filed, and we follow up to confirm everything is still performing.",
+    title: "Payment & Completion",
+    text: "You pay the independent contractor directly based on your agreed-upon estimate.",
   },
 ];
 
 export const whyChoose = [
   {
-    title: "Family Owned",
-    text: "East Valley plumbing under one family name. The person who answers your call is accountable to the person who turns the wrench.",
+    title: "Fast Connection",
+    text: "Instead of calling multiple companies that might be booked out for weeks, our service aims to quickly connect you with an available provider in your zip code.",
   },
   {
-    title: "Licensed, Bonded & Insured",
-    text: "Full Arizona licensing, bonding, and liability coverage on every residential and commercial project, with permits pulled whenever code requires.",
+    title: "Independent Professionals",
+    text: "You will be connected with local, independent plumbing providers who serve the residential areas of the East Valley and Phoenix metro.",
   },
   {
-    title: "True 24/7 Emergency Response",
-    text: "Burst pipe at 3am? Sewage backing into a tub on Thanksgiving? We answer, we dispatch, and we arrive with the equipment to stop the damage.",
+    title: "24/7 Availability",
+    text: "Plumbing emergencies rarely happen during business hours. Our phone line is open 24/7 to help connect you with available emergency technicians.",
   },
   {
-    title: "Flat-Rate Honest Pricing",
-    text: "Written pricing before work begins. No hourly meter running, no after-hours surcharges hidden in the fine print, no invented emergencies.",
+    title: "Residential Focus",
+    text: "The providers in our network specialize in residential plumbing systems, focusing entirely on single-family homes and residential properties.",
   },
   {
-    title: "Diagnostic Technology",
-    text: "Sewer cameras, acoustic and thermal leak detection, hydrostatic testing and hydro jetting — we find the real problem instead of replacing parts hopefully.",
+    title: "No Obligation",
+    text: "Using our connection service is completely free for homeowners. You decide whether to hire the independent provider after discussing your needs with them.",
   },
   {
-    title: "Clean, Respectful Crews",
-    text: "Shoe covers, drop cloths, background-checked technicians, and a job site restored to the condition you would expect in your own home.",
+    title: "Local Service",
+    text: "We focus on connecting you with providers familiar with Arizona's water conditions and common local plumbing challenges.",
   },
 ];

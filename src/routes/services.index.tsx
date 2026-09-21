@@ -9,7 +9,7 @@ import { meta, breadcrumbSchema } from "@/lib/seo";
 export const Route = createFileRoute("/services/")({
   head: () => ({
     meta: meta(
-      "Plumbing Services Mesa AZ | Residential & Commercial | Prestige Plumbing",
+      "Plumbing Services Mesa AZ | Residential Connections | Prestige Plumbing",
       "Full-service plumbing in Mesa & Phoenix: emergency plumbing, water heaters, drain cleaning, hydro jetting, leak detection, gas lines & repiping. Call (480) 863-0564.",
       "/services",
     ),

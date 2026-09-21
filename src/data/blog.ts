@@ -32,7 +32,7 @@ export const posts: Post[] = [
         heading: "1. Water Pools Around Your Feet In The Shower",
         body: [
           "A shower that drains as fast as it fills is working correctly. When water begins collecting around your ankles, the pipe's effective diameter has already been reduced significantly by hair bound together with soap scum and body oils.",
-          "Homeowners often wait until the drain stops entirely, but the intermediate stage is exactly when clearing is easiest and cheapest. Once the blockage becomes a solid plug, the material has usually compacted well down the branch line.",
+          "Homeowners often wait until the drain stops entirely, but the intermediate stage is exactly when clearing is most affordable. Once the blockage becomes a solid plug, the material has usually compacted well down the branch line.",
         ],
       },
       {
@@ -92,7 +92,7 @@ export const posts: Post[] = [
       },
     ],
     takeaway:
-      "Address slow drains while they are still merely slow. Prestige Plumbing Company clears and cameras drains across Mesa, Gilbert, Chandler and the Phoenix metro — call (480) 863-0564 for flat-rate pricing before we start.",
+      "Address slow drains while they are still merely slow. We connect homeowners with independent providers who clear and camera drains across Mesa, Gilbert, Chandler and the Phoenix metro — call (480) 863-0564 to find a local professional.",
   },
   {
     slug: "why-water-heaters-fail",
@@ -161,7 +161,7 @@ export const posts: Post[] = [
       },
     ],
     takeaway:
-      "A maintained water heater in Arizona can reach twelve to fifteen years; a neglected one often fails at seven. Book a flush and anode inspection with Prestige Plumbing Company at (480) 863-0564.",
+      "A maintained water heater in Arizona can reach twelve to fifteen years; a neglected one often fails at seven. Get connected with a local professional for a flush and anode inspection by calling (480) 863-0564.",
   },
   {
     slug: "how-to-prevent-plumbing-emergencies",
@@ -227,7 +227,7 @@ export const posts: Post[] = [
       },
     ],
     takeaway:
-      "Prevention costs a fraction of restoration. Book a whole-home plumbing inspection with Prestige Plumbing Company at (480) 863-0564 and get ahead of the failure.",
+      "Prevention costs a fraction of restoration. Call (480) 863-0564 to get connected with an independent professional for a whole-home plumbing inspection and get ahead of the failure.",
   },
   {
     slug: "benefits-of-hydro-jetting",
@@ -278,15 +278,15 @@ export const posts: Post[] = [
         ],
       },
       {
-        heading: "Commercial Kitchens: Schedule It",
+        heading: "Residential Drain Maintenance",
         body: [
-          "For restaurants, jetting should be preventative rather than reactive. A quarterly program costs a fraction of one closed dinner service, and health inspectors take a favorable view of documented drain maintenance.",
-          "We schedule commercial jetting overnight or before opening so no service window is ever lost.",
+          "For homeowners, jetting can be a preventative measure. It can save a lot of trouble down the line.",
+          "We can help connect you with local contractors who schedule jetting around your availability.",
         ],
       },
     ],
     takeaway:
-      "If you have had the same line cleared more than once this year, jetting is the conversation worth having. Call Prestige Plumbing Company at (480) 863-0564 for a camera inspection first.",
+      "If you have had the same line cleared more than once this year, jetting is the conversation worth having. Call (480) 863-0564 to get connected for a camera inspection first.",
   },
   {
     slug: "common-plumbing-problems-in-mesa",
@@ -299,7 +299,7 @@ export const posts: Post[] = [
     date: "2026-04-27",
     readTime: "8 min read",
     category: "Local",
-    image: "commercialOld",
+    image: "residentialPlumbing",
     sections: [
       {
         heading: "Hard Water Damage — The Universal Mesa Problem",
@@ -353,7 +353,7 @@ export const posts: Post[] = [
       },
     ],
     takeaway:
-      "We have worked on Mesa plumbing and we know what your house is likely hiding. Call Prestige Plumbing Company at (480) 863-0564 for a whole-home inspection.",
+      "We connect homeowners with professionals who know what your house is likely hiding. Call (480) 863-0564 to find an independent provider for a whole-home inspection.",
   },
   {
     slug: "residential-plumbing-maintenance-tips",
@@ -429,7 +429,7 @@ export const posts: Post[] = [
       },
     ],
     takeaway:
-      "If the annual items feel like more than you want to take on, we do all of them in a single visit. Call Prestige Plumbing Company at (480) 863-0564.",
+      "If the annual items feel like more than you want to take on, we can help connect you with independent professionals who do all of them in a single visit. Call (480) 863-0564.",
   },
   {
     slug: "gas-line-safety-guide",
@@ -490,7 +490,7 @@ export const posts: Post[] = [
       },
     ],
     takeaway:
-      "Gas work belongs with licensed, permitted professionals. Prestige Plumbing Company installs and repairs gas piping throughout the East Valley — call (480) 863-0564.",
+      "Gas work belongs with licensed, permitted professionals. We connect homeowners with experts who install and repair residential gas piping throughout the East Valley — call (480) 863-0564.",
   },
   {
     slug: "toilet-repair-guide",
@@ -552,7 +552,7 @@ export const posts: Post[] = [
       },
     ],
     takeaway:
-      "Simple parts are worth trying yourself. For anything involving the flange, the drain line, or water where it should not be, call Prestige Plumbing Company at (480) 863-0564.",
+      "Simple parts are worth trying yourself. For anything involving the flange, the drain line, or water where it should not be, call (480) 863-0564 to get connected with a local professional.",
   },
   {
     slug: "water-heater-maintenance-checklist",
@@ -612,7 +612,7 @@ export const posts: Post[] = [
       },
     ],
     takeaway:
-      "We perform the full checklist in one visit, including anode inspection and relief valve testing. Book water heater service with Prestige Plumbing Company at (480) 863-0564.",
+      "Local independent contractors can perform the full checklist in one visit, including anode inspection and relief valve testing. Book residential water heater service by calling (480) 863-0564.",
   },
   {
     slug: "how-to-detect-hidden-leaks",
@@ -630,7 +630,7 @@ export const posts: Post[] = [
       {
         heading: "The Meter Test: Ten Minutes, Definitive Answer",
         body: [
-          "This is the single best diagnostic a homeowner can perform, and it costs nothing. Turn off every water-using fixture and appliance in the home, including ice makers and irrigation.",
+          "This is one of the most effective diagnostics a homeowner can perform, and it costs nothing. Turn off every water-using fixture and appliance in the home, including ice makers and irrigation.",
           "Locate your water meter and note the reading, or watch the small leak-indicator dial or triangle. Wait thirty minutes without using any water and read it again.",
           "Any movement means water is escaping somewhere in your system. To narrow it down, close the main shut-off at the house and repeat: if the meter still moves, the leak is between the meter and the house; if it stops, the leak is inside.",
         ],
@@ -673,7 +673,7 @@ export const posts: Post[] = [
       },
     ],
     takeaway:
-      "If your meter is moving with everything off, do not wait. Prestige Plumbing Company locates hidden and slab leaks across Mesa and the Phoenix metro — call (480) 863-0564.",
+      "If your meter is moving with everything off, do not wait. We can connect you with independent professionals who locate hidden and slab leaks across Mesa and the Phoenix metro — call (480) 863-0564.",
   },
 ];
 

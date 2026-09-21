@@ -1,14 +1,14 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { images } from "@/data/images";
-import { business, stats, whyChoose, process, trustBadges } from "@/data/site";
+import { business, whyChoose, process } from "@/data/site";
 import { areas } from "@/data/areas";
 import { Reveal } from "@/components/Reveal";
 import { CTABand, CTAButtons, SectionHeading } from "@/components/ui-kit";
 import { meta, breadcrumbSchema, webPageSchema, abs } from "@/lib/seo";
 
-const title = "About Prestige Plumbing Company | Licensed Plumbers in Mesa, AZ";
+const title = "About Prestige Plumbing Company | Connections in Mesa, AZ";
 const description =
-  "Family owned, Prestige Plumbing Company is a licensed, bonded and insured plumbing contractor in Mesa, AZ serving the entire East Valley. Call (480) 863-0564.";
+  "Prestige Plumbing Company is a free service to assist homeowners in connecting with local service contractors in Mesa, AZ and the East Valley. Call (480) 863-0564.";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
@@ -38,11 +38,11 @@ function AboutPage() {
           <SectionHeading
             eyebrow="About Us"
             center={false}
-            title="A Family Owned Mesa Plumbing Company"
-            text={`${business.name} has served Mesa and the Phoenix metro from our shop at ${business.street}, ${business.city}, ${business.state}. Licensed, bonded and insured — with the same family name on the truck, the invoice and the warranty.`}
+            title="A Trusted Connection Service in Mesa"
+            text={`${business.name} is a free service assisting homeowners in connecting with independent local plumbing professionals across Mesa and the Phoenix metro.`}
           />
           <div className="mt-8">
-            <CTAButtons label="Talk To A Plumber" />
+            <CTAButtons label="Find A Professional" />
           </div>
         </div>
       </section>
@@ -60,54 +60,27 @@ function AboutPage() {
             />
           </Reveal>
           <Reveal delay={0.1}>
-            <h2 className="font-display text-3xl font-bold">Our Story</h2>
+            <h2 className="font-display text-3xl font-bold">Our Network</h2>
             <div className="mt-4 space-y-4 leading-relaxed text-muted-foreground">
               <p>
-                We started with one truck, one licensed plumber and a simple promise: quote
+                We started with a simple promise: help homeowners find reliable professionals who quote
                 the price before the work, do the work right, and stand behind it. Today
-                that promise still runs the business — we have just added more trucks,
+                that promise still drives our service — we have just grown our network to connect you with more local experts who carry
                 sewer cameras, acoustic leak detection gear and hydro jetting trailers.
               </p>
               <p>
                 Arizona plumbing is its own discipline. Hard water shortens water heater life,
                 caliche soil shifts and stresses buried lines, and post-tension slabs make a hidden
-                leak an expensive guessing game for anyone without the right equipment. Our
-                technicians train specifically for East Valley housing stock, from 1970s Mesa ranch
-                homes on galvanized pipe to new Queen Creek builds still under warranty.
+                leak an expensive guessing game for anyone without the right equipment. The independent
+                technicians we connect you with train specifically for East Valley housing stock.
               </p>
               <p>
-                Being family owned changes the incentives. There is no commission structure pushing
-                a technician toward a replacement you do not need, and no call center booking work
-                for a crew they will never meet. The person who answers your call is accountable to
-                the person who turns the wrench.
+                Our goal is to connect you with professionals who are accountable. We partner with contractors
+                who provide flat-rate pricing in writing and honest guidance about which repairs matter now. That is why
+                most of our homeowners return to our service across Mesa, Gilbert, Chandler, Tempe, Scottsdale and Phoenix.
               </p>
             </div>
-            <ul className="mt-6 flex flex-wrap gap-2">
-              {trustBadges.map((b) => (
-                <li
-                  key={b}
-                  className="rounded-full border border-border bg-card px-4 py-1.5 text-xs font-bold"
-                >
-                  {b}
-                </li>
-              ))}
-            </ul>
           </Reveal>
-        </div>
-      </section>
-
-      <section className="surface-panel py-16">
-        <div className="mx-auto max-w-7xl px-4 lg:px-8">
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            {stats.map((s, i) => (
-              <Reveal key={s.label} delay={i * 0.06}>
-                <div className="rounded-2xl border border-border bg-card p-6 text-center shadow-card">
-                  <p className="font-display text-4xl font-bold text-primary">{s.value}</p>
-                  <p className="mt-2 text-sm text-muted-foreground">{s.label}</p>
-                </div>
-              </Reveal>
-            ))}
-          </div>
         </div>
       </section>
 
@@ -162,7 +135,7 @@ function AboutPage() {
         </div>
       </section>
 
-      <CTABand title="Work With A Plumbing Company That Answers" />
+      <CTABand title="Connect With A Plumbing Professional That Answers" />
     </>
   );
 }

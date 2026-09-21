@@ -300,7 +300,7 @@ function AreaPage({ a }: { a: Area }) {
             <Link to="/">Home</Link> / <Link to="/service-areas">Locations</Link> / {a.city}, AZ
           </nav>
           <h1 className="mt-4 max-w-3xl font-display text-4xl font-bold sm:text-5xl">
-            Best Plumber in {a.city}, AZ
+            Find Plumbers in {a.city}, AZ
           </h1>
           <p className="mt-4 max-w-2xl text-lg text-secondary-foreground/80">{a.headline}</p>
           <div className="mt-8">

@@ -1,5 +1,4 @@
 import { business, socials, SITE_URL } from "@/data/site";
-import { testimonials } from "@/data/site";
 
 /** Absolute URL for a site-relative path. */
 export const abs = (path: string) => `${SITE_URL}${path === "/" ? "/" : path.replace(/\/$/, "")}`;
@@ -30,15 +29,9 @@ const areaServed = [
   "East Valley AZ",
 ];
 
-export const aggregateRating = {
-  "@type": "AggregateRating",
-  ratingValue: "4.9",
-  reviewCount: "487",
-};
-
 export const localBusinessSchema = {
   "@context": "https://schema.org",
-  "@type": ["LocalBusiness", "Plumber", "PlumbingBusiness" as string],
+  "@type": ["LocalBusiness", "ProfessionalService" as string],
   "@id": `${SITE_URL}/#localbusiness`,
   name: business.name,
   image: abs("/favicon.ico"),
@@ -60,7 +53,6 @@ export const localBusinessSchema = {
     },
   ],
   areaServed,
-  aggregateRating,
 };
 
 export const organizationSchema = {
@@ -119,7 +111,7 @@ export const serviceSchema = (
   description,
   url: abs(path),
   provider: {
-    "@type": "Plumber",
+    "@type": "LocalBusiness",
     "@id": `${SITE_URL}/#localbusiness`,
     name: business.name,
     telephone: business.phoneDisplay,
@@ -136,24 +128,6 @@ export const breadcrumbSchema = (items: { name: string; path: string }[]) => ({
     position: i + 1,
     name: it.name,
     item: abs(it.path),
-  })),
-});
-
-export const reviewSchema = () => ({
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "@id": `${SITE_URL}/#localbusiness`,
-  name: business.name,
-  image: abs("/favicon.ico"),
-  telephone: business.phoneDisplay,
-  address: postalAddress,
-  aggregateRating,
-  review: testimonials.map((t) => ({
-    "@type": "Review",
-    author: { "@type": "Person", name: t.name },
-    reviewRating: { "@type": "Rating", ratingValue: String(t.rating), bestRating: "5" },
-    reviewBody: t.text,
-    itemReviewed: { "@id": `${SITE_URL}/#localbusiness` },
   })),
 });
 

@@ -17,11 +17,10 @@ export function Footer() {
               <span className="font-display text-xl font-bold">Prestige Plumbing</span>
             </div>
             <p className="mt-4 text-sm leading-relaxed text-secondary-foreground/70">
-              Family owned, licensed, bonded and insured plumbing contractor serving Mesa and the
-              Phoenix metro. Residential and commercial plumbing, 24 hours a day.
+              This is a free service to assist homeowners in connecting with local service contractors. All contractors are independent and this site does not warrant or guarantee any work performed. It is the responsibility of the homeowner to verify that the hired contractor furnishes the necessary license and insurance required for the work being performed. All persons depicted in a photo or video are actors or models and not contractors listed on this site.
             </p>
             <div className="mt-5 flex flex-wrap gap-2">
-              {["Licensed", "Bonded", "Insured", "24/7"].map((b) => (
+              {["24/7 Service", "Residential", "Local Pros"].map((b) => (
                 <span
                   key={b}
                   className="rounded-full border border-white/15 px-3 py-1 text-[11px] font-semibold tracking-wide uppercase"
@@ -110,7 +109,7 @@ export function Footer() {
         </div>
 
         <div className="mt-12 flex flex-col gap-2 border-t border-white/10 pt-6 text-xs text-secondary-foreground/50 sm:flex-row sm:items-center sm:justify-between">
-          <p>© {new Date().getFullYear()} Prestige Plumbing Company. Licensed · Bonded · Insured.</p>
+          <p>© {new Date().getFullYear()} Prestige Plumbing Company. All rights reserved.</p>
           <p>Serving Mesa, Phoenix, Chandler, Gilbert, Tempe, Scottsdale, Glendale & beyond.</p>
         </div>
       </div>
