@@ -22,7 +22,7 @@ export const Route = createFileRoute("/")({
   head: () => ({
     meta: meta(
       "Residential Plumbing Connections Mesa AZ | 24/7 Service",
-      "Connect with trusted Mesa & Phoenix plumbing professionals. Emergency plumbing, water heaters, drain cleaning, leak detection & repiping. Call (480) 863-0564.",
+      "Connect with trusted Mesa & Phoenix plumbing professionals. Emergency plumbing, water heaters, drain cleaning, leak detection & repiping. Call (480) 681-3808.",
       "/",
     ),
     links: [{ rel: "canonical", href: "/" }],

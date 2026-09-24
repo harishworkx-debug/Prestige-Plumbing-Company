@@ -5,7 +5,7 @@ export const business = {
   legalType: "Homeowner Connection Service",
 
   url: SITE_URL,
-  phoneDisplay: "(480) 863-0564",
+  phoneDisplay: "(480) 681-3808",
   phoneHref: "tel:4802150629",
   email: "info@prestigeplumbingcompany.com",
   street: "1120 E Jarvis Ave",

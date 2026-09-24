@@ -6,7 +6,7 @@ import { meta, breadcrumbSchema, webPageSchema, abs } from "@/lib/seo";
 
 const title = "Plumbing Service Areas in Mesa & the East Valley | Prestige Plumbing Company";
 const description =
-  "Prestige Plumbing Company serves Mesa, Gilbert, Chandler, Tempe, Scottsdale, Phoenix, Queen Creek and the wider East Valley with 24/7 licensed plumbing. Call (480) 863-0564.";
+  "Prestige Plumbing Company serves Mesa, Gilbert, Chandler, Tempe, Scottsdale, Phoenix, Queen Creek and the wider East Valley with 24/7 licensed plumbing. Call (480) 681-3808.";
 
 export const Route = createFileRoute("/service-areas")({
   head: () => ({

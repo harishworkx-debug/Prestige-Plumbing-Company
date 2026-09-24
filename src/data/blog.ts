@@ -92,7 +92,7 @@ export const posts: Post[] = [
       },
     ],
     takeaway:
-      "Address slow drains while they are still merely slow. We connect homeowners with independent providers who clear and camera drains across Mesa, Gilbert, Chandler and the Phoenix metro — call (480) 863-0564 to find a local professional.",
+      "Address slow drains while they are still merely slow. We connect homeowners with independent providers who clear and camera drains across Mesa, Gilbert, Chandler and the Phoenix metro — call (480) 681-3808 to find a local professional.",
   },
   {
     slug: "why-water-heaters-fail",
@@ -161,7 +161,7 @@ export const posts: Post[] = [
       },
     ],
     takeaway:
-      "A maintained water heater in Arizona can reach twelve to fifteen years; a neglected one often fails at seven. Get connected with a local professional for a flush and anode inspection by calling (480) 863-0564.",
+      "A maintained water heater in Arizona can reach twelve to fifteen years; a neglected one often fails at seven. Get connected with a local professional for a flush and anode inspection by calling (480) 681-3808.",
   },
   {
     slug: "how-to-prevent-plumbing-emergencies",
@@ -227,7 +227,7 @@ export const posts: Post[] = [
       },
     ],
     takeaway:
-      "Prevention costs a fraction of restoration. Call (480) 863-0564 to get connected with an independent professional for a whole-home plumbing inspection and get ahead of the failure.",
+      "Prevention costs a fraction of restoration. Call (480) 681-3808 to get connected with an independent professional for a whole-home plumbing inspection and get ahead of the failure.",
   },
   {
     slug: "benefits-of-hydro-jetting",
@@ -286,7 +286,7 @@ export const posts: Post[] = [
       },
     ],
     takeaway:
-      "If you have had the same line cleared more than once this year, jetting is the conversation worth having. Call (480) 863-0564 to get connected for a camera inspection first.",
+      "If you have had the same line cleared more than once this year, jetting is the conversation worth having. Call (480) 681-3808 to get connected for a camera inspection first.",
   },
   {
     slug: "common-plumbing-problems-in-mesa",
@@ -353,7 +353,7 @@ export const posts: Post[] = [
       },
     ],
     takeaway:
-      "We connect homeowners with professionals who know what your house is likely hiding. Call (480) 863-0564 to find an independent provider for a whole-home inspection.",
+      "We connect homeowners with professionals who know what your house is likely hiding. Call (480) 681-3808 to find an independent provider for a whole-home inspection.",
   },
   {
     slug: "residential-plumbing-maintenance-tips",
@@ -429,7 +429,7 @@ export const posts: Post[] = [
       },
     ],
     takeaway:
-      "If the annual items feel like more than you want to take on, we can help connect you with independent professionals who do all of them in a single visit. Call (480) 863-0564.",
+      "If the annual items feel like more than you want to take on, we can help connect you with independent professionals who do all of them in a single visit. Call (480) 681-3808.",
   },
   {
     slug: "gas-line-safety-guide",
@@ -490,7 +490,7 @@ export const posts: Post[] = [
       },
     ],
     takeaway:
-      "Gas work belongs with licensed, permitted professionals. We connect homeowners with experts who install and repair residential gas piping throughout the East Valley — call (480) 863-0564.",
+      "Gas work belongs with licensed, permitted professionals. We connect homeowners with experts who install and repair residential gas piping throughout the East Valley — call (480) 681-3808.",
   },
   {
     slug: "toilet-repair-guide",
@@ -552,7 +552,7 @@ export const posts: Post[] = [
       },
     ],
     takeaway:
-      "Simple parts are worth trying yourself. For anything involving the flange, the drain line, or water where it should not be, call (480) 863-0564 to get connected with a local professional.",
+      "Simple parts are worth trying yourself. For anything involving the flange, the drain line, or water where it should not be, call (480) 681-3808 to get connected with a local professional.",
   },
   {
     slug: "water-heater-maintenance-checklist",
@@ -612,7 +612,7 @@ export const posts: Post[] = [
       },
     ],
     takeaway:
-      "Local independent contractors can perform the full checklist in one visit, including anode inspection and relief valve testing. Book residential water heater service by calling (480) 863-0564.",
+      "Local independent contractors can perform the full checklist in one visit, including anode inspection and relief valve testing. Book residential water heater service by calling (480) 681-3808.",
   },
   {
     slug: "how-to-detect-hidden-leaks",
@@ -673,7 +673,7 @@ export const posts: Post[] = [
       },
     ],
     takeaway:
-      "If your meter is moving with everything off, do not wait. We can connect you with independent professionals who locate hidden and slab leaks across Mesa and the Phoenix metro — call (480) 863-0564.",
+      "If your meter is moving with everything off, do not wait. We can connect you with independent professionals who locate hidden and slab leaks across Mesa and the Phoenix metro — call (480) 681-3808.",
   },
 ];
 

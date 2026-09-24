@@ -20,7 +20,7 @@ export const areas: Area[] = [
     zips: "85201, 85202, 85203, 85204, 85205, 85206, 85207, 85208, 85209, 85210, 85212, 85213, 85215",
     metaTitle: "Plumber Mesa AZ | 24/7 Residential Connections | Prestige Plumbing Company",
     metaDescription:
-      "Find trusted Mesa AZ residential plumbers. Connection service for emergency plumbing, water heaters, and drain cleaning. Call (480) 863-0564.",
+      "Find trusted Mesa AZ residential plumbers. Connection service for emergency plumbing, water heaters, and drain cleaning. Call (480) 681-3808.",
     headline: "Mesa's Premier Residential Plumbing Connections",
     intro: [
       "Mesa is home to a wide variety of residential neighborhoods. The independent providers in our network have helped homeowners repair, repipe and rescue plumbing systems in nearly every corner of this city — from the mid-century ranch homes near Main Street to the newer subdivisions stretching toward Signal Butte.",
@@ -83,7 +83,7 @@ export const areas: Area[] = [
     zips: "85008, 85016, 85018, 85028, 85032, 85044, 85048, 85050, 85054",
     metaTitle: "Plumber Phoenix AZ | Residential Plumbing Connections 24/7 | Prestige Plumbing Company",
     metaDescription:
-      "Find residential Phoenix plumbers for emergency repairs, water heaters, drains, leaks and repiping. Free connection service. Call (480) 863-0564.",
+      "Find residential Phoenix plumbers for emergency repairs, water heaters, drains, leaks and repiping. Free connection service. Call (480) 681-3808.",
     headline: "Local Phoenix Plumbers For Homeowners",
     intro: [
       "Phoenix is the largest and most architecturally varied city we serve, and residential plumbing here means adapting to whatever the neighborhood was built with. A 1940s bungalow in the Coronado Historic District, a 1960s block home in Arcadia, and a 1990s Ahwatukee two-story home share almost nothing except the water utility.",
@@ -146,7 +146,7 @@ export const areas: Area[] = [
     zips: "85224, 85225, 85226, 85248, 85249, 85286",
     metaTitle: "Plumber Chandler AZ | Homeowner Connections | Prestige Plumbing",
     metaDescription:
-      "Chandler AZ connection service for residential emergency repairs, water heater install, drain cleaning and leak detection. Call (480) 863-0564.",
+      "Chandler AZ connection service for residential emergency repairs, water heater install, drain cleaning and leak detection. Call (480) 681-3808.",
     headline: "Connecting Chandler Homeowners With Trusted Plumbers",
     intro: [
       "Chandler grew from farmland to a technology hub in a single generation, and its residential plumbing infrastructure reflects that timeline precisely. The historic downtown core contains genuinely old residential systems, while Ocotillo, Fulton Ranch and south Chandler are dominated by homes built after 1995.",
@@ -207,7 +207,7 @@ export const areas: Area[] = [
     zips: "85233, 85234, 85295, 85296, 85297, 85298",
     metaTitle: "Plumber Gilbert AZ | Residential Plumber Connections | Prestige Plumbing",
     metaDescription:
-      "Gilbert AZ connection service for residential water heaters, slab leaks, drain cleaning and repipes. Connect with local pros. Call (480) 863-0564.",
+      "Gilbert AZ connection service for residential water heaters, slab leaks, drain cleaning and repipes. Connect with local pros. Call (480) 681-3808.",
     headline: "Gilbert Residential Plumbing Connections",
     intro: [
       "Gilbert transformed into one of the fastest-growing residential communities in America, and nearly all of its housing was built during that expansion. That means an enormous concentration of homes constructed between 1995 and 2015 — and a predictable homeowner maintenance curve arriving.",
@@ -270,7 +270,7 @@ export const areas: Area[] = [
     zips: "85281, 85282, 85283, 85284",
     metaTitle: "Plumber Tempe AZ | Residential & Homeowner Connections | Prestige Plumbing",
     metaDescription:
-      "Tempe AZ residential connection service for homeowners. Drain cleaning, water heaters, leak repair and emergencies. Call (480) 863-0564.",
+      "Tempe AZ residential connection service for homeowners. Drain cleaning, water heaters, leak repair and emergencies. Call (480) 681-3808.",
     headline: "Tempe Plumbing Connections For Homeowners",
     intro: [
       "Tempe's residential profile is unique because of its density. A large share of the housing near the university is occupied by students or homeowners, meaning fixtures endure many cycles per year, and small residential problems can escalate fast.",
@@ -331,7 +331,7 @@ export const areas: Area[] = [
     zips: "85250, 85251, 85254, 85255, 85257, 85258, 85259, 85260, 85262",
     metaTitle: "Plumber Scottsdale AZ | Residential Plumbing Connections | Prestige Plumbing",
     metaDescription:
-      "Scottsdale connection service for residential homes: leak detection, tankless water heaters, remodel plumbing and gas lines. Call (480) 863-0564.",
+      "Scottsdale connection service for residential homes: leak detection, tankless water heaters, remodel plumbing and gas lines. Call (480) 681-3808.",
     headline: "Connecting Scottsdale Homeowners With Local Experts",
     intro: [
       "Scottsdale residential properties require careful plumbing decisions. Custom homes contain imported fixtures, specialty valves, and finishes where exploratory demolition is not ideal. We connect homeowners with independent providers who emphasize precision.",
@@ -394,7 +394,7 @@ export const areas: Area[] = [
     zips: "85301, 85302, 85303, 85304, 85305, 85306, 85307, 85308, 85310",
     metaTitle: "Plumber Glendale AZ | Homeowner Connections | Prestige Plumbing",
     metaDescription:
-      "Glendale AZ residential connections for plumbing repairs, water heater installation, and drain cleaning. Call (480) 863-0564.",
+      "Glendale AZ residential connections for plumbing repairs, water heater installation, and drain cleaning. Call (480) 681-3808.",
     headline: "Dependable Residential Connections In Glendale",
     intro: [
       "Glendale spans a wide range of residential ages, from the historic homes near downtown to the extensive 1970s and 1980s neighborhoods around Arrowhead. Each brings its own homeowner plumbing considerations.",
@@ -455,7 +455,7 @@ export const areas: Area[] = [
     zips: "85142, 85140, 85143",
     metaTitle: "Plumber Queen Creek AZ | Residential Connections | Prestige Plumbing",
     metaDescription:
-      "Queen Creek AZ residential connection service for water heaters, drain cleaning, and leaks. Connect with local pros. Call (480) 863-0564.",
+      "Queen Creek AZ residential connection service for water heaters, drain cleaning, and leaks. Connect with local pros. Call (480) 681-3808.",
     headline: "Queen Creek Homeowner Plumbing Connections",
     intro: [
       "Queen Creek residential growth brings a particular mix of plumbing needs for homeowners: brand-new homes with builder-grade components, and older ranch residential parcels.",
@@ -517,7 +517,7 @@ export const areas: Area[] = [
     zips: "85140, 85142, 85143",
     metaTitle: "Plumber San Tan Valley AZ | Homeowner Connections | Prestige Plumbing",
     metaDescription:
-      "San Tan Valley residential connection service for emergency repairs, water heaters, and drain cleaning. Call (480) 863-0564.",
+      "San Tan Valley residential connection service for emergency repairs, water heaters, and drain cleaning. Call (480) 681-3808.",
     headline: "Connecting San Tan Valley Homeowners",
     intro: [
       "San Tan Valley homeowners often need reliable connections to local professionals. We help route your residential service request to available independent plumbers serving the area.",
@@ -579,7 +579,7 @@ export const areas: Area[] = [
     zips: "85044, 85045, 85048",
     metaTitle: "Plumber Ahwatukee AZ | Residential Connections | Prestige Plumbing",
     metaDescription:
-      "Ahwatukee connection service for residential water heaters, slab leaks, and drains. Connect with local pros. Call (480) 863-0564.",
+      "Ahwatukee connection service for residential water heaters, slab leaks, and drains. Connect with local pros. Call (480) 681-3808.",
     headline: "Ahwatukee Homeowner Plumbing Connections",
     intro: [
       "Ahwatukee residential housing reflects a concentrated building period — largely 1980s through late 1990s. That construction window puts most of Ahwatukee residential homes in the age range where under-slab copper begins to fail.",

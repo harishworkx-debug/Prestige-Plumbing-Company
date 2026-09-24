@@ -80,7 +80,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         name: "description",
         content:
-          "Licensed, bonded and insured plumbing contractor serving Mesa & the Phoenix metro. 24/7 emergency plumbing. Call (480) 863-0564.",
+          "Licensed, bonded and insured plumbing contractor serving Mesa & the Phoenix metro. 24/7 emergency plumbing. Call (480) 681-3808.",
       },
       { name: "author", content: "Prestige Plumbing Company" },
       { property: "og:site_name", content: "Prestige Plumbing Company" },

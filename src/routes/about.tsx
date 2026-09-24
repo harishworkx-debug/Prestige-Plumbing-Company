@@ -8,7 +8,7 @@ import { meta, breadcrumbSchema, webPageSchema, abs } from "@/lib/seo";
 
 const title = "About Prestige Plumbing Company | Connections in Mesa, AZ";
 const description =
-  "Prestige Plumbing Company is a free service to assist homeowners in connecting with local service contractors in Mesa, AZ and the East Valley. Call (480) 863-0564.";
+  "Prestige Plumbing Company is a free service to assist homeowners in connecting with local service contractors in Mesa, AZ and the East Valley. Call (480) 681-3808.";
 
 export const Route = createFileRoute("/about")({
   head: () => ({

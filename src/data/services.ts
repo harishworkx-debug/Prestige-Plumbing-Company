@@ -29,7 +29,7 @@ const coreServices: Service[] = [
     name: "Emergency Plumbing",
     tagline: "24/7 residential emergency plumbing connections across Mesa and the Phoenix metro",
     metaTitle: "24/7 Emergency Plumber Mesa AZ | Residential Connections | Prestige Plumbing",
-    metaDescription: "Connect with emergency residential plumbers in Mesa & Phoenix metro. Available 24/7 for burst pipes and water heater failures. Call (480) 863-0564 now.",
+    metaDescription: "Connect with emergency residential plumbers in Mesa & Phoenix metro. Available 24/7 for burst pipes and water heater failures. Call (480) 681-3808 now.",
     image: "emergencyPlumbing",
     intro: [
       "A plumbing emergency does not schedule itself around business hours. Water travels fast, drywall absorbs it faster, and in Arizona's dry climate a hidden leak can quietly destroy framing and flooring. Prestige Plumbing Company helps homeowners connect with independent emergency professionals across Mesa, Phoenix, Chandler, Gilbert, Tempe and Scottsdale.",
@@ -94,7 +94,7 @@ const coreServices: Service[] = [
     name: "Water Heater Services",
     tagline: "Connecting homeowners with expert repair and replacement for water heaters",
     metaTitle: "Water Heater Repair & Installation Mesa AZ | Residential Connections",
-    metaDescription: "Residential water heater connections in Mesa, AZ. Connect with pros for repair, replacement and tankless installation. Call (480) 863-0564.",
+    metaDescription: "Residential water heater connections in Mesa, AZ. Connect with pros for repair, replacement and tankless installation. Call (480) 681-3808.",
     image: "waterHeaters",
     intro: [
       "Mesa's hard water is notoriously tough on residential water heaters. The high mineral content accelerates sediment buildup, degrading heating elements in electric models and insulating the burners in gas units.",
@@ -155,7 +155,7 @@ const coreServices: Service[] = [
     name: "Drain & Sewer Services",
     tagline: "Connecting homeowners with professional drain cleaning and sewer line repair",
     metaTitle: "Residential Drain Cleaning & Sewer Repair Mesa AZ | Prestige Plumbing",
-    metaDescription: "Residential drain cleaning and sewer repair connections in Mesa, AZ. Connect with pros for camera inspections. Call (480) 863-0564.",
+    metaDescription: "Residential drain cleaning and sewer repair connections in Mesa, AZ. Connect with pros for camera inspections. Call (480) 681-3808.",
     image: "drainAndSewer",
     intro: [
       "A slow drain is an annoyance; a main sewer backup is a health hazard for your home. The drainage system relies entirely on gravity and proper slope. When roots intrude or soils shift beneath the house, gravity flow stops.",
@@ -216,7 +216,7 @@ const coreServices: Service[] = [
     name: "Leak Detection & Slab Leaks",
     tagline: "Connecting homeowners with pros to pinpoint hidden leaks behind walls and slabs",
     metaTitle: "Residential Leak Detection & Slab Leak Repair Mesa AZ",
-    metaDescription: "Professional residential leak detection connections in Mesa. Find pros using acoustic equipment to locate home leaks. Call (480) 863-0564.",
+    metaDescription: "Professional residential leak detection connections in Mesa. Find pros using acoustic equipment to locate home leaks. Call (480) 681-3808.",
     image: "leakDetection",
     intro: [
       "A hidden leak in a pressurized water line doesn't stop. It runs continuously, quietly destroying residential drywall and flooring. In the East Valley, where thousands of homes built between the 1970s and 2000s have copper supply lines routed beneath the foundation, residential slab leaks are common.",
@@ -277,7 +277,7 @@ const coreServices: Service[] = [
     name: "Repiping & Pipe Repair",
     tagline: "Connecting homeowners with pros for whole-home repiping and pipe replacements",
     metaTitle: "Whole Home Repiping Mesa AZ | Residential Plumbing Connections",
-    metaDescription: "Expert whole-home repiping connections in Mesa. Connect with pros to replace failing polybutylene and copper pipes in your home. Call (480) 863-0564.",
+    metaDescription: "Expert whole-home repiping connections in Mesa. Connect with pros to replace failing polybutylene and copper pipes in your home. Call (480) 681-3808.",
     image: "repiping",
     intro: [
       "The plumbing infrastructure inside your home walls has a lifespan. Galvanized steel pipes rust from the inside out. Early-generation copper suffers from pinhole pitting due to Arizona's hard water. Polybutylene piping is famously prone to sudden failure.",
@@ -336,7 +336,7 @@ const coreServices: Service[] = [
     name: "Residential Gas Line Services",
     tagline: "Connecting homeowners with pros for safe residential gas line installation and repair",
     metaTitle: "Residential Gas Line Repair & Install Mesa AZ | Prestige Plumbing",
-    metaDescription: "Residential gas line connections in Mesa, AZ. Connect with pros to run gas for stoves, fire pits, and pool heaters. Call (480) 863-0564.",
+    metaDescription: "Residential gas line connections in Mesa, AZ. Connect with pros to run gas for stoves, fire pits, and pool heaters. Call (480) 681-3808.",
     image: "gasLine",
     intro: [
       "Natural gas is efficient for homeowners, but working with it requires strict adherence to safety codes. Prestige Plumbing Company connects homeowners with professionals qualified for residential gas line work.",
@@ -396,7 +396,7 @@ const coreServices: Service[] = [
     name: "Bathroom Plumbing",
     tagline: "Connecting homeowners with pros for toilet, shower, and sink repair",
     metaTitle: "Residential Bathroom Plumbing Mesa AZ | Prestige Plumbing",
-    metaDescription: "Residential bathroom plumbing connections in Mesa, AZ. Connect with pros for toilet repair and shower valve replacement. Call (480) 863-0564.",
+    metaDescription: "Residential bathroom plumbing connections in Mesa, AZ. Connect with pros for toilet repair and shower valve replacement. Call (480) 681-3808.",
     image: "bathroomPlumbing",
     intro: [
       "The home bathroom sees the highest volume of water usage, making it a frequent site of plumbing failures. Prestige Plumbing Company helps homeowners connect with local pros for residential bathroom plumbing.",
@@ -455,7 +455,7 @@ const coreServices: Service[] = [
     name: "Kitchen Plumbing",
     tagline: "Connecting homeowners with pros for disposals, faucets, and sinks",
     metaTitle: "Residential Kitchen Plumbing Mesa AZ | Prestige Plumbing",
-    metaDescription: "Residential kitchen plumbing connections in Mesa. Connect with pros for garbage disposal repair and faucet replacement. Call (480) 863-0564.",
+    metaDescription: "Residential kitchen plumbing connections in Mesa. Connect with pros for garbage disposal repair and faucet replacement. Call (480) 681-3808.",
     image: "kitchenPlumbing",
     intro: [
       "The residential kitchen is the center of your home, and a plumbing failure disrupts daily life. Prestige Plumbing Company connects homeowners with comprehensive kitchen plumbing services.",
@@ -514,7 +514,7 @@ const coreServices: Service[] = [
     name: "Residential Plumbing & Maintenance",
     tagline: "Connecting homeowners with pros for whole-home plumbing care",
     metaTitle: "Residential Plumber Connections Mesa AZ | Prestige Plumbing",
-    metaDescription: "Residential plumbing connections in the East Valley. Connect with pros for whole-home inspections and maintenance. Call (480) 863-0564.",
+    metaDescription: "Residential plumbing connections in the East Valley. Connect with pros for whole-home inspections and maintenance. Call (480) 681-3808.",
     image: "residentialPlumbing",
     intro: [
       "Your home's plumbing is an interconnected system. Prestige Plumbing Company helps homeowners connect with pros who offer proactive residential plumbing maintenance.",

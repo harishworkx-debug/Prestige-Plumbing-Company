@@ -5,9 +5,9 @@ import { Reveal } from "@/components/Reveal";
 import { CTAButtons, FAQList, MapEmbed, SectionHeading } from "@/components/ui-kit";
 import { meta, breadcrumbSchema, webPageSchema, faqSchema, abs } from "@/lib/seo";
 
-const title = "Contact Prestige Plumbing Company | Connections | (480) 863-0564";
+const title = "Contact Prestige Plumbing Company | Connections | (480) 681-3808";
 const description =
-  "Contact Prestige Plumbing Company to connect with independent local service contractors in Mesa, AZ and the East Valley. Call (480) 863-0564.";
+  "Contact Prestige Plumbing Company to connect with independent local service contractors in Mesa, AZ and the East Valley. Call (480) 681-3808.";
 
 export const Route = createFileRoute("/contact")({
   head: () => ({
