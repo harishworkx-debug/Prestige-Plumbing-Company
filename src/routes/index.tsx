@@ -10,7 +10,7 @@ import {
   MapPin,
 } from "lucide-react";
 import { images } from "@/data/images";
-import { business, homeFaqs, process, whyChoose } from "@/data/site";
+import { business, homeFaqs, process, whyChoose, testimonials } from "@/data/site";
 import { services } from "@/data/services";
 import { areas } from "@/data/areas";
 import { posts } from "@/data/blog";
@@ -21,8 +21,8 @@ import { faqSchema, meta, breadcrumbSchema } from "@/lib/seo";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: meta(
-      "Residential Plumbing Connections Mesa AZ | 24/7 Service",
-      "Connect with trusted Mesa & Phoenix plumbing professionals. Emergency plumbing, water heaters, drain cleaning, leak detection & repiping. Call (480) 681-3808.",
+      "Residential Plumbing Contractor Mesa AZ | 24/7 Service",
+      "Family-owned plumbing contractor in Mesa & Phoenix. Emergency plumbing, water heaters, drain cleaning, leak detection & repiping. Call (480) 681-3808.",
       "/",
     ),
     links: [{ rel: "canonical", href: "/" }],
@@ -59,13 +59,13 @@ function Home() {
             className="max-w-3xl text-secondary-foreground"
           >
             <span className="inline-flex items-center gap-2 rounded-full border border-white/25 bg-white/10 px-4 py-2 text-xs font-bold tracking-[0.18em] uppercase backdrop-blur">
-              <ShieldCheck className="h-4 w-4 text-accent" /> 24/7 Connections
+              <ShieldCheck className="h-4 w-4 text-accent" /> Licensed & Insured
             </span>
             <h1 className="mt-6 font-display text-4xl leading-[1.05] font-bold sm:text-5xl lg:text-6xl">
-              Trusted Plumbing Connections Serving Mesa & Phoenix Metro
+              Trusted Family-Owned Plumbing Contractor Serving Mesa & Phoenix
             </h1>
             <p className="mt-6 max-w-2xl text-lg leading-relaxed text-secondary-foreground/80">
-              Connecting Homeowners with Independent Professionals for Residential Plumbing Services. Emergency professionals available 24 hours a day, every day.
+              Expert plumbing services from a licensed, bonded, and insured contractor. Fast, reliable, and available 24/7 for all your residential plumbing needs.
             </p>
             <div className="mt-9">
               <CTAButtons dark label="Call Now" />
@@ -81,24 +81,24 @@ function Home() {
         <div className="mx-auto grid max-w-7xl gap-12 px-4 lg:grid-cols-1 lg:px-8">
           <Reveal>
             <span className="text-xs font-bold tracking-[0.22em] text-primary uppercase">
-              Residential Plumbing Connections
+              Residential Plumbing Services
             </span>
             <h2 className="mt-3 font-display text-3xl font-bold sm:text-4xl">
-              Connecting The East Valley With Trusted Professionals
+              Serving The East Valley With Trusted Plumbing Excellence
             </h2>
             <div className="mt-5 space-y-4 leading-relaxed text-muted-foreground">
               <p>
-                Prestige Plumbing Company is a free connection service designed to help Arizona homeowners find reliable, independent plumbing professionals. We are based in Mesa and are the service thousands of families trust to connect them with local contractors when water is where it should not be.
+                Prestige Plumbing Company is a family-owned plumbing contractor dedicated to helping Arizona homeowners with all their plumbing needs. Based in Mesa, we are the trusted team thousands of families rely on when water is where it should not be.
               </p>
               <p>
-                The independent professionals we connect you with handle every residential discipline — emergency plumbing, water heaters, drain and sewer work, leak detection, repiping, and gas lines.
+                Our licensed, bonded, and insured plumbers handle every residential discipline — emergency plumbing, water heaters, drain and sewer work, leak detection, repiping, and gas lines.
               </p>
               <p>
-                What genuinely separates the professionals in our network is their commitment to providing flat-rate pricing and honest guidance about which repairs matter now and which can wait.
+                What genuinely separates our team is our commitment to providing upfront flat-rate pricing and honest guidance about which repairs matter now and which can wait.
               </p>
             </div>
             <div className="mt-8">
-              <CTAButtons label="Find A Professional" />
+              <CTAButtons label="Schedule Service" />
             </div>
           </Reveal>
         </div>
@@ -109,8 +109,8 @@ function Home() {
         <div className="mx-auto max-w-7xl px-4 lg:px-8">
           <SectionHeading
             eyebrow="Why Use Prestige Plumbing"
-            title="The Difference Between A Cold Search And A Trusted Connection"
-            text="We help homeowners find the right independent professional for their specific residential plumbing needs."
+            title="The Difference Between A Corporate Chain And A Family-Owned Contractor"
+            text="We provide expert plumbing solutions tailored to your home, backed by our commitment to excellent service."
           />
           <div className="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {whyChoose.map((w, i) => (
@@ -133,8 +133,8 @@ function Home() {
         <div className="mx-auto max-w-7xl px-4 lg:px-8">
           <SectionHeading
             eyebrow="Plumbing Services"
-            title="Residential & Emergency Plumbing Connections"
-            text="From a running toilet to a whole-home repipe — connect with professionals who can handle every residential discipline."
+            title="Residential & Emergency Plumbing Services"
+            text="From a running toilet to a whole-home repipe — our expert plumbers handle every residential discipline."
           />
           <div className="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {services.map((s, i) => (
@@ -176,7 +176,7 @@ function Home() {
               Burst Pipe? Sewage Backup? No Hot Water? We Answer At Any Hour.
             </h2>
             <p className="mt-3 max-w-2xl text-secondary-foreground/70">
-              Call to get connected with a local professional who can provide guidance on shutting off water while a fully stocked truck is dispatched to your residential address.
+              Call our dispatch team for immediate guidance on shutting off water while a fully stocked truck is dispatched to your residential address.
             </p>
           </div>
           <CTAButtons dark label="Emergency Plumbing" />
@@ -203,7 +203,44 @@ function Home() {
           </div>
         </div>
       </section>
-      {/* TESTIMONIALS REMOVED */}
+      {/* TESTIMONIALS */}
+      <section className="py-20">
+        <div className="mx-auto max-w-7xl px-4 lg:px-8">
+          <SectionHeading eyebrow="Reviews" title="Real Feedback from Real Homeowners" />
+          <div className="mt-14 grid gap-6 md:grid-cols-3">
+            {testimonials.slice(0, 3).map((t, i) => (
+              <Reveal key={i} delay={i * 0.07}>
+                <div className="h-full rounded-2xl border border-border bg-card p-6 shadow-card flex flex-col hover-lift">
+                  <div className="flex gap-1 mb-4 text-amber-500">
+                    <Star className="h-4 w-4 fill-current" />
+                    <Star className="h-4 w-4 fill-current" />
+                    <Star className="h-4 w-4 fill-current" />
+                    <Star className="h-4 w-4 fill-current" />
+                    <Star className="h-4 w-4 fill-current" />
+                  </div>
+                  <blockquote className="flex-1 text-sm leading-relaxed text-muted-foreground whitespace-pre-wrap">
+                    "{t.text}"
+                  </blockquote>
+                  <figcaption className="mt-6 flex items-center gap-3 border-t border-border pt-4">
+                    <div className="h-10 w-10 shrink-0 rounded-full bg-primary/10 grid place-items-center font-bold text-primary">
+                      {t.name.charAt(0)}
+                    </div>
+                    <div>
+                      <div className="font-semibold text-foreground">{t.name}</div>
+                      <div className="text-xs text-muted-foreground">{t.time}</div>
+                    </div>
+                  </figcaption>
+                </div>
+              </Reveal>
+            ))}
+          </div>
+          <div className="mt-10 flex justify-center">
+            <Link to="/reviews" className="rounded-full bg-primary px-8 py-3 text-sm font-bold text-primary-foreground hover:bg-primary/90 transition-colors">
+              Read All Reviews
+            </Link>
+          </div>
+        </div>
+      </section>
 
       {/* AREAS */}
       <section className="surface-panel py-20">
@@ -279,7 +316,7 @@ function Home() {
         <div className="mx-auto max-w-7xl px-4 lg:px-8">
           <SectionHeading
             eyebrow="Service Location"
-            title="Connecting homeowners across Mesa and the Phoenix Metro"
+            title="Serving homeowners across Mesa and the Phoenix Metro"
           />
           <div className="mt-10">
             <MapEmbed />
@@ -289,7 +326,7 @@ function Home() {
 
       <CTABand
         title="Get Fast Plumbing Help Today"
-        text="Call or request a free estimate. Find professionals standing by 24 hours a day across Mesa and the Phoenix metro."
+        text="Call or request a free estimate. Our licensed plumbers are standing by 24 hours a day across Mesa and the Phoenix metro."
       />
     </>
   );

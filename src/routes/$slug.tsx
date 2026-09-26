@@ -340,6 +340,41 @@ function AreaPage({ a }: { a: Area }) {
 
             <Reveal>
               <h2 className="mt-14 font-display text-3xl font-bold">
+                24/7 Emergency Plumbing in {a.city}
+              </h2>
+              <p className="mt-5 leading-relaxed text-muted-foreground">
+                Plumbing emergencies don't wait for business hours, and neither do we. Whether you're dealing with a burst pipe, a sewage backup, or a failed water heater, our local experts are available 24 hours a day, 7 days a week to protect your {a.city} home from water damage. When you call, we dispatch a fully stocked truck to your address immediately.
+              </p>
+            </Reveal>
+
+            {a.reviews && a.reviews.length > 0 && (
+              <Reveal>
+                <h2 className="mt-14 font-display text-3xl font-bold">
+                  Reviews from {a.city} Homeowners
+                </h2>
+                <div className="mt-6 grid gap-4 sm:grid-cols-2">
+                  {a.reviews.map((r, i) => (
+                    <div key={i} className="rounded-2xl border border-border bg-card p-5 shadow-card">
+                      <div className="flex gap-1 text-amber-500 mb-3">
+                        {[1, 2, 3, 4, 5].map((star) => (
+                          <svg key={star} className="h-4 w-4 fill-current" viewBox="0 0 24 24">
+                            <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                          </svg>
+                        ))}
+                      </div>
+                      <p className="text-sm italic text-muted-foreground">"{r.text}"</p>
+                      <div className="mt-4 flex items-center justify-between border-t border-border pt-3">
+                        <span className="font-semibold text-sm">{r.name}</span>
+                        <span className="text-xs text-muted-foreground">{r.time}</span>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </Reveal>
+            )}
+
+            <Reveal>
+              <h2 className="mt-14 font-display text-3xl font-bold">
                 Typical Plumbing Issues In {a.city}
               </h2>
               <div className="mt-6 space-y-4">

@@ -151,6 +151,7 @@ export const meta = (title: string, description: string, path: string, type = "w
   { property: "og:url", content: abs(path) },
   { property: "og:site_name", content: business.name },
   { property: "og:locale", content: "en_US" },
+  { property: "og:phone_number", content: business.phoneDisplay },
   { name: "twitter:card", content: "summary_large_image" },
   { name: "twitter:title", content: title },
   { name: "twitter:description", content: description },

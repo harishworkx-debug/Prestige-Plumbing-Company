@@ -17,7 +17,7 @@ export function Footer() {
               <span className="font-display text-xl font-bold">Prestige Plumbing</span>
             </div>
             <p className="mt-4 text-sm leading-relaxed text-secondary-foreground/70">
-              This is a free service to assist homeowners in connecting with local service contractors. All contractors are independent and this site does not warrant or guarantee any work performed. It is the responsibility of the homeowner to verify that the hired contractor furnishes the necessary license and insurance required for the work being performed. All persons depicted in a photo or video are actors or models and not contractors listed on this site.
+              Prestige Plumbing Company is a family-owned, licensed, bonded, and insured plumbing contractor serving Mesa and the East Valley. We pride ourselves on honest pricing, expert repairs, and exceptional customer service.
             </p>
             <div className="mt-5 flex flex-wrap gap-2">
               {["24/7 Service", "Residential", "Local Pros"].map((b) => (

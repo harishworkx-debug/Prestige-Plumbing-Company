@@ -1,12 +1,13 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { ShieldCheck } from "lucide-react";
+import { ShieldCheck, Star } from "lucide-react";
 import { areas } from "@/data/areas";
+import { testimonials } from "@/data/site";
 import { CTABand, SectionHeading } from "@/components/ui-kit";
 import { meta, breadcrumbSchema, webPageSchema, abs } from "@/lib/seo";
 
-const title = "Network Standards | Prestige Plumbing Company Mesa, AZ";
+const title = "Customer Reviews | Prestige Plumbing Company Mesa, AZ";
 const description =
-  "Learn about the rigorous standards for the independent plumbing professionals in the Prestige Plumbing Company network across Mesa, Gilbert, Chandler and Tempe.";
+  "Read real reviews from our satisfied customers across Mesa, Gilbert, Chandler and Tempe.";
 
 export const Route = createFileRoute("/reviews")({
   head: () => ({
@@ -19,7 +20,7 @@ export const Route = createFileRoute("/reviews")({
         children: JSON.stringify(
           breadcrumbSchema([
             { name: "Home", path: "/" },
-            { name: "Network Standards", path: "/reviews" },
+            { name: "Reviews", path: "/reviews" },
           ]),
         ),
       },
@@ -34,10 +35,10 @@ function ReviewsPage() {
       <section className="surface-panel py-16 lg:py-24">
         <div className="mx-auto max-w-7xl px-4 lg:px-8">
           <SectionHeading
-            eyebrow="Our Network"
+            eyebrow="Customer Feedback"
             center={false}
-            title="Rigorous Standards For Local Professionals"
-            text="We believe homeowners deserve transparency. Here is what you can expect from the independent plumbing professionals we connect you with across Mesa, Gilbert, Chandler, Tempe, Scottsdale and Queen Creek."
+            title="Real Reviews From Real Homeowners"
+            text="See what our customers have to say about our expert plumbers across Mesa, Gilbert, Chandler, Tempe, Scottsdale and Queen Creek."
           />
         </div>
       </section>
@@ -45,28 +46,27 @@ function ReviewsPage() {
       <section className="py-16">
         <div className="mx-auto max-w-7xl px-4 lg:px-8">
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {[
-              {
-                title: "Licensed Professionals",
-                text: "The contractors in our network are required to hold the proper residential plumbing licenses.",
-              },
-              {
-                title: "Upfront Pricing",
-                text: "Professionals will provide flat-rate pricing and honest guidance before any work begins.",
-              },
-              {
-                title: "Fully Equipped",
-                text: "Network professionals carry the tools needed for modern diagnosis, including acoustic leak detection.",
-              },
-            ].map((t, i) => (
-              <figure key={i} className="h-full rounded-2xl border border-border bg-card p-6 shadow-card">
-                <div className="flex gap-1">
-                  <ShieldCheck className="h-5 w-5 text-accent" />
+            {testimonials.map((t, i) => (
+              <figure key={i} className="h-full rounded-2xl border border-border bg-card p-6 shadow-card flex flex-col">
+                <div className="flex gap-1 mb-4 text-amber-500">
+                  <Star className="h-4 w-4 fill-current" />
+                  <Star className="h-4 w-4 fill-current" />
+                  <Star className="h-4 w-4 fill-current" />
+                  <Star className="h-4 w-4 fill-current" />
+                  <Star className="h-4 w-4 fill-current" />
                 </div>
-                <h3 className="mt-4 font-display text-lg font-bold">{t.title}</h3>
-                <blockquote className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                  “{t.text}”
+                <blockquote className="flex-1 text-sm leading-relaxed text-muted-foreground whitespace-pre-wrap">
+                  "{t.text}"
                 </blockquote>
+                <figcaption className="mt-6 flex items-center gap-3 border-t border-border pt-4">
+                  <div className="h-10 w-10 shrink-0 rounded-full bg-primary/10 grid place-items-center font-bold text-primary">
+                    {t.name.charAt(0)}
+                  </div>
+                  <div>
+                    <div className="font-semibold text-foreground">{t.name}</div>
+                    <div className="text-xs text-muted-foreground">{t.time}</div>
+                  </div>
+                </figcaption>
               </figure>
             ))}
           </div>
@@ -75,7 +75,7 @@ function ReviewsPage() {
 
       <section className="py-16">
         <div className="mx-auto max-w-7xl px-4 lg:px-8">
-          <SectionHeading eyebrow="Local Connections" title="Find A Professional By City" />
+          <SectionHeading eyebrow="Service Areas" title="Our Service Areas" />
           <div className="mt-10 flex flex-wrap justify-center gap-3">
             {areas.map((a) => (
               <Link
@@ -91,7 +91,7 @@ function ReviewsPage() {
         </div>
       </section>
 
-      <CTABand title="Ready To Connect With A Local Professional?" />
+      <CTABand title="Ready For Expert Plumbing Service?" />
     </>
   );
 }

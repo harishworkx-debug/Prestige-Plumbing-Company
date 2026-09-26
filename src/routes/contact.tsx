@@ -5,9 +5,9 @@ import { Reveal } from "@/components/Reveal";
 import { CTAButtons, FAQList, MapEmbed, SectionHeading } from "@/components/ui-kit";
 import { meta, breadcrumbSchema, webPageSchema, faqSchema, abs } from "@/lib/seo";
 
-const title = "Contact Prestige Plumbing Company | Connections | (480) 681-3808";
+const title = "Contact Prestige Plumbing Company | Licensed Contractor | (480) 681-3808";
 const description =
-  "Contact Prestige Plumbing Company to connect with independent local service contractors in Mesa, AZ and the East Valley. Call (480) 681-3808.";
+  "Contact Prestige Plumbing Company for licensed, family-owned plumbing services in Mesa, AZ and the East Valley. Call (480) 681-3808.";
 
 export const Route = createFileRoute("/contact")({
   head: () => ({
@@ -50,8 +50,8 @@ function ContactPage() {
           <SectionHeading
             eyebrow="Contact"
             center={false}
-            title="Connect With A Mesa Plumbing Professional Right Now"
-            text="Call, message or email us any hour of the day to get connected with independent local professionals ready to help you."
+            title="Contact A Mesa Plumbing Professional Right Now"
+            text="Call, message or email us any hour of the day to get expert plumbing service from our family-owned team."
           />
           <div className="mt-8">
             <CTAButtons label="Call Now" />

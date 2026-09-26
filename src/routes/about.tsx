@@ -6,9 +6,9 @@ import { Reveal } from "@/components/Reveal";
 import { CTABand, CTAButtons, SectionHeading } from "@/components/ui-kit";
 import { meta, breadcrumbSchema, webPageSchema, abs } from "@/lib/seo";
 
-const title = "About Prestige Plumbing Company | Connections in Mesa, AZ";
+const title = "About Prestige Plumbing Company | Family-Owned Contractor in Mesa, AZ";
 const description =
-  "Prestige Plumbing Company is a free service to assist homeowners in connecting with local service contractors in Mesa, AZ and the East Valley. Call (480) 681-3808.";
+  "Prestige Plumbing Company is a family-owned plumbing contractor dedicated to serving homeowners in Mesa, AZ and the East Valley. Call (480) 681-3808.";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
@@ -38,11 +38,11 @@ function AboutPage() {
           <SectionHeading
             eyebrow="About Us"
             center={false}
-            title="A Trusted Connection Service in Mesa"
-            text={`${business.name} is a free service assisting homeowners in connecting with independent local plumbing professionals across Mesa and the Phoenix metro.`}
+            title="A Trusted Family-Owned Plumbing Contractor"
+            text={`${business.name} is a licensed, bonded, and insured plumbing contractor delivering expert service across Mesa and the Phoenix metro.`}
           />
           <div className="mt-8">
-            <CTAButtons label="Find A Professional" />
+            <CTAButtons label="Schedule Service" />
           </div>
         </div>
       </section>
@@ -60,24 +60,22 @@ function AboutPage() {
             />
           </Reveal>
           <Reveal delay={0.1}>
-            <h2 className="font-display text-3xl font-bold">Our Network</h2>
+            <h2 className="font-display text-3xl font-bold">Our Story</h2>
             <div className="mt-4 space-y-4 leading-relaxed text-muted-foreground">
               <p>
-                We started with a simple promise: help homeowners find reliable professionals who quote
-                the price before the work, do the work right, and stand behind it. Today
-                that promise still drives our service — we have just grown our network to connect you with more local experts who carry
+                We started with a simple promise: quote the price before the work, do the work right, and stand behind it. Today
+                that promise still drives our business — we have just grown our team to include more local experts equipped with
                 sewer cameras, acoustic leak detection gear and hydro jetting trailers.
               </p>
               <p>
                 Arizona plumbing is its own discipline. Hard water shortens water heater life,
                 caliche soil shifts and stresses buried lines, and post-tension slabs make a hidden
-                leak an expensive guessing game for anyone without the right equipment. The independent
-                technicians we connect you with train specifically for East Valley housing stock.
+                leak an expensive guessing game for anyone without the right equipment. Our licensed
+                technicians train specifically to handle the unique challenges of East Valley housing stock.
               </p>
               <p>
-                Our goal is to connect you with professionals who are accountable. We partner with contractors
-                who provide flat-rate pricing in writing and honest guidance about which repairs matter now. That is why
-                most of our homeowners return to our service across Mesa, Gilbert, Chandler, Tempe, Scottsdale and Phoenix.
+                Our goal is total accountability. We provide flat-rate pricing in writing and honest guidance about which repairs matter now. That is why
+                most of our homeowners return to us for all their plumbing needs across Mesa, Gilbert, Chandler, Tempe, Scottsdale and Phoenix.
               </p>
             </div>
           </Reveal>
@@ -135,7 +133,7 @@ function AboutPage() {
         </div>
       </section>
 
-      <CTABand title="Connect With A Plumbing Professional That Answers" />
+      <CTABand title="Call The Family-Owned Plumber That Answers" />
     </>
   );
 }
