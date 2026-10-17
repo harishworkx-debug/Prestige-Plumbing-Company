@@ -21,7 +21,7 @@ export const areas: Area[] = [
     zips: "85201, 85202, 85203, 85204, 85205, 85206, 85207, 85208, 85209, 85210, 85212, 85213, 85215",
     metaTitle: "Plumber Mesa AZ | Top Local Mesa Plumbing Company",
     metaDescription:
-      "Looking for a reliable plumber in Mesa AZ? Prestige Plumbing Company provides 24 hour emergency plumbing services Mesa AZ homeowners trust. Call (480) 681-3808.",
+      "Looking for a reliable plumber in Mesa AZ? Our plumbing company provides 24 hour emergency plumbing services Mesa AZ homeowners trust. Call (480) 681-3808.",
     headline: "Your Trusted Plumber In Mesa AZ",
     intro: [
       "Mesa is home to a wide variety of neighborhoods. When you need a residential plumber Mesa AZ homeowners trust, our licensed team is ready to repair, repipe, and rescue your plumbing system. From the mid-century ranch homes near Main Street to the newer subdivisions stretching toward Signal Butte, we provide the plumbing services Mesa AZ residents rely on.",
@@ -82,13 +82,13 @@ export const areas: Area[] = [
     slug: "plumber-phoenix-az",
     city: "Phoenix",
     zips: "85008, 85016, 85018, 85028, 85032, 85044, 85048, 85050, 85054",
-    metaTitle: "Plumber Phoenix AZ | Residential Plumbing Services 24/7 | Prestige Plumbing Company",
+    metaTitle: "Plumber Phoenix AZ | Residential Plumbing Services 24/7 | Plumbing Company",
     metaDescription:
       "Find residential Phoenix plumbers for emergency repairs, water heaters, drains, leaks and repiping. Free plumbing service. Call (480) 681-3808.",
     headline: "Local Phoenix Plumbers For Homeowners",
     intro: [
       "Phoenix is the largest and most architecturally varied city we serve, and residential plumbing here means adapting to whatever the neighborhood was built with. A 1940s bungalow in the Coronado Historic District, a 1960s block home in Arcadia, and a 1990s Ahwatukee two-story home share almost nothing except the water utility.",
-      "Prestige Plumbing Company connects Phoenix homeowners with local service providers. Our customers include homeowners who need help finding a provider for a water heater replacement, drain issue, or leak.",
+      "Our plumbing company connects Phoenix homeowners with local service providers. Our customers include homeowners who need help finding a provider for a water heater replacement, drain issue, or leak.",
       "The residential Phoenix challenges homeowners see most are age-related. Central-corridor homes retain galvanized supply lines well past their service lives. North Phoenix and Desert Ridge properties sit on soils that shift enough to stress under-slab piping. We help dispatch professionals who understand these localized issues.",
     ],
     landmarks: [
@@ -145,7 +145,7 @@ export const areas: Area[] = [
     slug: "plumber-chandler-az",
     city: "Chandler",
     zips: "85224, 85225, 85226, 85248, 85249, 85286",
-    metaTitle: "Plumber Chandler AZ | Homeowner Services | Prestige Plumbing",
+    metaTitle: "Plumber Chandler AZ | Homeowner Services | Plumbing Company",
     metaDescription:
       "Chandler AZ plumbing service for residential emergency repairs, water heater install, drain cleaning and leak detection. Call (480) 681-3808.",
     headline: "Connecting Chandler Homeowners With Trusted Plumbers",
@@ -206,7 +206,7 @@ export const areas: Area[] = [
     slug: "plumber-gilbert-az",
     city: "Gilbert",
     zips: "85233, 85234, 85295, 85296, 85297, 85298",
-    metaTitle: "Plumber Gilbert AZ | Residential Plumber Services | Prestige Plumbing",
+    metaTitle: "Plumber Gilbert AZ | Residential Plumber Services | Plumbing Company",
     metaDescription:
       "Gilbert AZ plumbing service for residential water heaters, slab leaks, drain cleaning and repipes. call our local pros. Call (480) 681-3808.",
     headline: "Gilbert Residential Plumbing Services",
@@ -269,7 +269,7 @@ export const areas: Area[] = [
     slug: "plumber-tempe-az",
     city: "Tempe",
     zips: "85281, 85282, 85283, 85284",
-    metaTitle: "Plumber Tempe AZ | Residential & Homeowner Services | Prestige Plumbing",
+    metaTitle: "Plumber Tempe AZ | Residential & Homeowner Services | Plumbing Company",
     metaDescription:
       "Tempe AZ residential plumbing service for homeowners. Drain cleaning, water heaters, leak repair and emergencies. Call (480) 681-3808.",
     headline: "Tempe Plumbing Services For Homeowners",
@@ -330,7 +330,7 @@ export const areas: Area[] = [
     slug: "plumber-scottsdale-az",
     city: "Scottsdale",
     zips: "85250, 85251, 85254, 85255, 85257, 85258, 85259, 85260, 85262",
-    metaTitle: "Plumber Scottsdale AZ | Residential Plumbing Services | Prestige Plumbing",
+    metaTitle: "Plumber Scottsdale AZ | Residential Plumbing Services | Plumbing Company",
     metaDescription:
       "Scottsdale plumbing service for residential homes: leak detection, tankless water heaters, remodel plumbing and gas lines. Call (480) 681-3808.",
     headline: "Connecting Scottsdale Homeowners With Local Experts",
@@ -393,7 +393,7 @@ export const areas: Area[] = [
     slug: "plumber-glendale-az",
     city: "Glendale",
     zips: "85301, 85302, 85303, 85304, 85305, 85306, 85307, 85308, 85310",
-    metaTitle: "Plumber Glendale AZ | Homeowner Services | Prestige Plumbing",
+    metaTitle: "Plumber Glendale AZ | Homeowner Services | Plumbing Company",
     metaDescription:
       "Glendale AZ residential services for plumbing repairs, water heater installation, and drain cleaning. Call (480) 681-3808.",
     headline: "Dependable Residential Services In Glendale",
@@ -454,7 +454,7 @@ export const areas: Area[] = [
     slug: "plumber-queen-creek-az",
     city: "Queen Creek",
     zips: "85142, 85140, 85143",
-    metaTitle: "Plumber Queen Creek AZ | Residential Services | Prestige Plumbing",
+    metaTitle: "Plumber Queen Creek AZ | Residential Services | Plumbing Company",
     metaDescription:
       "Queen Creek AZ residential plumbing service for water heaters, drain cleaning, and leaks. call our local pros. Call (480) 681-3808.",
     headline: "Queen Creek Homeowner Plumbing Services",
@@ -516,7 +516,7 @@ export const areas: Area[] = [
     slug: "plumber-san-tan-valley-az",
     city: "San Tan Valley",
     zips: "85140, 85142, 85143",
-    metaTitle: "Plumber San Tan Valley AZ | Homeowner Services | Prestige Plumbing",
+    metaTitle: "Plumber San Tan Valley AZ | Homeowner Services | Plumbing Company",
     metaDescription:
       "San Tan Valley residential plumbing service for emergency repairs, water heaters, and drain cleaning. Call (480) 681-3808.",
     headline: "Connecting San Tan Valley Homeowners",
@@ -578,7 +578,7 @@ export const areas: Area[] = [
     slug: "plumber-ahwatukee-az",
     city: "Ahwatukee",
     zips: "85044, 85045, 85048",
-    metaTitle: "Plumber Ahwatukee AZ | Residential Services | Prestige Plumbing",
+    metaTitle: "Plumber Ahwatukee AZ | Residential Services | Plumbing Company",
     metaDescription:
       "Ahwatukee plumbing service for residential water heaters, slab leaks, and drains. call our local pros. Call (480) 681-3808.",
     headline: "Ahwatukee Homeowner Plumbing Services",

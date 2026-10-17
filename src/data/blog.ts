@@ -18,7 +18,7 @@ export const posts: Post[] = [
   {
     slug: "signs-you-need-drain-cleaning",
     title: "7 Signs You Need Professional Drain Cleaning",
-    metaTitle: "7 Signs You Need Drain Cleaning | Prestige Plumbing Mesa AZ",
+    metaTitle: "7 Signs You Need Drain Cleaning | Plumbing Company Mesa AZ",
     metaDescription:
       "Slow drains, gurgling, odors and repeat clogs are warnings. Learn the 7 signs your Mesa AZ home needs professional drain cleaning before a backup.",
     excerpt:
@@ -97,7 +97,7 @@ export const posts: Post[] = [
   {
     slug: "why-water-heaters-fail",
     title: "Why Water Heaters Fail (And How To Get More Years From Yours)",
-    metaTitle: "Why Water Heaters Fail | Arizona Hard Water Guide | Prestige Plumbing",
+    metaTitle: "Why Water Heaters Fail | Arizona Hard Water Guide | Plumbing Company",
     metaDescription:
       "Sediment, anode rod depletion and high pressure kill Arizona water heaters early. Learn why yours failed and how to extend the next one's life.",
     excerpt:
@@ -166,7 +166,7 @@ export const posts: Post[] = [
   {
     slug: "how-to-prevent-plumbing-emergencies",
     title: "How To Prevent Plumbing Emergencies Before They Happen",
-    metaTitle: "How To Prevent Plumbing Emergencies | Mesa AZ | Prestige Plumbing",
+    metaTitle: "How To Prevent Plumbing Emergencies | Mesa AZ | Plumbing Company",
     metaDescription:
       "Most plumbing emergencies give warning signs first. Learn the preventative steps every Arizona homeowner should take to avoid a 2am flood.",
     excerpt:
@@ -232,7 +232,7 @@ export const posts: Post[] = [
   {
     slug: "benefits-of-hydro-jetting",
     title: "The Real Benefits Of Hydro Jetting Your Drain Lines",
-    metaTitle: "Benefits Of Hydro Jetting | Drain & Sewer Cleaning | Prestige Plumbing",
+    metaTitle: "Benefits Of Hydro Jetting | Drain & Sewer Cleaning | Plumbing Company",
     metaDescription:
       "Hydro jetting restores pipes to full diameter instead of punching a hole through a clog. Learn how it works and when it beats snaking.",
     excerpt:
@@ -291,7 +291,7 @@ export const posts: Post[] = [
   {
     slug: "common-plumbing-problems-in-mesa",
     title: "The Most Common Plumbing Problems In Mesa Homes",
-    metaTitle: "Common Plumbing Problems In Mesa AZ Homes | Prestige Plumbing",
+    metaTitle: "Common Plumbing Problems In Mesa AZ Homes | Plumbing Company",
     metaDescription:
       "Hard water, slab leaks, root intrusion and galvanized pipe — the plumbing issues Mesa homeowners face most, explained by local plumbers.",
     excerpt:
@@ -358,7 +358,7 @@ export const posts: Post[] = [
   {
     slug: "residential-plumbing-maintenance-tips",
     title: "Residential Plumbing Maintenance: A Homeowner's Annual Checklist",
-    metaTitle: "Home Plumbing Maintenance Checklist | Prestige Plumbing Mesa AZ",
+    metaTitle: "Home Plumbing Maintenance Checklist | Plumbing Company Mesa AZ",
     metaDescription:
       "A practical month-by-month plumbing maintenance checklist for Arizona homeowners. Protect your pipes, water heater and drains all year.",
     excerpt:
@@ -434,7 +434,7 @@ export const posts: Post[] = [
   {
     slug: "gas-line-safety-guide",
     title: "Gas Line Safety: What Every Arizona Homeowner Should Know",
-    metaTitle: "Gas Line Safety Guide Arizona | Prestige Plumbing Company",
+    metaTitle: "Gas Line Safety Guide Arizona | Plumbing Company",
     metaDescription:
       "Gas leak warning signs, what to do immediately, and how proper gas line installation protects your family. Licensed gas plumbers in Mesa AZ.",
     excerpt:
@@ -495,7 +495,7 @@ export const posts: Post[] = [
   {
     slug: "toilet-repair-guide",
     title: "Toilet Repair Guide: Fix The Common Problems Yourself",
-    metaTitle: "Toilet Repair Guide | Running, Clogged & Leaking | Prestige Plumbing",
+    metaTitle: "Toilet Repair Guide | Running, Clogged & Leaking | Plumbing Company",
     metaDescription:
       "How to diagnose and fix a running toilet, weak flush, leaking base or phantom refill — and when to call a plumber in Mesa AZ.",
     excerpt:
@@ -557,7 +557,7 @@ export const posts: Post[] = [
   {
     slug: "water-heater-maintenance-checklist",
     title: "Water Heater Maintenance Checklist For Arizona Homes",
-    metaTitle: "Water Heater Maintenance Checklist AZ | Prestige Plumbing Mesa",
+    metaTitle: "Water Heater Maintenance Checklist AZ | Plumbing Company Mesa",
     metaDescription:
       "Step-by-step water heater maintenance for hard-water Arizona homes: flushing, anode inspection, relief valve testing and tankless descaling.",
     excerpt:
@@ -617,7 +617,7 @@ export const posts: Post[] = [
   {
     slug: "how-to-detect-hidden-leaks",
     title: "How To Detect Hidden Water Leaks In Your Home",
-    metaTitle: "How To Detect Hidden Water Leaks | Slab Leak Signs | Prestige Plumbing",
+    metaTitle: "How To Detect Hidden Water Leaks | Slab Leak Signs | Plumbing Company",
     metaDescription:
       "Find hidden leaks before they cause damage. Meter tests, slab leak symptoms and the detection methods professionals use in Mesa AZ homes.",
     excerpt:

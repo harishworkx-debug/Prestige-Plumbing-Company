@@ -76,14 +76,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Prestige Plumbing Company | Licensed Plumbers in Mesa, AZ" },
+      { title: "Plumbing Company | Licensed Plumbers in Mesa, AZ" },
       {
         name: "description",
         content:
           "Licensed, bonded and insured plumbing contractor serving Mesa & the Phoenix metro. 24/7 emergency plumbing. Call (480) 681-3808.",
       },
-      { name: "author", content: "Prestige Plumbing Company" },
-      { property: "og:site_name", content: "Prestige Plumbing Company" },
+      { name: "author", content: "Plumbing Company" },
+      { property: "og:site_name", content: "Plumbing Company" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [

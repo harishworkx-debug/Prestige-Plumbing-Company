@@ -9,7 +9,7 @@ import { meta, breadcrumbSchema } from "@/lib/seo";
 export const Route = createFileRoute("/services/")({
   head: () => ({
     meta: meta(
-      "Plumbing Services Mesa AZ | Licensed Contractor | Prestige Plumbing",
+      "Plumbing Services Mesa AZ | Licensed Contractor | Plumbing Company",
       "Full-service plumbing in Mesa & Phoenix: emergency plumbing, water heaters, drain cleaning, hydro jetting, leak detection, gas lines & repiping. Call (480) 681-3808.",
       "/services",
     ),
@@ -38,7 +38,7 @@ function ServicesIndex() {
             eyebrow="Our Plumbing Services"
             center={false}
             title="Every Plumbing Service Your Home Or Business Needs"
-            text="Prestige Plumbing Company has served Mesa and the Phoenix metro as a licensed, bonded and insured contractor. Whatever the fixture, pipe, drain or appliance, one company handles it — with flat-rate pricing quoted before work begins and a documented workmanship warranty afterward."
+            text="Plumbing Company has served Mesa and the Phoenix metro as a licensed, bonded and insured contractor. Whatever the fixture, pipe, drain or appliance, one company handles it — with flat-rate pricing quoted before work begins and a documented workmanship warranty afterward."
           />
         </div>
       </section>

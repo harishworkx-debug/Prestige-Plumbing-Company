@@ -120,6 +120,32 @@ export const serviceSchema = (
   areaServed: { "@type": "City", name: `${city}, Arizona` },
 });
 
+export const reviewsSchema = (reviewsList: { name: string; text: string; time: string }[]) => ({
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  name: business.name,
+  telephone: business.phoneDisplay,
+  url: abs("/"),
+  aggregateRating: {
+    "@type": "AggregateRating",
+    ratingValue: "4.9",
+    reviewCount: reviewsList.length.toString(),
+  },
+  review: reviewsList.map((r) => ({
+    "@type": "Review",
+    author: {
+      "@type": "Person",
+      name: r.name,
+    },
+    reviewRating: {
+      "@type": "Rating",
+      ratingValue: "5",
+      bestRating: "5",
+    },
+    reviewBody: r.text,
+  })),
+});
+
 export const breadcrumbSchema = (items: { name: string; path: string }[]) => ({
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",

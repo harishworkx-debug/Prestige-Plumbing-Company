@@ -6,9 +6,9 @@ import { Reveal } from "@/components/Reveal";
 import { CTABand, CTAButtons, SectionHeading } from "@/components/ui-kit";
 import { meta, breadcrumbSchema, webPageSchema, abs } from "@/lib/seo";
 
-const title = "About Prestige Plumbing Company | Family-Owned Contractor in Mesa, AZ";
+const title = "About Plumbing Company | Family-Owned Contractor in Mesa, AZ";
 const description =
-  "Prestige Plumbing Company is a family-owned plumbing contractor dedicated to serving homeowners in Mesa, AZ and the East Valley. Call (480) 681-3808.";
+  "Plumbing Company is a family-owned plumbing contractor dedicated to serving homeowners in Mesa, AZ and the East Valley. Call (480) 681-3808.";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
@@ -52,7 +52,7 @@ function AboutPage() {
           <Reveal>
             <img
               src={images.aboutTeam}
-              alt="Prestige Plumbing Company team in Mesa, Arizona"
+              alt="Plumbing Company team in Mesa, Arizona"
               width={1280}
               height={853}
               loading="lazy"
@@ -100,7 +100,7 @@ function AboutPage() {
 
       <section className="surface-panel py-16">
         <div className="mx-auto max-w-7xl px-4 lg:px-8">
-          <SectionHeading eyebrow="Our Process" title="How Every Prestige Plumbing Job Runs" />
+          <SectionHeading eyebrow="Our Process" title="How Every Plumbing Job Runs" />
           <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {process.map((p, i) => (
               <Reveal key={p.step} delay={(i % 3) * 0.06}>

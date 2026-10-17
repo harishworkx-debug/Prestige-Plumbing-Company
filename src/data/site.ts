@@ -1,13 +1,13 @@
-export const SITE_URL = "https://prestigeplumbingcompany.com";
+export const SITE_URL = "https://plumbingcompany.com";
 
 export const business = {
-  name: "Prestige Plumbing Company",
+  name: "Plumbing Company",
   legalType: "Licensed Plumbing Contractor",
 
   url: SITE_URL,
   phoneDisplay: "(480) 681-3808",
   phoneHref: "tel:4806813808",
-  email: "info@prestigeplumbingcompany.com",
+  email: "info@plumbingcompany.com",
   street: "1120 E Jarvis Ave",
   city: "Mesa",
   state: "AZ",
@@ -18,14 +18,14 @@ export const business = {
   lng: -111.8093683,
   mapLink: "https://maps.google.com/?q=1120+E+Jarvis+Ave,+Mesa,+AZ+85204",
   mapEmbed:
-    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3330.5100902307227!2d-111.80936828869199!3d33.40994337329464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872ba70be73a5803%3A0x56e9aa95dc356cab!2sPrestige%20Plumbing%20Company!5e0!3m2!1sen!2sin!4v1784982688252!5m2!1sen!2sin",
+    "https://maps.google.com/maps?q=1120+E+Jarvis+Ave,+Mesa,+AZ+85204&t=&z=14&ie=UTF8&iwloc=&output=embed",
 };
 
 export const socials = [
-  { label: "Facebook", href: "https://facebook.com/prestigeplumbingcompany" },
-  { label: "Instagram", href: "https://instagram.com/prestigeplumbingcompany" },
-  { label: "LinkedIn", href: "https://linkedin.com/company/prestigeplumbingcompany" },
-  { label: "YouTube", href: "https://youtube.com/@prestigeplumbingcompany" },
+  { label: "Facebook", href: "https://facebook.com" },
+  { label: "Instagram", href: "https://instagram.com" },
+  { label: "LinkedIn", href: "https://linkedin.com" },
+  { label: "YouTube", href: "https://youtube.com" },
 ];
 
 export const stats = [
@@ -117,22 +117,22 @@ export const testimonials = [
   {
     name: "Chad Barth",
     time: "5 years ago",
-    text: "Jessie and Raul were great to work with as they had to replace the majority of our gas lines in the entire home. They were professional, honest, trustworthy and great to work with. They were always on time and great communicators and all around, just great guys. They did an awesome job of cleaning up my landscaping after having to dig trenches all over which I was very happy with. I would highly recommend Prestige Plumbing, don’t go anywhere else!",
+    text: "Jessie and Raul were great to work with as they had to replace the majority of our gas lines in the entire home. They were professional, honest, trustworthy and great to work with. They were always on time and great communicators and all around, just great guys. They did an awesome job of cleaning up my landscaping after having to dig trenches all over which I was very happy with. I would highly recommend this plumbing company, don’t go anywhere else!",
   },
   {
     name: "Christine Aguilar-Barth",
     time: "5 years ago",
-    text: "Prestige Plumbing just completed a big job for us and we’re extremely satisfied! They gave us a professional opinion and details on what it took to eradicate our gas leak problems. They were extremely knowledgeable, professional, and fair in price. Never did I doubt they weren’t up for the job! If your looking for a small or large job please consider this crew, you won’t be disappointed…AND they do it right! Thanks Jess3 and Raul!!!",
+    text: "Plumbing Company just completed a big job for us and we’re extremely satisfied! They gave us a professional opinion and details on what it took to eradicate our gas leak problems. They were extremely knowledgeable, professional, and fair in price. Never did I doubt they weren’t up for the job! If your looking for a small or large job please consider this crew, you won’t be disappointed…AND they do it right! Thanks Jess3 and Raul!!!",
   },
   {
     name: "D Chavez",
     time: "5 years ago",
-    text: "Old sewer pipes collapsed and left me with an emergency situation. Two other companies did some demo work, and I was left with a disaster and an estimate I could not afford. Prestige Plumbing came in with an estimate that was fair and thorough (unlike the other company that wanted to charge more for less work). Their schedule was full, but they fit me in and even worked to accommodate some scheduling issues I had. I observed them working and asked a million questions, but they took the time to explain what they were doing and answered every question I had. When I ran into some issues that went beyond their portion of the job, they offered opinions and pointed me in the right direction.\n\nThis was an extensive job (they cut concrete and dug trenches in my house), and I have never seen more hardworking and respectful employees. They were honest, patient, and helpful, and they did not try to talk me into anything that was not necessary.\n\nI won’t have to worry about plumbing for a very long time, but if I did I would call Prestige Plumbing. I am incredibly happy with the work they did, and I will refer everyone I know whether it is a leaky faucet or pipes that need to be replaced. Thanks Raul!",
+    text: "Old sewer pipes collapsed and left me with an emergency situation. Two other companies did some demo work, and I was left with a disaster and an estimate I could not afford. Plumbing Company came in with an estimate that was fair and thorough (unlike the other company that wanted to charge more for less work). Their schedule was full, but they fit me in and even worked to accommodate some scheduling issues I had. I observed them working and asked a million questions, but they took the time to explain what they were doing and answered every question I had. When I ran into some issues that went beyond their portion of the job, they offered opinions and pointed me in the right direction.\n\nThis was an extensive job (they cut concrete and dug trenches in my house), and I have never seen more hardworking and respectful employees. They were honest, patient, and helpful, and they did not try to talk me into anything that was not necessary.\n\nI won’t have to worry about plumbing for a very long time, but if I did I would call them again. I am incredibly happy with the work they did, and I will refer everyone I know whether it is a leaky faucet or pipes that need to be replaced. Thanks Raul!",
   },
   {
     name: "Laurie Suprock",
     time: "5 years ago",
-    text: "Prestige Plumbing is Number 1 in my book 😊\n\nOn Monday I called about 6 plumbers, several did not answer their phones or if I left a message, they did not call me back. Two said they could come and look for an estimate by Friday or Saturday. Raul said he would be at my home in a few hours and he was. He took a look at my job, an additional gas line for a new dryer and gave options on how to complete the work and then gave me a quote that seemed very reasonable. I also asked him to add in a whole house water filter system. Again, the price was fair and reasonable. I agreed to have him do the work and let me know that he could get his crew to start in two days. Two days later he called before he came but arrived around 9:00 after picking up parts and started the work (3 men). They worked in that hot attic and did not complain and did additional work not put into the estimate to make the job more efficient and safe. They were about doing a first-class job on time and on budget. Because of a few fitting issues the work was not complete in a day but they were back at it the next morning and finished in a good timeframe. The work looked excellent!!! They cleaned up after themselves and made everything perfect along with strong workmanship warranty.\n\nMy bottom line is Friendly, Fast, Affordable.\n\nI own 15 rental homes, and have built and remodeled several other homes. I know a little bit about the work they did and the costs involved. Prestige will be my first call for any plumbing job from now on.\n\nJohn S",
+    text: "Plumbing Company is Number 1 in my book 😊\n\nOn Monday I called about 6 plumbers, several did not answer their phones or if I left a message, they did not call me back. Two said they could come and look for an estimate by Friday or Saturday. Raul said he would be at my home in a few hours and he was. He took a look at my job, an additional gas line for a new dryer and gave options on how to complete the work and then gave me a quote that seemed very reasonable. I also asked him to add in a whole house water filter system. Again, the price was fair and reasonable. I agreed to have him do the work and let me know that he could get his crew to start in two days. Two days later he called before he came but arrived around 9:00 after picking up parts and started the work (3 men). They worked in that hot attic and did not complain and did additional work not put into the estimate to make the job more efficient and safe. They were about doing a first-class job on time and on budget. Because of a few fitting issues the work was not complete in a day but they were back at it the next morning and finished in a good timeframe. The work looked excellent!!! They cleaned up after themselves and made everything perfect along with strong workmanship warranty.\n\nMy bottom line is Friendly, Fast, Affordable.\n\nI own 15 rental homes, and have built and remodeled several other homes. I know a little bit about the work they did and the costs involved. They will be my first call for any plumbing job from now on.\n\nJohn S",
   },
   {
     name: "Harrison Stone",
@@ -142,23 +142,23 @@ export const testimonials = [
   {
     name: "Anthony Chabarria",
     time: "6 years ago",
-    text: "Hired Prestige Plumbing to install shampoo bowls and sinks in my salon. They did absolutely a Marvelous job. I Do recommend them. You will not be disappointed. I will be calling them for every service from now on.",
+    text: "Hired this plumbing company to install shampoo bowls and sinks in my salon. They did absolutely a Marvelous job. I Do recommend them. You will not be disappointed. I will be calling them for every service from now on.",
   },
   {
     name: "Lili Leyva",
     time: "6 years ago",
-    text: "I am very pleased with Prestige! Jesse and his team did the plumbing in my salon, they were very punctual and professional. Prestige is my go to, I only trust them! I highly recommend Prestige to everyone.",
+    text: "I am very pleased with this plumbing company! Jesse and his team did the plumbing in my salon, they were very punctual and professional. They are my go to, I only trust them! I highly recommend them to everyone.",
   },
   {
     name: "John Poirier",
     time: "6 years ago",
-    text: "Professional. Punctual. Positive. Prestige. Their name say it all. Raul helped us with a plumbing situation during a bath remodel when the original plumber said it was too complicated. Raul came right over, gave us the proper direction and set the plan in motion. He was available right up to the end of the project. Thanks Raul and thanks Prestige.",
+    text: "Professional. Punctual. Positive. Polite. Their service says it all. Raul helped us with a plumbing situation during a bath remodel when the original plumber said it was too complicated. Raul came right over, gave us the proper direction and set the plan in motion. He was available right up to the end of the project. Thanks Raul and thanks to the plumbing team.",
   }
 ];
 export const homeFaqs = [
   {
     q: "How do your plumbing services work?",
-    a: "When you call Prestige Plumbing Company, our dispatchers will gather your details and send one of our licensed, bonded, and insured plumbers directly to your home.",
+    a: "When you call our plumbing company, our dispatchers will gather your details and send one of our licensed, bonded, and insured plumbers directly to your home.",
   },
   {
     q: "Do you offer 24 hour emergency plumbing in Mesa and Phoenix?",
@@ -166,7 +166,7 @@ export const homeFaqs = [
   },
   {
     q: "Are your plumbers licensed, bonded and insured in Arizona?",
-    a: "Yes, Prestige Plumbing Company is a fully licensed, bonded, and insured plumbing contractor in the state of Arizona.",
+    a: "Yes, our plumbing company is a fully licensed, bonded, and insured plumbing contractor in the state of Arizona.",
   },
   {
     q: "How much does a plumbing repair cost?",

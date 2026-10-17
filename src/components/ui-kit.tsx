@@ -77,7 +77,7 @@ export function FAQList({ faqs }: { faqs: { q: string; a: string }[] }) {
 export function MapEmbed() {
   return (
     <iframe
-      title="Prestige Plumbing Company location in Mesa, Arizona"
+      title="Plumbing Company location in Mesa, Arizona"
       src={business.mapEmbed}
       width="100%"
       height={500}

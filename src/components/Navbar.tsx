@@ -37,7 +37,7 @@ export function Navbar() {
             </span>
             <span className="min-w-0">
               <span className="block truncate font-display text-lg leading-tight font-bold">
-                Prestige Plumbing
+                Plumbing Company
               </span>
               <span className="block text-[11px] tracking-[0.18em] text-muted-foreground uppercase">
                 Mesa

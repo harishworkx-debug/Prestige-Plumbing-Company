@@ -83,7 +83,7 @@ function ServicePage({ s }: { s: Service }) {
       <section className="relative isolate overflow-hidden">
         <img
           src={images[s.image]}
-          alt={`${s.name} services by Prestige Plumbing Company in Mesa, Arizona`}
+          alt={`${s.name} services by Plumbing Company in Mesa, Arizona`}
           width={1920}
           height={1280}
           className="absolute inset-0 h-full w-full object-cover"
@@ -193,7 +193,7 @@ function ServicePage({ s }: { s: Service }) {
 
             <Reveal>
               <h2 className="mt-14 font-display text-3xl font-bold">
-                Why Choose Prestige Plumbing Company
+                Why Choose Our Plumbing Company
               </h2>
               <p className="mt-5 leading-relaxed text-muted-foreground">
                 We have been a family owned, licensed, bonded and insured plumbing contractor in

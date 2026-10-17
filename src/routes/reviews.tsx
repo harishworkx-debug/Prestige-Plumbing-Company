@@ -5,7 +5,7 @@ import { testimonials } from "@/data/site";
 import { CTABand, SectionHeading } from "@/components/ui-kit";
 import { meta, breadcrumbSchema, webPageSchema, abs } from "@/lib/seo";
 
-const title = "Customer Reviews | Prestige Plumbing Company Mesa, AZ";
+const title = "Customer Reviews | Plumbing Company Mesa, AZ";
 const description =
   "Read real reviews from our satisfied customers across Mesa, Gilbert, Chandler and Tempe.";
 

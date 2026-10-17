@@ -5,7 +5,7 @@ import { Reveal } from "@/components/Reveal";
 import { CTABand, SectionHeading } from "@/components/ui-kit";
 import { meta, breadcrumbSchema, webPageSchema, abs } from "@/lib/seo";
 
-const title = "Plumbing Blog | Tips & Guides From Mesa AZ Plumbers | Prestige Plumbing";
+const title = "Plumbing Blog | Tips & Guides From Mesa AZ Plumbers | Plumbing Company";
 const description =
   "Expert plumbing advice from licensed Mesa, AZ plumbers: drain cleaning, water heaters, slab leaks, hard water and emergency prevention tips for Arizona homes.";
 
