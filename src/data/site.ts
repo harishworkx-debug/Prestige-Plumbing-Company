@@ -48,7 +48,6 @@ export const nav = [
   { label: "About", to: "/about" },
   { label: "Services", to: "/services" },
   { label: "Service Areas", to: "/service-areas" },
-  { label: "Reviews", to: "/reviews" },
   { label: "Blog", to: "/blog" },
   { label: "Contact", to: "/contact" },
 ] as const;
