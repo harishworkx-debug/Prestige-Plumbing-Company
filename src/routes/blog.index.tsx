@@ -8,7 +8,7 @@ import { CTABand, SectionHeading } from "@/components/ui-kit";
 import { meta, breadcrumbSchema, webPageSchema, abs } from "@/lib/seo";
 
 const title = `Plumbing Blog | Guides & Advice From Mesa AZ Plumbers | ${business.name}`;
-const description = `Expert plumbing guides written by licensed Mesa, AZ plumbers at ${business.name} (AZ ${business.rocLicense}): water heaters, drain cleaning, slab leaks, and gas line safety.`;
+const description = `Expert plumbing guides written by licensed Mesa, AZ plumbers at ${business.name}: water heaters, drain cleaning, slab leaks, and gas line safety.`;
 
 export const Route = createFileRoute("/blog/")({
   head: () => ({
@@ -39,7 +39,7 @@ function BlogIndex() {
             eyebrow="Plumbing Blog & Guides"
             center={false}
             title={`Field-Tested Arizona Plumbing Guides From Licensed Master Plumbers`}
-            text={`Practical, honest advice from Jesse Leyva and our licensed technicians at ${business.name} (AZ ${business.rocLicense}). Grounded in decades of East Valley residential service calls.`}
+            text={`Practical, honest advice from Jesse Leyva and our licensed technicians at ${business.name}. Grounded in decades of East Valley residential service calls.`}
           />
         </div>
       </section>

@@ -20,8 +20,8 @@ import { abs, faqSchema, meta, breadcrumbSchema, reviewsSchema } from "@/lib/seo
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: meta(
-      `Plumber in Mesa, AZ | 24/7 Emergency Plumbing | Prestige Plumbing`,
-      `Need a licensed plumber in Mesa, AZ? Prestige Plumbing Company (AZ ROC #347689) provides 24/7 emergency repairs, water heaters, drain cleaning & slab leaks. Call (480) 681-3808.`,
+      `Plumber in Mesa, AZ | 24/7 Emergency Plumbing | Plumbing Company Mesa`,
+      `Need a licensed plumber in Mesa, AZ? Plumbing Company Mesa provides 24/7 emergency repairs, water heaters, drain cleaning & slab leaks. Call (480) 681-3808.`,
       "/",
     ),
     links: [{ rel: "canonical", href: abs("/") }],
@@ -59,7 +59,7 @@ function Home() {
             className="max-w-3xl text-secondary-foreground"
           >
             <span className="inline-flex items-center gap-2 rounded-full border border-white/25 bg-white/10 px-4 py-2 text-xs font-bold tracking-[0.18em] uppercase backdrop-blur">
-              <ShieldCheck className="h-4 w-4 text-accent" /> AZ {business.rocLicense} · Licensed & Insured
+              <ShieldCheck className="h-4 w-4 text-accent" /> 24/7 Mesa Dispatch · Licensed & Insured
             </span>
             <h1 className="mt-6 font-display text-4xl leading-[1.05] font-bold sm:text-5xl lg:text-6xl">
               Mesa's Trusted Family-Owned Plumbing Contractor
@@ -134,7 +134,7 @@ function Home() {
       <section className="surface-panel py-20">
         <div className="mx-auto max-w-7xl px-4 lg:px-8">
           <SectionHeading
-            eyebrow="Why Choose Prestige Plumbing"
+            eyebrow="Why Choose Plumbing Company Mesa"
             title="The Difference Between A Corporate Chain And A Family-Owned Contractor"
             text="We provide expert plumbing solutions tailored to your home, backed by our commitment to excellent service."
           />

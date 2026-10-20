@@ -18,11 +18,11 @@ export function Footer() {
             </div>
             <p className="mt-4 text-sm leading-relaxed text-secondary-foreground/70">
               {business.name} is a family-owned, licensed, bonded, and insured plumbing contractor
-              (AZ {business.rocLicense}) based in Mesa, AZ. We deliver honest flat-rate pricing, master
+              based in Mesa, AZ. We deliver honest flat-rate pricing, master
               craftsmanship, and rapid 24/7 emergency dispatch across the East Valley.
             </p>
             <div className="mt-5 flex flex-wrap gap-2">
-              {[business.rocLicense, "24/7 Emergency", "Bonded & Insured", "Family-Owned"].map((b) => (
+              {["Licensed & Insured", "24/7 Emergency", "Bonded & Insured", "Family-Owned"].map((b) => (
                 <span
                   key={b}
                   className="rounded-full border border-white/15 px-3 py-1 text-[11px] font-semibold tracking-wide uppercase"

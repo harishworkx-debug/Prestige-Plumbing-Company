@@ -40,7 +40,7 @@ export function Navbar() {
                 {business.name}
               </span>
               <span className="block text-[11px] tracking-[0.18em] text-muted-foreground uppercase">
-                Mesa, AZ · {business.rocLicense}
+                Mesa, AZ · 24/7 Dispatch
               </span>
             </span>
           </Link>

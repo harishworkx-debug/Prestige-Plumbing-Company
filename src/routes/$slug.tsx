@@ -110,7 +110,7 @@ function ServicePage({ s }: { s: Service }) {
           </nav>
           <div className="mt-4 flex flex-wrap gap-2">
             <span className="rounded-full border border-white/20 bg-white/10 px-3 py-1 text-xs font-bold tracking-wide uppercase">
-              AZ ROC #{business.rocLicense}
+              Licensed & Insured
             </span>
             <span className="rounded-full border border-white/20 bg-white/10 px-3 py-1 text-xs font-bold tracking-wide uppercase">
               24/7 Mesa Dispatch
@@ -142,7 +142,7 @@ function ServicePage({ s }: { s: Service }) {
 
             <Reveal>
               <h2 className="mt-14 font-display text-3xl font-bold">
-                Why Mesa Homeowners Choose Prestige For {s.name}
+                Why Mesa Homeowners Choose Us For {s.name}
               </h2>
               <ul className="mt-6 grid gap-3 sm:grid-cols-2">
                 {s.benefits.map((b) => (
@@ -398,7 +398,7 @@ function ServicePage({ s }: { s: Service }) {
               </span>
               <h3 className="mt-3 font-display text-2xl font-bold">Book {s.name} Today</h3>
               <p className="mt-2 text-sm text-muted-foreground">
-                Licensed, bonded, and insured (AZ ROC #{business.rocLicense}). Flat-rate pricing in writing before work begins, 24/7 emergency dispatch across Mesa and the Valley.
+                Licensed, bonded, and insured plumbing contractors. Flat-rate pricing in writing before work begins, 24/7 emergency dispatch across Mesa and the Valley.
               </p>
               <div className="mt-6 flex flex-col gap-3">
                 <CTAButtons label="Call Now" />
@@ -459,7 +459,7 @@ function AreaPage({ a }: { a: Area }) {
           </nav>
           <div className="mt-4 flex flex-wrap gap-2">
             <span className="rounded-full border border-white/20 bg-white/10 px-3 py-1 text-xs font-bold tracking-wide uppercase">
-              AZ ROC #{business.rocLicense}
+              Licensed & Insured
             </span>
             <span className="rounded-full border border-white/20 bg-white/10 px-3 py-1 text-xs font-bold tracking-wide uppercase">
               Dispatched From Mesa Hub
@@ -648,7 +648,7 @@ function AreaPage({ a }: { a: Area }) {
 
             <Reveal>
               <h2 className="mt-14 font-display text-3xl font-bold">
-                Why Choose Prestige For {a.city} Plumbing
+                Why Choose Us For {a.city} Plumbing
               </h2>
               <ul className="mt-6 space-y-2">
                 {a.whyLocal.map((w) => (
@@ -701,7 +701,7 @@ function AreaPage({ a }: { a: Area }) {
                 Need A Plumber In {a.city}?
               </h3>
               <p className="mt-2 text-sm text-muted-foreground">
-                Licensed, bonded, and insured master plumbers (AZ ROC #{business.rocLicense}) dispatched across {a.city} and the East Valley, 24 hours a day.
+                Licensed, bonded, and insured master plumbers dispatched across {a.city} and the East Valley, 24 hours a day.
               </p>
               <div className="mt-6">
                 <CTAButtons label="Call Now" />

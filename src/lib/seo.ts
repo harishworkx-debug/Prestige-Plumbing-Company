@@ -42,15 +42,6 @@ export const localBusinessSchema = {
   priceRange: "$$",
   currenciesAccepted: "USD",
   paymentAccepted: "Cash, Credit Card, Check",
-  identifier: business.rocLicense,
-  hasCredential: {
-    "@type": "EducationalOccupationalCredential",
-    credentialCategory: "State Contractor License",
-    name: "Arizona Registrar of Contractors (ROC) License",
-    identifier: "347689",
-    url: business.rocLicenseUrl,
-  },
-
   sameAs: socials.map((s) => s.href),
   address: postalAddress,
   geo: { "@type": "GeoCoordinates", latitude: business.lat, longitude: business.lng },
@@ -185,7 +176,7 @@ export const articleSchema = (
   author: {
     "@type": "Person",
     name: author,
-    jobTitle: "Founder & Master Plumber (AZ ROC #347689)",
+    jobTitle: "Founder & Master Plumber",
     worksFor: { "@id": `${SITE_URL}/#organization` },
   },
   publisher: { "@id": `${SITE_URL}/#organization` },

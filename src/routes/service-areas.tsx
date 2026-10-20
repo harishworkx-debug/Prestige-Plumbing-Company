@@ -7,7 +7,7 @@ import { CTABand, SectionHeading } from "@/components/ui-kit";
 import { meta, breadcrumbSchema, webPageSchema, abs } from "@/lib/seo";
 
 const title = `Plumbing Service Areas | ${business.name} Mesa & East Valley`;
-const description = `${business.name} serves Mesa, Gilbert, Chandler, Tempe, Scottsdale, Phoenix, Queen Creek & the East Valley with 24/7 licensed plumbing (AZ ${business.rocLicense}). Call ${business.phoneDisplay}.`;
+const description = `${business.name} serves Mesa, Gilbert, Chandler, Tempe, Scottsdale, Phoenix, Queen Creek & the East Valley with 24/7 licensed plumbing. Call ${business.phoneDisplay}.`;
 
 export const Route = createFileRoute("/service-areas")({
   head: () => ({
@@ -38,7 +38,7 @@ function AreasIndex() {
             eyebrow="Service Coverage"
             center={false}
             title={`Licensed Plumbers Serving Mesa & The Phoenix East Valley`}
-            text={`Our central operations hub is located at 1120 E Jarvis Ave in Mesa, AZ. Our fully equipped mobile plumbing units provide direct residential and commercial service across the East Valley and metropolitan Phoenix under AZ ${business.rocLicense}.`}
+            text={`Our central operations hub is located at 1120 E Jarvis Ave in Mesa, AZ. Our fully equipped mobile plumbing units provide direct residential and commercial service across the East Valley and metropolitan Phoenix.`}
           />
 
           {/* COVERAGE EXPLANATION CARDS */}

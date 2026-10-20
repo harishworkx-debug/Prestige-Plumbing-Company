@@ -6,7 +6,7 @@ import { CTABand, SectionHeading } from "@/components/ui-kit";
 import { meta, breadcrumbSchema, webPageSchema, reviewsSchema, abs } from "@/lib/seo";
 
 const title = `Verified Customer Reviews | ${business.name} Mesa, AZ`;
-const description = `Read authentic customer reviews for ${business.name} in Mesa, AZ (AZ ${business.rocLicense}). 4.7★ Google rating for gas lines, water heaters, and 24/7 plumbing repairs.`;
+const description = `Read authentic customer reviews for ${business.name} in Mesa, AZ. 4.7★ Google rating for gas lines, water heaters, and 24/7 plumbing repairs.`;
 
 export const Route = createFileRoute("/reviews")({
   head: () => ({
@@ -66,7 +66,7 @@ function ReviewsPage() {
 
             <div className="flex items-center gap-2 text-xs font-semibold text-muted-foreground">
               <ShieldCheck className="h-4 w-4 text-primary" />
-              <span>Licensed AZ {business.rocLicense}</span>
+              <span>Licensed, Bonded & Insured</span>
             </div>
           </div>
         </div>

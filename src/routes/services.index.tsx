@@ -11,7 +11,7 @@ export const Route = createFileRoute("/services/")({
   head: () => ({
     meta: meta(
       `Plumbing Services Mesa AZ | Licensed Contractor | ${business.name}`,
-      `Full-service plumbing in Mesa & Phoenix: emergency plumbing, water heaters, drain cleaning, hydro jetting, leak detection, gas lines & repiping by ${business.name} (AZ ${business.rocLicense}). Call ${business.phoneDisplay}.`,
+      `Full-service plumbing in Mesa & Phoenix: emergency plumbing, water heaters, drain cleaning, hydro jetting, leak detection, gas lines & repiping by ${business.name}. Call ${business.phoneDisplay}.`,
       "/services",
     ),
     links: [{ rel: "canonical", href: abs("/services") }],
@@ -39,12 +39,12 @@ function ServicesIndex() {
             eyebrow="Our Plumbing Services"
             center={false}
             title="Complete Plumbing Solutions for Mesa & East Valley Homes"
-            text={`${business.name} delivers master plumbing craftsmanship under AZ ${business.rocLicense}. Whatever the fixture, pipe, drain, or gas line, our licensed technicians provide upfront flat-rate pricing in writing and documented workmanship warranties.`}
+            text={`${business.name} delivers master plumbing craftsmanship with full licensing, bonding, and insurance. Whatever the fixture, pipe, drain, or gas line, our licensed technicians provide upfront flat-rate pricing in writing and documented workmanship warranties.`}
           />
 
           <div className="mt-8 flex flex-wrap gap-4 text-xs font-semibold text-muted-foreground">
             <span className="inline-flex items-center gap-1.5 rounded-full border border-border bg-card px-4 py-2">
-              <ShieldCheck className="h-4 w-4 text-primary" /> Licensed AZ {business.rocLicense}
+              <ShieldCheck className="h-4 w-4 text-primary" /> Licensed, Bonded & Insured
             </span>
             <span className="inline-flex items-center gap-1.5 rounded-full border border-border bg-card px-4 py-2">
               <CheckCircle2 className="h-4 w-4 text-primary" /> Upfront Flat-Rate Written Pricing

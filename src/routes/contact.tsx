@@ -5,8 +5,8 @@ import { Reveal } from "@/components/Reveal";
 import { CTAButtons, FAQList, MapEmbed, SectionHeading } from "@/components/ui-kit";
 import { meta, breadcrumbSchema, webPageSchema, faqSchema, abs } from "@/lib/seo";
 
-const title = `Contact Prestige Plumbing Company | Mesa, AZ`;
-const description = `Need a plumber in Mesa, AZ? Contact Prestige Plumbing Company (AZ ROC #347689) at 1120 E Jarvis Ave for flat-rate estimates and 24/7 emergency service. Call (480) 681-3808.`;
+const title = `Contact Plumbing Company Mesa | Mesa, AZ`;
+const description = `Need a plumber in Mesa, AZ? Contact Plumbing Company Mesa at 1120 E Jarvis Ave for flat-rate estimates and 24/7 emergency service. Call (480) 681-3808.`;
 
 export const Route = createFileRoute("/contact")({
   head: () => ({
@@ -41,9 +41,8 @@ const details = [
   { icon: Clock, label: "Hours", value: business.hours },
   {
     icon: ShieldCheck,
-    label: "State Contractor License",
-    value: `${business.rocLicense} (Commercial & Residential)`,
-    href: business.rocLicenseUrl,
+    label: "Professional Status",
+    value: "Licensed, Bonded & Fully Insured",
   },
 ];
 

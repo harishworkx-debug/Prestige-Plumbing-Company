@@ -26,8 +26,8 @@ import { Reveal } from "@/components/Reveal";
 import { CTABand, CTAButtons, SectionHeading } from "@/components/ui-kit";
 import { meta, breadcrumbSchema, webPageSchema, abs } from "@/lib/seo";
 
-const title = `About ${business.name} | Licensed AZ ${business.rocLicense} Contractor`;
-const description = `${business.name} is a family-owned plumbing contractor in Mesa, AZ (AZ ${business.rocLicense}). Master plumbers, upfront flat-rate pricing, and 24/7 emergency service. Call ${business.phoneDisplay}.`;
+const title = `About ${business.name} | Licensed Plumbing Contractor in Mesa, AZ`;
+const description = `${business.name} is a family-owned plumbing contractor in Mesa, AZ. Master plumbers, upfront flat-rate pricing, and 24/7 emergency service. Call ${business.phoneDisplay}.`;
 
 export const Route = createFileRoute("/about")({
   head: () => ({
@@ -81,16 +81,10 @@ function AboutPage() {
 
           <div className="mt-8 flex flex-wrap items-center gap-4">
             <CTAButtons label="Schedule Service" />
-            <a
-              href={business.rocLicenseUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-5 py-3 text-sm font-semibold text-foreground transition-colors hover:bg-muted"
-            >
+            <div className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-5 py-3 text-sm font-semibold text-foreground">
               <ShieldCheck className="h-4 w-4 text-primary" />
-              <span>Verify License: {business.rocLicense}</span>
-              <ExternalLink className="h-3.5 w-3.5 text-muted-foreground" />
-            </a>
+              <span>Licensed, Bonded & Insured</span>
+            </div>
           </div>
         </div>
       </section>
@@ -110,10 +104,10 @@ function AboutPage() {
               />
               <div className="absolute -bottom-4 -right-4 hidden rounded-xl border border-border bg-card p-4 shadow-lg sm:block">
                 <div className="flex items-center gap-2 text-xs font-bold text-primary uppercase">
-                  <ShieldCheck className="h-4 w-4" /> Verified Contractor
+                  <ShieldCheck className="h-4 w-4" /> Professional Plumbers
                 </div>
-                <div className="mt-1 font-display text-sm font-bold">{business.rocLicense}</div>
-                <div className="text-[11px] text-muted-foreground">Bonded & Insured in AZ</div>
+                <div className="mt-1 font-display text-sm font-bold">Licensed & Insured</div>
+                <div className="text-[11px] text-muted-foreground">Serving Mesa & East Valley</div>
               </div>
             </div>
           </Reveal>
@@ -148,9 +142,9 @@ function AboutPage() {
       <section className="surface-panel py-16">
         <div className="mx-auto max-w-7xl px-4 lg:px-8">
           <SectionHeading
-            eyebrow="Verification & Compliance"
-            title="State Licensing & Verified Credentials"
-            text="We believe in total transparency. Every plumbing repair and gas line installation is completed under our official Arizona state contractor license."
+            eyebrow="Trust & Quality"
+            title="Licensed & Insured Master Plumbing"
+            text="We believe in total transparency. Every plumbing repair and gas line installation is completed with high standards of safety, quality, and craftsmanship."
           />
 
           <div className="mt-10 grid gap-6 md:grid-cols-3">
@@ -159,20 +153,12 @@ function AboutPage() {
                 <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-primary/10 text-primary">
                   <ShieldCheck className="h-5 w-5" />
                 </div>
-                <h3 className="mt-4 font-display text-lg font-bold">AZ State ROC License</h3>
-                <p className="mt-1 text-sm font-semibold text-primary">{business.rocLicense}</p>
+                <h3 className="mt-4 font-display text-lg font-bold">Licensed & Bonded</h3>
+                <p className="mt-1 text-sm font-semibold text-primary">Full Contractor Coverage</p>
                 <p className="mt-2 text-xs leading-relaxed text-muted-foreground">
-                  Active license with the Arizona Registrar of Contractors covering Commercial and
-                  Residential plumbing installations.
+                  Complete commercial and residential general liability insurance and surety bonding
+                  protecting your property on every service call.
                 </p>
-                <a
-                  href={business.rocLicenseUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="mt-4 inline-flex items-center gap-1.5 text-xs font-bold text-primary hover:underline"
-                >
-                  Verify on AZ ROC Portal <ExternalLink className="h-3 w-3" />
-                </a>
               </div>
             </Reveal>
 
