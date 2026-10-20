@@ -17,9 +17,11 @@ export function CTAButtons({ label = "Call Now", dark = false }: { label?: strin
 export function CTABand({
   title = "Need A Plumber Right Now?",
   text = "Licensed, bonded and insured plumbers answering 24 hours a day across Mesa and the Phoenix metro. Free estimates on replacement work.",
+  buttonLabel = "Talk To A Plumber",
 }: {
   title?: string;
   text?: string;
+  buttonLabel?: string;
 }) {
   return (
     <section className="bg-secondary py-16 text-secondary-foreground">
@@ -27,7 +29,7 @@ export function CTABand({
         <h2 className="font-display text-3xl font-bold sm:text-4xl">{title}</h2>
         <p className="mx-auto mt-4 max-w-2xl text-secondary-foreground/70">{text}</p>
         <div className="mt-8 flex justify-center">
-          <CTAButtons dark label="Talk To A Plumber" />
+          <CTAButtons dark label={buttonLabel} />
         </div>
       </div>
     </section>
@@ -77,7 +79,7 @@ export function FAQList({ faqs }: { faqs: { q: string; a: string }[] }) {
 export function MapEmbed() {
   return (
     <iframe
-      title="Plumbing Company location in Mesa, Arizona"
+      title={`${business.name} location in Mesa, Arizona`}
       src={business.mapEmbed}
       width="100%"
       height={500}

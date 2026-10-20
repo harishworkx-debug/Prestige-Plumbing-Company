@@ -1,13 +1,14 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
+import { ShieldCheck, CheckCircle2 } from "lucide-react";
 import { images } from "@/data/images";
 import { posts } from "@/data/blog";
+import { business } from "@/data/site";
 import { Reveal } from "@/components/Reveal";
 import { CTABand, SectionHeading } from "@/components/ui-kit";
 import { meta, breadcrumbSchema, webPageSchema, abs } from "@/lib/seo";
 
-const title = "Plumbing Blog | Tips & Guides From Mesa AZ Plumbers | Plumbing Company";
-const description =
-  "Expert plumbing advice from licensed Mesa, AZ plumbers: drain cleaning, water heaters, slab leaks, hard water and emergency prevention tips for Arizona homes.";
+const title = `Plumbing Blog | Guides & Advice From Mesa AZ Plumbers | ${business.name}`;
+const description = `Expert plumbing guides written by licensed Mesa, AZ plumbers at ${business.name} (AZ ${business.rocLicense}): water heaters, drain cleaning, slab leaks, and gas line safety.`;
 
 export const Route = createFileRoute("/blog/")({
   head: () => ({
@@ -35,10 +36,10 @@ function BlogIndex() {
       <section className="surface-panel py-16 lg:py-24">
         <div className="mx-auto max-w-7xl px-4 lg:px-8">
           <SectionHeading
-            eyebrow="Plumbing Blog"
+            eyebrow="Plumbing Blog & Guides"
             center={false}
-            title="Arizona Plumbing Guides From Licensed Technicians"
-            text="Practical, field-tested advice written by the same plumbers who work Mesa and Phoenix metro homes every day — no filler, no scare tactics."
+            title={`Field-Tested Arizona Plumbing Guides From Licensed Master Plumbers`}
+            text={`Practical, honest advice from Jesse Leyva and our licensed technicians at ${business.name} (AZ ${business.rocLicense}). Grounded in decades of East Valley residential service calls.`}
           />
         </div>
       </section>

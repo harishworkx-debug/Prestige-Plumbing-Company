@@ -14,13 +14,15 @@ export function Footer() {
               <span className="grid h-11 w-11 shrink-0 place-items-center rounded-2xl gradient-brand text-primary-foreground">
                 <Droplets className="h-6 w-6" />
               </span>
-              <span className="font-display text-xl font-bold">Plumbing Company</span>
+              <span className="font-display text-xl font-bold">{business.name}</span>
             </div>
             <p className="mt-4 text-sm leading-relaxed text-secondary-foreground/70">
-              Plumbing Company is a family-owned, licensed, bonded, and insured plumbing contractor serving Mesa and the East Valley. We pride ourselves on honest pricing, expert repairs, and exceptional customer service.
+              {business.name} is a family-owned, licensed, bonded, and insured plumbing contractor
+              (AZ {business.rocLicense}) based in Mesa, AZ. We deliver honest flat-rate pricing, master
+              craftsmanship, and rapid 24/7 emergency dispatch across the East Valley.
             </p>
             <div className="mt-5 flex flex-wrap gap-2">
-              {["24/7 Service", "Residential", "Local Pros"].map((b) => (
+              {[business.rocLicense, "24/7 Emergency", "Bonded & Insured", "Family-Owned"].map((b) => (
                 <span
                   key={b}
                   className="rounded-full border border-white/15 px-3 py-1 text-[11px] font-semibold tracking-wide uppercase"
@@ -109,8 +111,8 @@ export function Footer() {
         </div>
 
         <div className="mt-12 flex flex-col gap-2 border-t border-white/10 pt-6 text-xs text-secondary-foreground/50 sm:flex-row sm:items-center sm:justify-between">
-          <p>© {new Date().getFullYear()} Plumbing Company. All rights reserved.</p>
-          <p>Serving Mesa, Phoenix, Chandler, Gilbert, Tempe, Scottsdale, Glendale & beyond.</p>
+          <p>© {new Date().getFullYear()} {business.name} (AZ {business.rocLicense}). All rights reserved.</p>
+          <p>Serving Mesa, Phoenix, Chandler, Gilbert, Tempe, Scottsdale, Glendale, Queen Creek & the East Valley.</p>
         </div>
       </div>
     </footer>

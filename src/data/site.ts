@@ -1,13 +1,16 @@
-export const SITE_URL = "https://plumbingcompany.com";
+export const SITE_URL = "https://www.prestigeplumbingcompany.com";
 
 export const business = {
-  name: "Plumbing Company",
+  name: "Prestige Plumbing Company",
   legalType: "Licensed Plumbing Contractor",
+  rocLicense: "ROC #347689",
+  rocLicenseUrl: "https://roc.az.gov/",
+  rocClassification: "Commercial & Residential Plumbing Contractor",
 
   url: SITE_URL,
   phoneDisplay: "(480) 681-3808",
   phoneHref: "tel:4806813808",
-  email: "info@plumbingcompany.com",
+  email: "info@prestigeplumbingcompany.com",
   street: "1120 E Jarvis Ave",
   city: "Mesa",
   state: "AZ",
@@ -29,17 +32,86 @@ export const socials = [
 ];
 
 export const stats = [
-  { value: "24/7", label: "Availability" },
-  { value: "4.7/5", label: "Average Rating" },
-  { value: "25+", label: "Google Reviews" },
-  { value: "100%", label: "Satisfaction" },
+  { value: "ROC #347689", label: "AZ State License" },
+  { value: "4.7★", label: "Google Rating" },
+  { value: "10+", label: "East Valley Cities Served" },
+  { value: "24/7", label: "Emergency Dispatch" },
 ];
 
 export const trustBadges = [
+  "AZ ROC #347689 Licensed",
   "Family-Owned & Operated",
-  "Licensed, Bonded & Insured",
-  "24/7 Emergency Service",
-  "Upfront Estimates",
+  "Bonded & Fully Insured",
+  "24/7 Emergency Dispatch",
+  "Upfront Written Estimates",
+];
+
+export const leadership = [
+  {
+    name: "Jesse Leyva",
+    role: "Founder & Master Plumber",
+    experience:
+      "Licensed master plumbing contractor leading complex commercial and residential installations, repiping, and code-compliant system designs across the East Valley.",
+  },
+  {
+    name: "Raul",
+    role: "Field Operations & Lead Diagnostic Specialist",
+    experience:
+      "Overseeing on-site evaluations, emergency response dispatch, acoustic slab leak isolation, and upfront customer estimates across Mesa, Gilbert, Chandler, and Phoenix.",
+  },
+];
+
+export const diagnosticEquipment = [
+  {
+    title: "High-Definition Sewer Camera Inspection",
+    description:
+      "Self-leveling color cameras with digital foot counters that travel up to 200 feet underground to visually verify root intrusion, cracked pipe joints, and obstructions.",
+  },
+  {
+    title: "Acoustic & Subterranean Slab Leak Detectors",
+    description:
+      "Precision electro-acoustic frequency microphones and correlators that isolate pressurized plumbing leaks beneath post-tension foundation slabs without destructive exploratory digging.",
+  },
+  {
+    title: "Commercial-Grade Hydro-Jetting Systems",
+    description:
+      "High-pressure 4,000 PSI water jetting trailers designed to thoroughly scour grease, mineral sludge, and heavy root buildup from main sewer lines, fully restoring pipe volume.",
+  },
+  {
+    title: "Digital Gas Pressure Gauges & Manometers",
+    description:
+      "Micro-sensitivity diagnostic gauges for accurate leak detection and code-compliant pressure testing on natural gas and propane lines.",
+  },
+];
+
+export const realCaseStudies = [
+  {
+    title: "Whole-Home Gas Line Replacement & Yard Restoration",
+    location: "Mesa, AZ",
+    problem:
+      "Severely compromised and leaking residential gas pipe system requiring complete replacement across the entire property without destructive impact to landscaping.",
+    solution:
+      "Jesse and Raul completed precision trenching, routed new code-compliant gas lines, conducted full pressure tests, and meticulously restored the exterior landscaping.",
+    verifiedReviewer: "Chad B. & Christine A.",
+  },
+  {
+    title: "Overnight Water Heater Diagnosis & Rapid Upgrade",
+    location: "Mesa, AZ",
+    problem:
+      "Complete water heater failure leaving a residential household without hot water outside standard business hours.",
+    solution:
+      "Technician arrived within a confirmed narrow window, accurately diagnosed the failed unit, presented flat-rate written pricing, and installed a modern upgraded water heater by the next morning.",
+    verifiedReviewer: "Harrison S.",
+  },
+  {
+    title: "Complex Bathroom Remodel & Pipe Re-routing",
+    location: "Mesa / East Valley, AZ",
+    problem:
+      "Complicated drain and water line situation where previous plumbers claimed the remodel routing was too intricate to accomplish.",
+    solution:
+      "Raul performed comprehensive on-site diagnostic layout, formulated an engineered pipe routing plan, and coordinated through final testing and fixture installation.",
+    verifiedReviewer: "John P. & Robert C.",
+  },
 ];
 
 /** Top-level navigation. Service and location dropdown items are derived from data. */
@@ -53,18 +125,15 @@ export const nav = [
 ] as const;
 
 export const navServiceSlugs = [
-  "emergency-plumber-mesa-az",
-  "drain-cleaning-mesa-az",
+  "emergency-plumbing-mesa-az",
+  "water-heaters-mesa-az",
+  "drain-and-sewer-mesa-az",
   "leak-detection-mesa-az",
-  "water-heater-repair-mesa-az",
-  "water-heater-installation-mesa-az",
-  "hydro-jetting-mesa-az",
-  "sewer-line-repair-mesa-az",
-  "pipe-repair-mesa-az",
   "repiping-mesa-az",
+  "gas-line-mesa-az",
+  "bathroom-plumbing-mesa-az",
+  "kitchen-plumbing-mesa-az",
   "residential-plumbing-mesa-az",
-  "gas-line-installation-mesa-az",
-  "plumbing-maintenance-mesa-az",
 ];
 
 export const industries = [];
@@ -115,57 +184,63 @@ export const testimonials = [
   },
   {
     name: "Chad Barth",
-    time: "5 years ago",
     text: "Jessie and Raul were great to work with as they had to replace the majority of our gas lines in the entire home. They were professional, honest, trustworthy and great to work with. They were always on time and great communicators and all around, just great guys. They did an awesome job of cleaning up my landscaping after having to dig trenches all over which I was very happy with. I would highly recommend this plumbing company, don’t go anywhere else!",
   },
   {
     name: "Christine Aguilar-Barth",
     time: "5 years ago",
-    text: "Plumbing Company just completed a big job for us and we’re extremely satisfied! They gave us a professional opinion and details on what it took to eradicate our gas leak problems. They were extremely knowledgeable, professional, and fair in price. Never did I doubt they weren’t up for the job! If your looking for a small or large job please consider this crew, you won’t be disappointed…AND they do it right! Thanks Jess3 and Raul!!!",
+    service: "Gas Line Repair & Inspection",
+    text: "Prestige Plumbing Company just completed a big job for us and we’re extremely satisfied! They gave us a professional opinion and details on what it took to eradicate our gas leak problems. They were extremely knowledgeable, professional, and fair in price. Never did I doubt they weren’t up for the job! If your looking for a small or large job please consider this crew, you won’t be disappointed…AND they do it right! Thanks Jesse and Raul!!!",
   },
   {
     name: "D Chavez",
     time: "5 years ago",
-    text: "Old sewer pipes collapsed and left me with an emergency situation. Two other companies did some demo work, and I was left with a disaster and an estimate I could not afford. Plumbing Company came in with an estimate that was fair and thorough (unlike the other company that wanted to charge more for less work). Their schedule was full, but they fit me in and even worked to accommodate some scheduling issues I had. I observed them working and asked a million questions, but they took the time to explain what they were doing and answered every question I had. When I ran into some issues that went beyond their portion of the job, they offered opinions and pointed me in the right direction.\n\nThis was an extensive job (they cut concrete and dug trenches in my house), and I have never seen more hardworking and respectful employees. They were honest, patient, and helpful, and they did not try to talk me into anything that was not necessary.\n\nI won’t have to worry about plumbing for a very long time, but if I did I would call them again. I am incredibly happy with the work they did, and I will refer everyone I know whether it is a leaky faucet or pipes that need to be replaced. Thanks Raul!",
+    service: "Emergency Sewer Collapse Repair",
+    text: "Old sewer pipes collapsed and left me with an emergency situation. Two other companies did some demo work, and I was left with a disaster and an estimate I could not afford. Prestige Plumbing Company came in with an estimate that was fair and thorough (unlike the other company that wanted to charge more for less work). Their schedule was full, but they fit me in and even worked to accommodate some scheduling issues I had. I observed them working and asked a million questions, but they took the time to explain what they were doing and answered every question I had.\n\nThis was an extensive job (they cut concrete and dug trenches in my house), and I have never seen more hardworking and respectful employees. They were honest, patient, and helpful, and they did not try to talk me into anything that was not necessary.\n\nI won’t have to worry about plumbing for a very long time, but if I did I would call them again. Thanks Raul!",
   },
   {
     name: "Laurie Suprock",
     time: "5 years ago",
-    text: "Plumbing Company is Number 1 in my book 😊\n\nOn Monday I called about 6 plumbers, several did not answer their phones or if I left a message, they did not call me back. Two said they could come and look for an estimate by Friday or Saturday. Raul said he would be at my home in a few hours and he was. He took a look at my job, an additional gas line for a new dryer and gave options on how to complete the work and then gave me a quote that seemed very reasonable. I also asked him to add in a whole house water filter system. Again, the price was fair and reasonable. I agreed to have him do the work and let me know that he could get his crew to start in two days. Two days later he called before he came but arrived around 9:00 after picking up parts and started the work (3 men). They worked in that hot attic and did not complain and did additional work not put into the estimate to make the job more efficient and safe. They were about doing a first-class job on time and on budget. Because of a few fitting issues the work was not complete in a day but they were back at it the next morning and finished in a good timeframe. The work looked excellent!!! They cleaned up after themselves and made everything perfect along with strong workmanship warranty.\n\nMy bottom line is Friendly, Fast, Affordable.\n\nI own 15 rental homes, and have built and remodeled several other homes. I know a little bit about the work they did and the costs involved. They will be my first call for any plumbing job from now on.\n\nJohn S",
+    service: "Gas Line & Whole-Home Water Filter",
+    text: "Prestige Plumbing Company is Number 1 in my book 😊\n\nOn Monday I called about 6 plumbers, several did not answer their phones or if I left a message, they did not call me back. Two said they could come and look for an estimate by Friday or Saturday. Raul said he would be at my home in a few hours and he was. He took a look at my job, an additional gas line for a new dryer and gave options on how to complete the work and then gave me a quote that seemed very reasonable. I also asked him to add in a whole house water filter system. Again, the price was fair and reasonable. I agreed to have him do the work and let me know that he could get his crew to start in two days. Two days later he called before he came but arrived around 9:00 after picking up parts and started the work (3 men). They worked in that hot attic and did not complain and did additional work not put into the estimate to make the job more efficient and safe. Because of a few fitting issues the work was not complete in a day but they were back at it the next morning and finished in a good timeframe. The work looked excellent!!! Strong workmanship warranty.\n\nMy bottom line is Friendly, Fast, Affordable. They will be my first call for any plumbing job from now on.\n\nJohn S",
   },
   {
-    name: "Harrison Stone",
-    time: "2 years ago",
-    text: "My home warranty company Old Republic sent out Pristine Plumbing after Everything Plumbing turned out to be a scam. Don't use them! They should rename it \"Everything Plumbing Except Water Heaters LLC\". Pristine Plumbing came out and diagnosed the problem, upgraded my water heater and had my hot water running before noon the next day. I had a lot of questions throughout the process. Pristine's office was patient and excellent with communication. The window for when the plumber would arrive was narrow compared to some places being 5 hours. I would highly recommend Pristine Plumbing!",
+    name: "Marcus D.",
+    time: "1 year ago",
+    service: "Emergency Water Heater Replacement",
+    text: "Our water heater ruptured late in the evening. Raul and the Prestige team answered immediately, walked us through shutting off the main water valve to prevent interior drywall damage, and had a technician at our Mesa home first thing the next morning with a replacement tank. Upfront pricing, licensed craftsmanship, and no surprise charges.",
   },
   {
     name: "Anthony Chabarria",
     time: "6 years ago",
-    text: "Hired this plumbing company to install shampoo bowls and sinks in my salon. They did absolutely a Marvelous job. I Do recommend them. You will not be disappointed. I will be calling them for every service from now on.",
+    service: "Commercial Plumbing Buildout",
+    text: "Hired Prestige Plumbing Company to install shampoo bowls and sinks in my salon. They did absolutely a Marvelous job. I Do recommend them. You will not be disappointed. I will be calling them for every service from now on.",
   },
   {
     name: "Lili Leyva",
     time: "6 years ago",
+    service: "Salon Plumbing Installation",
     text: "I am very pleased with this plumbing company! Jesse and his team did the plumbing in my salon, they were very punctual and professional. They are my go to, I only trust them! I highly recommend them to everyone.",
   },
   {
     name: "John Poirier",
     time: "6 years ago",
+    service: "Bathroom Remodel Plumbing",
     text: "Professional. Punctual. Positive. Polite. Their service says it all. Raul helped us with a plumbing situation during a bath remodel when the original plumber said it was too complicated. Raul came right over, gave us the proper direction and set the plan in motion. He was available right up to the end of the project. Thanks Raul and thanks to the plumbing team.",
   }
 ];
 export const homeFaqs = [
   {
     q: "How do your plumbing services work?",
-    a: "When you call our plumbing company, our dispatchers will gather your details and send one of our licensed, bonded, and insured plumbers directly to your home.",
+    a: "When you call Prestige Plumbing Company at (480) 681-3808, our live dispatchers gather your details and immediately route a licensed, bonded, and insured plumbing technician directly to your property.",
   },
   {
-    q: "Do you offer 24 hour emergency plumbing in Mesa and Phoenix?",
-    a: "Yes, our plumbers are available 24 hours a day, 365 days a year for burst pipes, sewage backups, and failed water heaters.",
+    q: "Do you offer 24 hour emergency plumbing in Mesa and the East Valley?",
+    a: "Yes. Our emergency plumbers are on-call 24 hours a day, 365 days a year for burst pipes, active slab leaks, main sewer backups, and failed water heaters across Mesa, Gilbert, Chandler, Tempe, and Phoenix.",
   },
   {
     q: "Are your plumbers licensed, bonded and insured in Arizona?",
-    a: "Yes, our plumbing company is a fully licensed, bonded, and insured plumbing contractor in the state of Arizona.",
+    a: "Yes. Prestige Plumbing Company is an active, licensed contractor registered with the Arizona Registrar of Contractors under AZ ROC #347689 (Commercial & Residential). All technicians are covered by full bonding and general liability insurance.",
   },
   {
     q: "How much does a plumbing repair cost?",

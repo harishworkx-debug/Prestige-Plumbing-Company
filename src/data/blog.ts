@@ -1,679 +1,591 @@
 import type { ImageKey } from "./images";
 
+export interface PostDocumentedExample {
+  title: string;
+  scenario: string;
+  resolution: string;
+  technicalTakeaway: string;
+}
+
 export interface Post {
   slug: string;
   title: string;
   metaTitle: string;
   metaDescription: string;
   excerpt: string;
+  author: string;
+  technicalReviewer: string;
   date: string;
+  updatedDate: string;
   readTime: string;
   category: string;
   image: ImageKey;
   sections: { heading: string; body: string[]; list?: string[] }[];
+  documentedExample: PostDocumentedExample;
   takeaway: string;
 }
 
 export const posts: Post[] = [
   {
     slug: "signs-you-need-drain-cleaning",
-    title: "7 Signs You Need Professional Drain Cleaning",
-    metaTitle: "7 Signs You Need Drain Cleaning | Plumbing Company Mesa AZ",
-    metaDescription:
-      "Slow drains, gurgling, odors and repeat clogs are warnings. Learn the 7 signs your Mesa AZ home needs professional drain cleaning before a backup.",
-    excerpt:
-      "Drains rarely fail without warning. Here are the seven signals Mesa homeowners should never ignore — and what each one actually means inside the pipe.",
-    date: "2026-06-18",
+    title: "7 Signs You Need Professional Drain Cleaning in Mesa, AZ",
+    metaTitle: "7 Signs You Need Drain Cleaning Mesa AZ | Prestige Plumbing Company",
+    metaDescription: "Slow drains, gurgling toilets, foul odors & recurring clogs are warnings. Learn the 7 signs your Mesa home needs drain cleaning before a sewer backup.",
+    excerpt: "Drains rarely fail without warning. Here are the seven signals East Valley homeowners should never ignore — and what each one actually means inside your pipes.",
+    author: "Jesse Leyva (Master Plumber)",
+    technicalReviewer: "Jesse Leyva, Master Plumber (AZ ROC #347689)",
+    date: "2026-05-12",
+    updatedDate: "2026-10-18",
     readTime: "7 min read",
     category: "Drains",
     image: "blogDrain",
     sections: [
       {
-        heading: "1. Water Pools Around Your Feet In The Shower",
+        heading: "1. Water Pools Around Your Feet in the Shower",
         body: [
-          "A shower that drains as fast as it fills is working correctly. When water begins collecting around your ankles, the pipe's effective diameter has already been reduced significantly by hair bound together with soap scum and body oils.",
-          "Homeowners often wait until the drain stops entirely, but the intermediate stage is exactly when clearing is most affordable. Once the blockage becomes a solid plug, the material has usually compacted well down the branch line.",
+          "A shower drain should evacuate water at the same rate the showerhead delivers it (typically 1.8 to 2.5 gallons per minute). When water pools around your ankles, the internal pipe diameter has been choked by a dense matrix of hair, soap scum, and body oils.",
+          "Homeowners often wait until the drain stops completely, but the intermediate slow-drain stage is when professional cleaning is fastest and most affordable. Once the clog solidifies, wastewater compacts debris farther down the horizontal branch line toward the stack.",
         ],
       },
       {
-        heading: "2. Drains Gurgle When Another Fixture Runs",
+        heading: "2. Toilets Gurgle When Another Fixture Runs",
         body: [
-          "Gurgling means air is being pulled through water in a trap — a sign that either the drain line is partially blocked or the vent system is restricted. Neither resolves itself.",
-          "If a toilet bubbles when the washing machine drains, the issue is almost certainly in a shared line rather than the individual fixture, and that shifts the diagnosis toward the main.",
+          "Gurgling indicates that negative air pressure is pulling air through the water seal of your toilet trap. This happens when a partial blockage downstream in the main sewer line restricts venting, forcing waste flow to siphon air from the nearest open trap.",
+          "If a toilet bubbles or gurgles when your residential washing machine drains, the restriction is almost certainly in the shared main building drain rather than the individual fixture.",
         ],
       },
       {
-        heading: "3. Sewage Or Musty Odor Near Drains",
+        heading: "3. Persistent Sewer Gas Odors Near Drains",
         body: [
-          "Properly functioning traps hold water that blocks sewer gas from entering living space. Persistent odor means either the trap has dried out, the vent is blocked, or waste is accumulating in the line and decomposing.",
-          "Rarely used guest bathrooms are the most common cause of dried traps. Running water for thirty seconds monthly solves that entirely. If the odor persists after refilling traps, you have a line issue.",
+          "Properly functioning plumbing P-traps hold a water barrier that stops methane and sewer gases from entering your home. A persistent sewer odor means either a trap has evaporated, a roof vent stack is obstructed, or decomposing bio-sludge has coated the pipe walls above the water line.",
+          "In Mesa's arid climate, guest bathroom traps evaporate quickly. If running water for 30 seconds does not permanently eliminate the odor, decomposing waste or a cracked vent line inside the wall is the underlying cause.",
         ],
       },
       {
-        heading: "4. You Are Plunging The Same Fixture Repeatedly",
+        heading: "4. You Are Plunging the Same Fixture Repeatedly",
         body: [
-          "One plunge is maintenance. Three plunges in a month is a diagnostic finding. Repeat clogs at the same fixture indicate a physical defect — a belly holding water, an offset joint catching debris, or a heavy accumulation coating the pipe wall.",
-          "This is the point where a camera inspection pays for itself, because it converts guessing into evidence.",
+          "Plunging once every few months is ordinary maintenance. Plunging three times in a single month indicates a physical structural defect: an offset joint catching toilet paper, an under-slab pipe belly holding standing water, or invasive tree root mats.",
+          "This is where a high-definition digital sewer camera inspection pays for itself, converting guesswork into verified visual evidence.",
         ],
       },
       {
-        heading: "5. Multiple Fixtures Are Slow At Once",
+        heading: "5. Multiple Fixtures Drain Slowly at the Same Time",
         body: [
-          "When several fixtures across the house slow simultaneously, the problem is downstream of all of them — the main line or the sewer lateral. This is the most urgent sign on the list.",
-          "Main line blockages escalate to whole-house backups, and the lowest fixture in the home is where sewage surfaces. That is usually a shower or tub, and the cleanup is unpleasant and expensive.",
+          "When a bathroom sink, shower, and toilet all drain sluggishly simultaneously, the issue is located downstream of all three: in the primary building lateral or municipal sewer connection.",
+          "Main line restrictions inevitably escalate to whole-house sewage overflows. Because wastewater seeks the lowest point of relief, sewage surfaces first in ground-floor bathtubs and shower basins.",
         ],
       },
       {
-        heading: "6. Fruit Flies Or Drain Flies Appear",
+        heading: "6. Drain Flies (Psychodidae) Around Sinks and Tubs",
         body: [
-          "Drain flies breed in the organic film that coats the inside of a slow drain. Their presence is a reliable indicator of accumulated biofilm well beyond the visible strainer.",
-          "Surface cleaners do not reach the breeding surface. Mechanical cleaning of the pipe wall does.",
+          "Drain flies breed and lay eggs inside the gelatinous organic biofilm that lines sluggish, dirty drain pipes. Their presence is a definitive biological indicator of accumulated organic matter.",
+          "Pouring bleach or boiling water down the drain only kills surface insects temporarily. Eliminating the infestation requires mechanical cabling or hydro jetting to scrub the breeding biofilm from the pipe walls.",
         ],
       },
       {
-        heading: "7. Water Backs Up Somewhere Unexpected",
+        heading: "7. Water Backs Up in Unexpected Locations",
         body: [
-          "Running the washing machine and finding water in the shower means waste is finding the path of least resistance because the intended path is blocked. Treat this as an emergency.",
-          "Shut off water-using appliances and call a plumber before running anything else. Continuing to add volume to a blocked system only increases the amount of water that ends up on your floor.",
-        ],
-      },
-      {
-        heading: "What Professional Drain Cleaning Actually Involves",
-        body: [
-          "A real drain cleaning removes accumulated material from the full circumference of the pipe rather than boring a channel through it. Depending on what the line contains, that means cabling with an appropriately sized cutting head or hydro jetting at pressures up to 4,000 PSI.",
-          "For any recurring blockage, camera inspection should come first. Roots, bellies, offsets and scale all produce identical symptoms at the fixture and require completely different remedies.",
-        ],
-        list: [
-          "Camera inspection on recurring or main-line issues",
-          "Mechanical cabling for hair, soft blockages and branch lines",
-          "Hydro jetting for grease, scale and root intrusion",
-          "Post-service flow testing to confirm genuine restoration",
+          "If running your kitchen sink causes water to back up into your laundry standpipe, or running the washing machine floods the master shower, your main drainage path is compromised. Treat this as an immediate plumbing emergency.",
+          "Shut off all water-consuming appliances immediately. Adding more water volume to a blocked system will inevitably force sewage onto your flooring.",
         ],
       },
     ],
-    takeaway:
-      "Address slow drains while they are still merely slow. We dispatch to homeowners licensed plumbers who clear and camera drains across Mesa, Gilbert, Chandler and the Phoenix metro — call (480) 681-3808 to find a local professional.",
+    documentedExample: {
+      title: "Field Diagnostic: Chronic Shower Backup in Dobson Ranch",
+      scenario: "Homeowner reported monthly shower clogs that chemical drain cleaners failed to resolve. Cabling heads returned with black grease and fibrous debris.",
+      resolution: "Our technician fed a Rigid microREEL sewer camera through the cleanout, identifying heavy calcified hard water scale and fine ficus roots entering a clay joint 32 feet out. We hydro-jetted the line at 4,000 PSI, restoring 100% flow diameter.",
+      technicalTakeaway: "Chemical drain cleaners never dissolve roots or mineral scale—they merely erode the bottom of the pipe. Always verify chronic clogs with inline video cameras.",
+    },
+    takeaway: "Address slow drains while they are still merely slow before they turn into a full-blown emergency backup. Prestige Plumbing Company provides expert camera inspections and hydro jetting across Mesa, Gilbert, Chandler, and Phoenix. Call (480) 681-3808 for upfront flat-rate service.",
   },
   {
     slug: "why-water-heaters-fail",
-    title: "Why Water Heaters Fail (And How To Get More Years From Yours)",
-    metaTitle: "Why Water Heaters Fail | Arizona Hard Water Guide | Plumbing Company",
-    metaDescription:
-      "Sediment, anode rod depletion and high pressure kill Arizona water heaters early. Learn why yours failed and how to extend the next one's life.",
-    excerpt:
-      "Most water heaters in Arizona die years before they should — and almost always from the same three causes. Here is what actually happens inside the tank.",
-    date: "2026-06-04",
+    title: "Why Water Heaters Fail in Arizona (And How to Extend Their Lifespan)",
+    metaTitle: "Why Water Heaters Fail Arizona | Hard Water Guide | Prestige Plumbing Company",
+    metaDescription: "Hard water sediment, sacrificial anode rod depletion & high pressure kill Arizona water heaters. Learn why tanks fail and how to double your unit's life.",
+    excerpt: "Most water heaters in the East Valley fail years before their intended lifespan — almost always due to the same three regional factors. Here is what actually happens inside your tank.",
+    author: "Raul (Field Operations & Water Heater Specialist)",
+    technicalReviewer: "Jesse Leyva, Master Plumber (AZ ROC #347689)",
+    date: "2026-05-20",
+    updatedDate: "2026-10-18",
     readTime: "8 min read",
     category: "Water Heaters",
     image: "waterHeaterOld",
     sections: [
       {
-        heading: "Cause One: Sediment Accumulation",
+        heading: "Cause One: Heavy Mineral Sediment Accumulation",
         body: [
-          "Arizona water carries a heavy dissolved mineral load. When that water is heated, calcium and magnesium precipitate out and settle on the bottom of the tank, forming a hard crust that grows a little thicker every year.",
-          "On a gas heater, the burner sits directly beneath that crust. Heat now has to pass through mineral rock before reaching water, so the tank floor overheats, the steel expands and contracts beyond design tolerance, and the protective glass lining eventually cracks. Once the lining fails, corrosion reaches bare steel and the tank's remaining life is measured in months.",
-          "The popping and rumbling homeowners describe is water trapped beneath sediment flashing to steam. It is not a harmless quirk; it is the sound of a heater being destroyed.",
+          "Mesa and East Valley tap water carries an extreme mineral load (15 to 25 grains of dissolved calcium and magnesium per gallon). When water is heated above 120°F, these minerals precipitate out of solution and settle at the bottom of the tank, forming a dense calcified rock barrier.",
+          "On gas water heaters, the burner fires directly beneath this sediment crust. Because heat cannot transfer efficiently through solid mineral rock, the steel tank floor overheats, expanding and contracting beyond its engineering tolerance. This cracks the protective internal glass porcelain lining, exposing bare steel to direct corrosion and eventual tank rupture.",
+          "The popping, knocking, or rumbling sounds homeowners hear is water trapped beneath the sediment layer boiling into steam. It is not harmless—it is the sound of your tank undergoing destructive thermal stress.",
         ],
       },
       {
-        heading: "Cause Two: A Consumed Anode Rod",
+        heading: "Cause Two: Sacrificial Anode Rod Depletion",
         body: [
-          "Every tank heater contains a sacrificial anode rod — typically magnesium or aluminum — that corrodes preferentially so the steel tank does not. It is the single most important component in the appliance and the one almost nobody inspects.",
-          "In soft water an anode may last six years. In Mesa, Gilbert and Chandler water it can be entirely consumed in three to four. From the moment it is gone, the tank itself becomes the sacrificial element.",
-          "Replacing an anode rod costs a fraction of a new heater and can add five or more years of service. It is the highest-return maintenance item in residential plumbing, and it requires nothing more than a visit and a wrench.",
+          "Every tank water heater contains a sacrificial anode rod (magnesium or aluminum) designed to corrode preferentially through galvanic action so the steel tank does not rust. It is the single most vital protective component in the appliance.",
+          "In soft water, an anode rod can last 6 to 8 years. In Mesa's aggressive mineral water, an anode rod is often completely depleted down to its steel wire core in 3 to 4 years. Once the sacrificial rod is consumed, electrolytic corrosion attacks the steel tank walls directly.",
+          "Replacing an anode rod every 3 to 4 years costs a fraction of a new water heater and can add 5 to 7 years of service to your unit.",
         ],
       },
       {
-        heading: "Cause Three: Excessive Water Pressure",
+        heading: "Cause Three: Excessive Water Pressure & Thermal Expansion",
         body: [
-          "Water expands when heated. In a closed system — one with a check valve or pressure reducing valve at the meter — that expansion has nowhere to go, so pressure spikes every heating cycle.",
-          "Without a thermal expansion tank, those spikes stress the tank, the relief valve, and every fixture in the house. Homeowners see it as a relief valve that drips, or as toilet fill valves and faucet cartridges failing repeatedly.",
-          "Static pressure should be between 55 and 70 PSI. Above 80 PSI, code requires regulation, and above that threshold every water-using component in the home wears faster.",
+          "Water expands in volume by roughly 2% when heated. In a closed plumbing system—one equipped with a backflow preventer or Pressure Reducing Valve (PRV) at the meter—that thermal expansion has nowhere to escape, causing internal pressure to spike dramatically during every heating cycle.",
+          "Without a functioning thermal expansion tank, these pressure surges stress the tank welds, weaken internal flue baffles, and cause Temperature & Pressure (T&P) relief valves to drip continuously.",
+          "Static household water pressure should remain between 55 and 70 PSI. Pressure exceeding 80 PSI violates uniform plumbing code and drastically accelerates tank failure.",
         ],
       },
       {
-        heading: "Warning Signs Your Heater Is Nearing The End",
+        heading: "Warning Signs Your Water Heater Is Nearing Total Failure",
         body: [
-          "Failure is rarely instantaneous. Most heaters signal their decline for months before the tank lets go.",
+          "Water heaters rarely fail without advance warning. Watching for early symptoms allows you to plan a replacement rather than dealing with an emergency flooded garage.",
         ],
         list: [
-          "Rumbling, popping or kettling noises during heating cycles",
-          "Hot water that runs out noticeably faster than a year ago",
-          "Rusty or metallic-tasting water on the hot side only",
-          "Moisture, rust staining or a damp ring at the base",
-          "A relief valve that discharges periodically",
-          "Age beyond ten years without documented maintenance",
-        ],
-      },
-      {
-        heading: "The Maintenance Schedule That Actually Works In Arizona",
-        body: [
-          "Manufacturer schedules are written for average national water quality. Arizona is not average. Our recommendation for Valley homes is more aggressive and produces measurably longer equipment life.",
-        ],
-        list: [
-          "Flush the tank annually — twice yearly with no softener",
-          "Inspect the anode rod at year three and every two years after",
-          "Verify static pressure and expansion tank charge annually",
-          "Test the temperature and pressure relief valve each year",
-          "Set the thermostat to 120°F to reduce scale formation and scald risk",
-          "Descale tankless heat exchangers every twelve months",
+          "Loud popping, banging, or rumbling noises during active heating cycles",
+          "Hot water running out noticeably faster during normal family showers",
+          "Rusty, discolored, or metallic-tasting water on the hot side only",
+          "Moisture, corrosion, or a wet mineral ring forming around the tank base",
+          "The Temperature & Pressure (T&P) relief valve dripping water into the discharge tube",
+          "The tank is over 8–10 years old in an East Valley home without a water softener",
         ],
       },
     ],
-    takeaway:
-      "A maintained water heater in Arizona can reach twelve to fifteen years; a neglected one often fails at seven. Call a local professional for a flush and anode inspection by calling (480) 681-3808.",
+    documentedExample: {
+      title: "Field Case: 10-Year Water Heater Rupture in Superstition Springs",
+      scenario: "Homeowner experienced complete loss of hot water and 20 gallons of water in the garage drip pan. The unit had never received an annual sediment flush.",
+      resolution: "We extracted the ruptured 50-gallon tank, revealing over 40 lbs of hardened calcium limestone inside. We installed a Bradford White commercial-grade gas heater with a new thermal expansion tank and brass shutoff valve.",
+      technicalTakeaway: "Sediment build-up acts like an insulator. A water heater with 3 inches of sediment consumes up to 30% more energy before rupturing prematurely.",
+    },
+    takeaway: "Protecting your water heater requires annual flushing, timely anode rod replacements, and regulated static water pressure. Prestige Plumbing Company provides expert water heater repair, replacement, and tankless conversions across Mesa and the East Valley. Call (480) 681-3808 for upfront flat-rate pricing.",
   },
   {
     slug: "how-to-prevent-plumbing-emergencies",
-    title: "How To Prevent Plumbing Emergencies Before They Happen",
-    metaTitle: "How To Prevent Plumbing Emergencies | Mesa AZ | Plumbing Company",
-    metaDescription:
-      "Most plumbing emergencies give warning signs first. Learn the preventative steps every Arizona homeowner should take to avoid a 2am flood.",
-    excerpt:
-      "Nearly every emergency we respond to was preventable. Here is the short list of habits and upgrades that keep you off our midnight dispatch board.",
-    date: "2026-05-22",
-    readTime: "7 min read",
+    title: "How to Prevent Catastrophic Plumbing Emergencies in Arizona",
+    metaTitle: "Prevent Plumbing Emergencies Mesa AZ | Prestige Plumbing Company",
+    metaDescription: "Avoid costly burst pipes, slab leaks & sewer backups. Master plumber checklist for protecting your Mesa, AZ home from sudden water damage.",
+    excerpt: "Plumbing emergencies cause billions in property damage every year. Here is the verified prevention checklist used by licensed Arizona master plumbers to safeguard your home.",
+    author: "Jesse Leyva (Founder & Master Plumber)",
+    technicalReviewer: "Jesse Leyva, Master Plumber (AZ ROC #347689)",
+    date: "2026-06-02",
+    updatedDate: "2026-10-18",
+    readTime: "6 min read",
     category: "Prevention",
     image: "emergencyPlumbing",
     sections: [
       {
-        heading: "Know Your Shut-Offs Before You Need Them",
+        heading: "1. Locate and Test Your Main Whole-Home Water Shutoff Valve",
         body: [
-          "The single most valuable thirty seconds in a plumbing emergency is the time it takes to close the main water valve. Most homeowners have never located theirs, and they discover it in the dark while water spreads across a floor.",
-          "Find your main shut-off today. In Arizona homes it is usually on an exterior wall near the front hose bibb, or at the meter box near the street. Turn it fully closed and open again — valves seize when they sit untouched for years, and one that will not close is worse than none at all.",
-          "Locate your gas shut-off at the meter as well, and keep a wrench nearby that fits it.",
+          "When a 1-inch pressurized supply pipe ruptures, it can flood your home with 40 to 60 gallons of water per minute. In an emergency, every second spent searching for your main shutoff valve equates to thousands of dollars in ruined flooring and drywall.",
+          "Locate your main shut-off valve today (typically located on the exterior front wall near your hose bibb, or inside the garage near the water heater). If your valve is an old multi-turn gate valve with a round wheel, test it gently. Gate valves frequently seize or snap internally. We strongly recommend upgrading to a modern quarter-turn brass ball valve.",
         ],
       },
       {
-        heading: "Replace Supply Connectors On A Schedule",
+        heading: "2. Replace Rubber Washing Machine Hoses with Braided Stainless Steel",
         body: [
-          "Braided stainless connectors on washing machines, toilets, sinks and water heaters are the most common single point of catastrophic failure in a home. They are inexpensive, they fail without warning, and they release water at full main pressure until someone intervenes.",
-          "Replace them every five to seven years regardless of appearance. A pair of connectors costs less than a restoration deductible by several orders of magnitude.",
+          "Standard black rubber washing machine hoses are under continuous municipal water pressure 24/7. Over time, internal rubber degrades, bubbles, and bursts catastrophically—often while homeowners are away at work.",
+          "Replace rubber hoses every 5 years with burst-proof braided stainless steel supply lines. Consider installing an automatic washing machine shut-off valve that relieves pressure when the appliance is idle.",
         ],
       },
       {
-        heading: "Regulate Your Water Pressure",
+        heading: "3. Monitor Household Static Water Pressure Regularly",
         body: [
-          "High pressure destroys plumbing systems quietly. It shortens the life of every valve, cartridge, connector and appliance, and it turns a small weakness into a burst.",
-          "Have static pressure measured. If it is above 80 PSI, install a pressure reducing valve. If you already have one, remember that they fail — typically after ten to fifteen years — and should be tested periodically.",
+          "Municipal water providers in Mesa and Phoenix often pump water at 85 to 110+ PSI to ensure adequate pressure across vast distribution grids. However, residential appliances and plumbing joints are only rated for up to 80 PSI.",
+          "High water pressure constantly strains toilet fill valves, flexible faucet connectors, and copper solder joints. Install an inexpensive screw-on pressure gauge on an outdoor hose bibb once a year. If pressure exceeds 75 PSI, install or replace your Pressure Reducing Valve (PRV).",
         ],
       },
       {
-        heading: "Install Leak Detection Where Water Hides",
+        heading: "4. Eliminate Builder-Grade Plastic Push-Pull Angle Stops",
         body: [
-          "Modern leak sensors cost very little and alert your phone the moment they detect moisture. The value is entirely in the placement.",
-        ],
-        list: [
-          "Water heater drip pan",
-          "Beneath kitchen and bathroom sinks",
-          "Behind the washing machine",
-          "Under the dishwasher toe kick",
-          "Near any water softener or filtration equipment",
-        ],
-      },
-      {
-        heading: "Stop Treating Your Drains As Disposals",
-        body: [
-          "Grease, fibrous vegetable waste, coffee grounds, wipes and hygiene products cause the overwhelming majority of the backups we clear. 'Flushable' wipes do not break down; they accumulate and bind with grease into the blockages that require jetting to remove.",
-          "Keep a grease container by the stove. Fit hair catchers in every shower. Flush only human waste and toilet paper. These three habits eliminate most residential drain emergencies.",
-        ],
-      },
-      {
-        heading: "Schedule An Annual Inspection",
-        body: [
-          "An annual plumbing inspection is the closest thing to insurance against emergencies. We test pressure, inspect accessible piping, evaluate the water heater, exercise valves, and camera the sewer lateral where age warrants it.",
-          "The findings are prioritized: what needs attention now, what to plan within a year, and what merely needs monitoring. Most homeowners discover at least one item they had no idea was developing.",
+          "Many high-volume residential subdivisions in the East Valley were built with cheap plastic push-pull angle stops under sinks and behind toilets. After 7 to 10 years of exposure to Arizona's chlorinated water, the plastic becomes brittle and cracks when touched.",
+          "Proactively replace plastic shutoffs with commercial-grade, all-brass quarter-turn ball angle stops with Teflon seals.",
         ],
       },
     ],
-    takeaway:
-      "Prevention costs a fraction of restoration. Call (480) 681-3808 to schedule an appointment with our licensed professional for a whole-home plumbing inspection and get ahead of the failure.",
+    documentedExample: {
+      title: "Field Case: Ruptured Guest Bath Plastic Angle Stop",
+      scenario: "Homeowner attempted to replace a toilet flapper; turning the builder-grade plastic angle stop snapped the stem clean off, flooding the hallway at 70 PSI.",
+      resolution: "Our emergency plumber arrived in 30 minutes, isolated the street meter, cut back the damaged copper stub-out, and installed a heavy-duty brass compression angle stop.",
+      technicalTakeaway: "Never force a seized plastic angle stop. If it doesn't turn smoothly with light hand pressure, shut off the whole-home main water valve before proceeding.",
+    },
+    takeaway: "Preventative plumbing maintenance is always a fraction of the cost of emergency water damage restoration. Prestige Plumbing Company provides comprehensive whole-home plumbing inspections across Mesa, Gilbert, Chandler, and Phoenix. Call (480) 681-3808 to schedule your inspection.",
   },
   {
     slug: "benefits-of-hydro-jetting",
-    title: "The Real Benefits Of Hydro Jetting Your Drain Lines",
-    metaTitle: "Benefits Of Hydro Jetting | Drain & Sewer Cleaning | Plumbing Company",
-    metaDescription:
-      "Hydro jetting restores pipes to full diameter instead of punching a hole through a clog. Learn how it works and when it beats snaking.",
-    excerpt:
-      "Snaking opens a channel. Jetting cleans the pipe. Here is the difference, why it matters, and when jetting is the wrong choice.",
-    date: "2026-05-09",
-    readTime: "6 min read",
-    category: "Drains",
-    image: "drainOld",
+    title: "The Benefits of Hydro Jetting: Why Snaking Isn't Always Enough",
+    metaTitle: "Benefits of Hydro Jetting Mesa AZ | Sewer Cleaning | Prestige Plumbing",
+    metaDescription: "Mechanical snakes punch holes, but 4,000 PSI hydro jetting scours away grease, roots & scale. Learn why hydro jetting provides permanent sewer line clearing.",
+    excerpt: "Traditional drain snakes clear temporary paths, but hydro jetting restores pipes to like-new internal diameter. Here is the technical breakdown of how high-pressure jetting works.",
+    author: "Raul (Field Operations Specialist)",
+    technicalReviewer: "Jesse Leyva, Master Plumber (AZ ROC #347689)",
+    date: "2026-06-15",
+    updatedDate: "2026-10-18",
+    readTime: "7 min read",
+    category: "Drain Cleaning",
+    image: "blogDrain",
     sections: [
       {
-        heading: "What Hydro Jetting Actually Does",
+        heading: "Mechanical Snaking vs. Hydro Jetting: Understanding the Difference",
         body: [
-          "A hydro jetter pushes water through a specialized nozzle at pressures reaching 4,000 PSI. Most jets face backward, which both propels the hose upstream and scours accumulated material off the pipe wall behind the nozzle. Forward jets break through the obstruction itself.",
-          "The result is a pipe restored to its original interior diameter, with the removed material flushed downstream to the municipal main rather than compacted further into your system.",
+          "A mechanical drain snake (or motorized cabling machine) utilizes a flexible steel cable with an articulated cutting blade at the tip. It rotates down the pipe to punch a hole through a soft clog and restore basic water flow.",
+          "However, a snake only clears a path the exact width of its cutting head (typically 1 to 2 inches inside a 4-inch sewer pipe). It leaves behind a thick coating of grease, soap scum, and tree root stubs along the pipe walls. Within weeks or months, new debris catches on these rough edges and the backup returns.",
+          "Hydro jetting utilizes a heavy-duty commercial pump delivering up to 4,000 PSI of pressurized water through specialized forward-penetrating and reverse-scouring nozzles. It strips grease, pulverizes tree roots, and flushes hard mineral scale completely out of the pipe.",
         ],
       },
       {
-        heading: "Why It Outlasts Snaking",
+        heading: "Complete 360-Degree Cleaning of Pipe Walls",
         body: [
-          "A cable with a cutting head bores a passage through a blockage. Flow returns immediately, which feels like success — but the pipe wall is still coated. In a grease-laden kitchen line, that remaining coating recaptures the passage within weeks.",
-          "Jetting removes the coating itself. Customers who were calling for a drain clearing every two months often go two years or more after a proper jetting service.",
+          "The reverse-thrust jets on a hydro jetter propel the nozzle forward through the sewer line while scouring the entire 360-degree circumference of the pipe interior. It emulsifies solidified fats, oils, and grease (FOG) that mechanical cables simply slide through.",
+          "Hydro jetting restores the full original flow capacity of cast-iron, PVC, and clay sewer lines, delaying the recurrence of future clogs by years rather than weeks.",
         ],
       },
       {
-        heading: "What Jetting Removes That Cables Cannot",
+        heading: "Pulverizing Invasive Tree Root Systems",
         body: [
-          "Certain accumulations simply do not respond to mechanical cabling.",
-        ],
-        list: [
-          "Hardened grease bonded to the pipe wall",
-          "Mineral scale inside aging cast iron",
-          "Fine root hair intrusion at joints",
-          "Sludge settled in low-slope or bellied sections",
-          "Soap and detergent residue in laundry lines",
+          "In older Mesa and Tempe neighborhoods, mature ficus, eucalyptus, and palm roots aggressively enter sewer joints in search of moisture. Mechanical cables slice through the center of root balls, leaving thick root collars that regrow rapidly.",
+          "Hydro jetting nozzles equipped with rotating hardened steel chains or laser-cut water streams shear roots flush against the pipe wall, clearing the entire joint and preparing the pipe for permanent trenchless lining if necessary.",
         ],
       },
       {
-        heading: "When Jetting Is The Wrong Call",
+        heading: "Why Camera Inspection Must Always Precede Jetting",
         body: [
-          "Any company that recommends jetting without a camera inspection is guessing with your money. High pressure applied to compromised pipe makes the situation worse.",
-          "We do not jet heavily corroded cast iron with visible channeling, cracked or collapsed clay, or badly offset joints. Those conditions need spot repair, lining or replacement, and pressure would accelerate the failure.",
-          "This is why every jetting job we perform begins and ends with camera footage — you see the pipe before and after, and the recommendation is based on evidence rather than a price sheet.",
-        ],
-      },
-      {
-        heading: "Residential Drain Maintenance",
-        body: [
-          "For homeowners, jetting can be a preventative measure. It can save a lot of trouble down the line.",
-          "We can help dispatch local contractors who schedule jetting around your availability.",
+          "Hydro jetting is powerful and should only be performed by licensed plumbing professionals. Before jetting any sewer line, our technicians run a high-definition digital sewer camera to inspect the structural integrity of the pipe.",
+          "If an old clay or orangeburg pipe has collapsed, cracked, or separated, high-pressure jetting could cause further damage. Camera verification ensures the line can safely handle 4,000 PSI scouring.",
         ],
       },
     ],
-    takeaway:
-      "If you have had the same line cleared more than once this year, jetting is the conversation worth having. Call (480) 681-3808 to schedule a camera inspection first.",
+    documentedExample: {
+      title: "Field Case: Commercial Kitchen Line Jetting in Mesa",
+      scenario: "A local restaurant experienced weekly kitchen floor drain backups despite regular mechanical snaking. Cable blades were coming back coated in heavy yellow grease.",
+      resolution: "We performed a preliminary camera inspection to verify Schedule 40 PVC integrity, followed by high-pressure hydro jetting with a spinning grease nozzle at 3,800 PSI, scouring 120 feet of line clean to city main.",
+      technicalTakeaway: "Grease acts like soft wax—a cable punch merely creates a tunnel that closes right back up. Only high-pressure water emulsifies grease out of the drainage system.",
+    },
+    takeaway: "For permanent drain and sewer clearing, hydro jetting is the gold standard. Prestige Plumbing Company provides professional sewer camera inspections and commercial-grade hydro jetting across Mesa, Gilbert, Chandler, and Phoenix. Call (480) 681-3808 to schedule service.",
   },
   {
     slug: "common-plumbing-problems-in-mesa",
-    title: "The Most Common Plumbing Problems In Mesa Homes",
-    metaTitle: "Common Plumbing Problems In Mesa AZ Homes | Plumbing Company",
-    metaDescription:
-      "Hard water, slab leaks, root intrusion and galvanized pipe — the plumbing issues Mesa homeowners face most, explained by local plumbers.",
-    excerpt:
-      "Twenty years of service calls in one city produces clear patterns. These are the plumbing problems Mesa homes actually have.",
-    date: "2026-04-27",
+    title: "Top 5 Plumbing Problems Unique to Mesa, AZ (And What Causes Them)",
+    metaTitle: "Common Plumbing Problems in Mesa AZ | Prestige Plumbing Company",
+    metaDescription: "Mesa's hard water, under-slab copper pinholes, shifting clay soils & high municipal pressure create unique challenges. Learn how local master plumbers solve them.",
+    excerpt: "Arizona desert conditions, regional water chemistry, and local building practices combine to create plumbing issues you won't find in other parts of the country.",
+    author: "Jesse Leyva (Founder & Master Plumber)",
+    technicalReviewer: "Jesse Leyva, Master Plumber (AZ ROC #347689)",
+    date: "2026-06-25",
+    updatedDate: "2026-10-18",
     readTime: "8 min read",
-    category: "Local",
-    image: "residentialPlumbing",
+    category: "Local Plumbing",
+    image: "aboutTeam",
     sections: [
       {
-        heading: "Hard Water Damage — The Universal Mesa Problem",
+        heading: "1. Extreme Mineral Hard Water (15–25 Grains Per Gallon)",
         body: [
-          "Every plumbing problem in Mesa is either caused by hard water or made worse by it. Our municipal supply blends Colorado River and Salt River water, both carrying heavy dissolved calcium and magnesium.",
-          "The consequences show up everywhere: sediment crusting water heater tanks, scale narrowing supply lines, faucet cartridges seizing, dishwasher and washing machine components failing early, and white deposits on every fixture in the house.",
-          "Water treatment is not a luxury purchase in this city; it is the difference between a water heater lasting seven years and lasting thirteen.",
+          "Mesa's municipal water supply blends surface water from the Salt River and Colorado River (via the Central Arizona Project) with deep groundwater wells. All three sources carry heavy concentrations of dissolved calcium and magnesium.",
+          "This mineral hardness rapidly coats heating elements, calcifies shower cartridges, reduces water pressure at faucet aerators, and leaves stubborn white crust on glass enclosures. Installing an ion-exchange water softener is the single most effective way to protect household appliances in Mesa.",
         ],
       },
       {
-        heading: "Slab Leaks In East Mesa",
+        heading: "2. Under-Slab Copper Pinhole Leaks (Slab Leaks)",
         body: [
-          "Homes built from roughly 1988 through 2004 — the wave that filled in east of Greenfield and Power Roads — commonly run copper supply through the slab. Three decades of aggressive water chemistry and soil movement produce pinhole failures.",
-          "The symptoms are consistent: a warm spot on tile, the sound of running water when everything is off, a water bill that jumped without explanation, and sometimes hairline cracks appearing in drywall or grout.",
-          "We locate these acoustically and usually recommend rerouting the affected line overhead in PEX rather than jackhammering the floor.",
+          "Between the 1970s and early 2000s, thousands of homes in East Mesa, Dobson Ranch, and Red Mountain Ranch were built with soft copper water lines laid directly into caliche soil beneath concrete foundation slabs.",
+          "Over decades, aggressive water chemistry corrodes copper from the inside, while soil settling rubs pipes against abrasive rocks from the outside. Pinhole leaks develop, causing warm floor spots, foundation settling, and huge water bills. We locate them acoustically and execute overhead PEX attic reroutes.",
         ],
       },
       {
-        heading: "Root Intrusion In Central Mesa Sewer Laterals",
+        heading: "3. Expansive Caliche & Clay Soil Movement",
         body: [
-          "The mature ficus, mesquite and palm trees that make older Mesa neighborhoods pleasant also send aggressive root systems toward the only reliable water source in a desert: your sewer lateral.",
-          "Clay pipe joints are the entry point. Roots enter as hairs, expand, catch waste, and eventually block the line completely. Camera inspection shows exactly where they enter and how much damage has occurred.",
+          "Mesa soil contains dense layers of caliche (calcium carbonate cemented soil) and expansive clay that swell significantly during monsoon storm deluges and shrink during dry summer heat.",
+          "This ground expansion puts heavy shear stress on underground main water service lines, irrigation pipes, and sewer laterals, leading to cracked pipe joints and subterranean leaks.",
         ],
       },
       {
-        heading: "Galvanized Pipe In Pre-1970 Homes",
+        heading: "4. Municipal Water Pressure Spikes (85–110+ PSI)",
         body: [
-          "Downtown Mesa and the older neighborhoods surrounding it still contain galvanized steel supply piping. It corrodes from the inside, building up tuberculation that progressively narrows the passage until pressure becomes unusable.",
-          "Homeowners often replace fixtures repeatedly trying to solve it. Nothing works, because the restriction is in the pipe itself. PEX repiping restores full flow and is far less invasive than most people expect.",
+          "Because Mesa covers over 138 square miles with varying elevations from the valley floor to the Usery Mountain foothills, municipal water utilities pump at high pressures to reach all zones.",
+          "Pressures regularly exceed 85 to 100 PSI at residential meters. Left unregulated, these pressure surges rupture water heater tanks, cause water hammer banging, and blow out toilet valves. Pressure Reducing Valves (PRVs) are mandatory for system protection.",
         ],
       },
       {
-        heading: "Summer Pressure And Thermal Stress",
+        heading: "5. Summer Monsoon Storm Sewer Backups",
         body: [
-          "Mesa summers push everything to its limit. Ground temperatures raise incoming water temperature, exterior components degrade under UV exposure, and hose bibbs left pressurized against a closed nozzle fail spectacularly.",
-          "Before summer, we recommend checking exterior hose bibbs, verifying static pressure, and confirming your pressure reducing valve still holds its setting.",
-        ],
-      },
-      {
-        heading: "What Mesa Homeowners Should Do About It",
-        body: [
-          "None of these problems are mysterious, and all of them respond well to attention before failure.",
-        ],
-        list: [
-          "Flush the water heater annually and inspect the anode by year three",
-          "Install water treatment sized to your household",
-          "Keep static pressure between 55 and 70 PSI",
-          "Camera the sewer lateral every three to five years in older neighborhoods",
-          "Investigate any unexplained water bill increase immediately",
+          "During July and August monsoon storms, intense localized rainfall can overwhelm storm drainage systems and infiltrate older municipal sanitary sewer lines through manholes and roof vents.",
+          "If your home's main sewer lateral has existing root intrusions or grease buildup, monsoon surges cause immediate sewage backups into ground-floor fixtures. Cleanouts and backwater valves prevent backflow.",
         ],
       },
     ],
-    takeaway:
-      "We dispatch to homeowners professionals who know what your house is likely hiding. Call (480) 681-3808 to find an our licensed provider for a whole-home inspection.",
+    documentedExample: {
+      title: "Field Case: East Mesa Slab Leak & Pressure Surge Repair",
+      scenario: "Homeowner experienced a $260 water bill increase and loud water hammer noises whenever laundry cycles stopped. Static pressure tested at 98 PSI.",
+      resolution: "We located a pinhole hot water slab leak under the hallway tile using acoustic microphones, performed an overhead PEX-A attic reroute, and replaced the failed 15-year-old PRV.",
+      technicalTakeaway: "Unregulated municipal water pressure accelerates copper erosion dramatically. Lowering pressure from 98 PSI to 65 PSI doubles plumbing component life.",
+    },
+    takeaway: "Mesa homes require plumbing solutions engineered specifically for Arizona desert conditions. Prestige Plumbing Company is licensed (AZ ROC #347689), bonded, and headquartered right here in Mesa. Call (480) 681-3808 for honest flat-rate service.",
   },
   {
     slug: "residential-plumbing-maintenance-tips",
-    title: "Residential Plumbing Maintenance: A Homeowner's Annual Checklist",
-    metaTitle: "Home Plumbing Maintenance Checklist | Plumbing Company Mesa AZ",
-    metaDescription:
-      "A practical month-by-month plumbing maintenance checklist for Arizona homeowners. Protect your pipes, water heater and drains all year.",
-    excerpt:
-      "A simple annual routine prevents the majority of residential plumbing failures. Here is exactly what to check and when.",
-    date: "2026-04-11",
+    title: "The Ultimate Arizona Residential Plumbing Maintenance Schedule",
+    metaTitle: "Plumbing Maintenance Checklist Mesa AZ | Prestige Plumbing Company",
+    metaDescription: "Comprehensive seasonal plumbing maintenance checklist for Arizona homeowners. Protect water heaters, PRV valves & sewer lines from costly failures.",
+    excerpt: "Preventative plumbing maintenance takes minutes a month but saves thousands of dollars in emergency repairs. Here is your step-by-step Arizona maintenance schedule.",
+    author: "Raul (Lead Estimator & Field Operations)",
+    technicalReviewer: "Jesse Leyva, Master Plumber (AZ ROC #347689)",
+    date: "2026-07-02",
+    updatedDate: "2026-10-18",
     readTime: "7 min read",
     category: "Maintenance",
     image: "residentialPlumbing",
     sections: [
       {
-        heading: "Monthly: Five Minutes That Matter",
+        heading: "Monthly Homeowner Plumbing Checklist",
         body: [
-          "The monthly routine is short and catches problems while they are still inexpensive.",
+          "Perform a simple visual walk-through once a month to catch minor leaks before they cause rot:",
         ],
         list: [
-          "Read the water meter with every fixture off and confirm it is not moving",
-          "Run water briefly in unused bathrooms to keep traps sealed",
-          "Look under every sink for moisture, staining or corrosion",
-          "Check the water heater pan and surrounding floor for dampness",
-          "Test that garbage disposal and dishwasher drain freely",
+          "Check under all kitchen and bathroom vanity sinks for dampness or water stains",
+          "Inspect toilet tanks for silent leaks by adding a few drops of food coloring into the tank (if color appears in the bowl within 15 minutes, replace the flapper)",
+          "Inspect water softener salt brine levels and break up any hardened salt bridges",
+          "Check the digital leak indicator on your water meter when no water is running",
         ],
       },
       {
-        heading: "Quarterly: Fixtures And Flow",
+        heading: "Quarterly Plumbing Checklist",
         body: [
-          "Every three months, spend twenty minutes on the details that quietly degrade.",
+          "Every three months, address fixtures exposed to mineral hardness:",
         ],
         list: [
-          "Clean faucet aerators and showerheads of mineral scale",
-          "Clear hair and debris from pop-up drain assemblies",
-          "Inspect toilet tanks for running water and worn flappers",
-          "Check exposed piping in the garage and attic for corrosion",
-          "Verify washing machine hoses show no bulging or rust at the fittings",
+          "Unscrew faucet aerators and showerheads; soak in white vinegar to dissolve calcium scale",
+          "Exercise all fixture angle stop valves by turning them off and on to prevent mineral seizure",
+          "Pour a bucket of water down unused guest bathroom drains to refill dried P-traps",
+          "Inspect washing machine stainless steel braided hoses for kinks, bulges, or corrosion",
         ],
       },
       {
-        heading: "Annually: The Important Work",
+        heading: "Annual Master Plumbing Checklist",
         body: [
-          "These are the items with the largest impact on equipment life, and several are worth having a professional perform.",
+          "Once a year, perform critical heavy maintenance on your major plumbing infrastructure:",
         ],
         list: [
-          "Flush the water heater completely to remove sediment",
-          "Test the temperature and pressure relief valve",
-          "Measure static water pressure and verify the regulator holds 55–70 PSI",
-          "Exercise the main shut-off valve and every angle stop in the house",
-          "Descale tankless water heaters through the isolation valves",
-          "Inspect and service water softener and filtration systems",
-        ],
-      },
-      {
-        heading: "Every Three Years: The Deeper Checks",
-        body: [
-          "Some components need attention on a longer cycle but matter enormously when neglected.",
-        ],
-        list: [
-          "Inspect and replace the water heater anode rod as needed",
-          "Camera the sewer lateral on homes over twenty-five years old",
-          "Replace braided supply connectors throughout the house",
-          "Have a professional whole-home plumbing inspection performed",
-        ],
-      },
-      {
-        heading: "The Arizona Adjustments",
-        body: [
-          "National maintenance advice underestimates what hard water and desert heat do to a plumbing system. In the Valley, double the frequency of water heater flushing if you have no softener, inspect exterior hose bibbs before summer, and treat any unexplained bill increase as a leak until proven otherwise.",
-          "Homes with under-slab copper built between 1985 and 2005 deserve particular attention — that population is squarely in the slab leak window, and early detection is dramatically cheaper than emergency response.",
+          "Flush your water heater tank to purge accumulated calcium and magnesium sediment",
+          "Test the Temperature & Pressure (T&P) relief valve on your water heater for smooth operation",
+          "Test household static water pressure with a gauge (ensure pressure stays between 55 and 70 PSI)",
+          "Schedule a professional sewer camera inspection if you have mature trees near sewer laterals",
         ],
       },
     ],
-    takeaway:
-      "If the annual items feel like more than you want to take on, we can help dispatch expert plumbers who do all of them in a single visit. Call (480) 681-3808.",
+    documentedExample: {
+      title: "Field Case: Annual Maintenance Inspection in Las Sendas",
+      scenario: "During an annual 45-point inspection, our technician tested incoming water pressure at 94 PSI and identified a failing water heater T&P valve dripping into the wall cavity.",
+      resolution: "We installed a new Zurn Wilkins PRV set to 65 PSI, replaced the corroded T&P valve, and completed an annual sediment flush of the 50-gallon Bradford White tank.",
+      technicalTakeaway: "Annual inspections consistently catch minor component failures—like leaking T&P valves or failing regulators—months before they cause catastrophic structural flooding.",
+    },
+    takeaway: "Regular maintenance keeps your plumbing reliable and safeguards your home investment. Prestige Plumbing Company provides multi-point residential plumbing inspections across Mesa, Gilbert, Chandler, and Phoenix. Call (480) 681-3808 to book your inspection.",
   },
   {
     slug: "gas-line-safety-guide",
-    title: "Gas Line Safety: What Every Arizona Homeowner Should Know",
-    metaTitle: "Gas Line Safety Guide Arizona | Plumbing Company",
-    metaDescription:
-      "Gas leak warning signs, what to do immediately, and how proper gas line installation protects your family. Licensed gas plumbers in Mesa AZ.",
-    excerpt:
-      "Gas is the one plumbing system where a mistake is not measured in dollars. Here is what to recognize, what to do, and what proper installation looks like.",
-    date: "2026-03-28",
-    readTime: "6 min read",
-    category: "Gas",
-    image: "gasLineOld",
+    title: "Arizona Gas Line Safety: Rotten Egg Smells, Utility Red-Tags, and Code Compliance",
+    metaTitle: "Gas Line Safety Guide Mesa AZ | Licensed Gas Plumber | Prestige Plumbing",
+    metaDescription: "What to do if you smell natural gas, get red-tagged by Southwest Gas, or need outdoor BBQ/fire pit lines. Licensed Arizona gas plumbing guide.",
+    excerpt: "Natural gas is safe and efficient when properly maintained, but gas leaks require immediate, protocol-driven action. Here is what every Arizona homeowner must know.",
+    author: "Jesse Leyva (Founder & Master Plumber)",
+    technicalReviewer: "Jesse Leyva, Master Plumber (AZ ROC #347689)",
+    date: "2026-07-10",
+    updatedDate: "2026-10-18",
+    readTime: "7 min read",
+    category: "Gas Lines",
+    image: "gasLine",
     sections: [
       {
-        heading: "Recognizing A Gas Leak",
+        heading: "What to Do Immediately If You Smell Natural Gas",
         body: [
-          "Natural gas is odorless by nature. Utilities add mercaptan, which produces the distinctive rotten-egg smell, specifically so leaks are detectable. That odor is never something to investigate casually.",
-        ],
-        list: [
-          "A sulfur or rotten-egg smell indoors or near the meter",
-          "Hissing or whistling near a gas line or appliance",
-          "Yellow or orange burner flames instead of steady blue",
-          "Soot accumulation around appliance vents",
-          "Dead or discolored vegetation over an underground line",
-          "Unexplained headaches, dizziness or nausea in the household",
+          "Natural gas is naturally colorless and odorless. Gas utilities inject a harmless chemical odorant called mercaptan, which smells distinctly like rotten eggs or sulfur, so leaks can be detected instantly.",
+          "If you smell a strong gas odor inside your home: do not flip light switches, do not ignite matches, do not unplug appliances, and do not use your phone indoors (any electrical spark can ignite gas). Evacuate all occupants immediately, leave doors open, and call 911 or Southwest Gas from across the street.",
         ],
       },
       {
-        heading: "What To Do Immediately",
+        heading: "Understanding Southwest Gas 'Red-Tag' Lockouts",
         body: [
-          "If you suspect a leak, act in this order and do not deviate. Do not operate any electrical switch, appliance or garage door opener, and do not use a phone inside the building — any of these can produce an ignition source.",
-          "Leave the building with everyone inside, including pets. Once outside and at a distance, call your gas utility's emergency line. After the utility has made the area safe, call a licensed plumber for the repair.",
-          "Never attempt to locate or repair a gas leak yourself, and never rely on soapy water testing as a substitute for professional pressure testing.",
+          "If Southwest Gas responds to a leak report, their technicians shut off the gas meter and place a physical red lock and warning tag on the valve. The utility cannot legally restore gas service until a licensed plumbing contractor performs the repair, passes a mechanical pressure decay test, and provides official documentation.",
+          "Do not panic if you are red-tagged. Prestige Plumbing Company responds rapidly to utility lockouts. We isolate lines, pressure-test with compressed air at 15 PSI, make code-compliant repairs using black iron or poly gas pipe, and coordinate municipal inspections for fast gas restoration.",
         ],
       },
       {
-        heading: "Why Proper Installation Matters So Much",
+        heading: "Proper Gas Line Sizing for Outdoor Living Appliances",
         body: [
-          "Most gas problems we encounter originate at installation. The most common defect is undersized piping: a line adequate for one appliance is teed into for a second, and neither performs correctly under simultaneous demand.",
-          "Correct installation begins with a BTU load calculation covering every connected appliance and the developed pipe length to the furthest one. Each segment is then sized so pressure drop stays within code limits at full simultaneous load.",
-          "CSST flexible gas piping must be bonded to the electrical grounding system — a step routinely missed by unqualified installers and a genuine lightning-related fire risk when omitted.",
-        ],
-      },
-      {
-        heading: "Permits Are Not Optional",
-        body: [
-          "New gas lines and extensions require permits and inspection in essentially every Valley jurisdiction, including Mesa, Gilbert, Chandler, Tempe and Scottsdale. The inspection exists because gas mistakes are not self-correcting.",
-          "Unpermitted gas work also creates insurance exposure. If an incident traces to unpermitted piping, coverage disputes follow. The permit fee is trivial compared to that risk.",
-        ],
-      },
-      {
-        heading: "Outdoor Fire Features And Grills",
-        body: [
-          "Fire pits, built-in grills and patio heaters are among the most popular gas additions in Arizona backyards, and they carry specific requirements: an accessible emergency shut-off outside the enclosure, correct burial depth and tracer wire for underground runs, and pressure testing before backfill.",
-          "Plan the stub-out location with your hardscape design before concrete is poured. Retrofitting a gas line under finished pavers is considerably more expensive than planning for it.",
+          "Adding a 100,000 BTU outdoor BBQ island, a 50,000 BTU fire pit, or a 400,000 BTU pool heater requires precise pipe capacity calculations. If a line is undersized, running your pool heater will starve your indoor water heater and furnace of fuel.",
+          "We calculate cumulative household BTU loads, determine correct pipe diameters, and install underground yellow medium-density polyethylene (MDPE) pipe with anodeless risers buried to strict code depth.",
         ],
       },
     ],
-    takeaway:
-      "Gas work belongs with licensed, permitted professionals. We dispatch to homeowners experts who install and repair residential gas piping throughout the East Valley — call (480) 681-3808.",
+    documentedExample: {
+      title: "Field Case: Whole-Home Gas Line Reroute After Southwest Gas Lockout",
+      scenario: "Southwest Gas locked out a Mesa home's meter after a minor yard leak was detected. The family had no hot water, heat, or cooking gas.",
+      resolution: "Jesse and Raul performed an emergency pressure decay test, identified corroded underground steel pipe, trenched 90 feet, installed code-compliant poly gas pipe with tracer wire, and passed city inspection in 48 hours.",
+      testimonialSnippet: "Jessie and Raul were great to work with as they had to replace the majority of our gas lines. Professional, honest, on time, and did an awesome job restoring my landscaping.",
+      technicalTakeaway: "Underground gas lines must use approved polyethylene pipe with anodeless steel risers—never bury bare black iron directly in corrosive desert soil.",
+    },
+    takeaway: "Gas line work must always be performed by licensed, bonded Arizona ROC contractors. Prestige Plumbing Company (AZ ROC #347689) provides emergency gas leak repairs, pressure testing, and appliance hookups across Mesa and the Valley. Call (480) 681-3808 immediately.",
   },
   {
     slug: "toilet-repair-guide",
-    title: "Toilet Repair Guide: Fix The Common Problems Yourself",
-    metaTitle: "Toilet Repair Guide | Running, Clogged & Leaking | Plumbing Company",
-    metaDescription:
-      "How to diagnose and fix a running toilet, weak flush, leaking base or phantom refill — and when to call a plumber in Mesa AZ.",
-    excerpt:
-      "Most toilet problems come down to four inexpensive parts. Here is how to identify which one is failing before you call anyone.",
-    date: "2026-03-14",
-    readTime: "7 min read",
-    category: "Fixtures",
-    image: "waterHeaters",
+    title: "The Homeowner's Guide to Toilet Repair: Phantom Flushes, Leaks, and Wobbles",
+    metaTitle: "Toilet Repair Guide Mesa AZ | Running Toilet Fix | Prestige Plumbing",
+    metaDescription: "Fix ghost flushing, leaking tank flappers, broken fill valves & wobbly toilet bases. Learn when to DIY and when to call a licensed Mesa plumber.",
+    excerpt: "Toilets account for over 30% of total indoor water usage. Here is the diagnostic breakdown of phantom flushes, fill valve failures, and dangerous wax seal leaks.",
+    author: "Raul (Field Operations Specialist)",
+    technicalReviewer: "Jesse Leyva, Master Plumber (AZ ROC #347689)",
+    date: "2026-07-18",
+    updatedDate: "2026-10-18",
+    readTime: "6 min read",
+    category: "Bathrooms",
+    image: "bathroomPlumbing",
     sections: [
       {
-        heading: "The Running Toilet",
+        heading: "1. The 'Phantom Flush': Why Your Toilet Runs By Itself",
         body: [
-          "A toilet that runs continuously is wasting up to two hundred gallons a day. The cause is almost always the flapper — a rubber seal that hardens with age and mineral exposure until it no longer seats fully.",
-          "Test it by adding a few drops of food coloring to the tank and waiting fifteen minutes without flushing. Color appearing in the bowl confirms a leaking flapper. Replacement costs a few dollars and takes ten minutes.",
-          "If the flapper is sound, check the fill valve. When the float is set too high, water reaches the overflow tube and drains continuously into the bowl. Lowering the float usually resolves it.",
+          "If your toilet intermittently runs for two to three seconds without anyone touching the handle, it is experiencing a 'phantom flush'. This occurs when water slowly leaks out of the toilet tank into the bowl.",
+          "The cause is almost always a deteriorated rubber flapper or mineral scale on the flush valve seat. In Arizona's hard water, rubber flappers warp or become encrusted within 3 to 5 years, breaking the watertight seal. Replacing the flapper permanently cures the problem and stops wasting hundreds of gallons of water per week.",
         ],
       },
       {
-        heading: "The Weak Or Incomplete Flush",
+        heading: "2. The Toilet Tank Hisses Continuously (Fill Valve Failure)",
         body: [
-          "A flush that fails to clear the bowl has one of three causes: insufficient tank water volume, blocked rim jets, or a partial blockage in the trapway.",
-          "First, check the water level in the tank — it should sit about an inch below the overflow tube. Then inspect the small holes under the bowl rim; in hard-water areas like Mesa these clog with mineral scale and dramatically reduce flush energy. A wire and some descaling solution restores them.",
-          "If both check out, the trapway or branch drain is partially obstructed and needs mechanical clearing.",
+          "If your toilet hisses constantly, water is continuously running into the overflow tube. This means the fill valve (ballcock assembly) has failed internally or the float is set too high.",
+          "Hard water minerals deposit inside the tiny diaphragm of the fill valve, preventing it from shutting off completely. Replacing the entire fill valve assembly with a commercial-grade Fluidmaster 400A restores quiet, reliable operation.",
         ],
       },
       {
-        heading: "Water Around The Base",
+        heading: "3. The Rocking Toilet: Danger of Subfloor Rot",
         body: [
-          "Water pooling at the toilet base usually means a failed wax ring, and it demands prompt attention because that water is going into your subfloor.",
-          "First rule out condensation, which is common in humid bathrooms, and check the tank-to-bowl bolts and supply connection. If the water appears only after flushing, the wax ring has failed.",
-          "A rocking toilet is the usual cause — movement breaks the seal. Never simply shim and caulk over the problem; the flange needs inspection, and a broken flange requires repair before resetting the toilet.",
-        ],
-      },
-      {
-        heading: "Phantom Flushing",
-        body: [
-          "When a toilet refills briefly on its own every few minutes without anyone touching it, water is slowly escaping the tank into the bowl, and the fill valve is topping it back up.",
-          "This is the same flapper issue as a running toilet, just at a lower rate. It wastes a surprising amount of water over a month, and the fix is identical.",
-        ],
-      },
-      {
-        heading: "When To Call A Plumber",
-        body: [
-          "Several situations are genuinely beyond a straightforward parts swap and should not be attempted with a plunger and optimism.",
-        ],
-        list: [
-          "A toilet that rocks or has a damaged closet flange",
-          "Repeated clogs, which usually indicate a drain line problem rather than the fixture",
-          "Sewage odor persisting after repairs",
-          "Cracks in the tank or bowl porcelain",
-          "Multiple fixtures backing up alongside the toilet",
-          "Water damage visible on the floor or ceiling below",
+          "A toilet should be firmly anchored to the floor with zero wobble or movement. If a toilet rocks when sat on, the wax ring seal beneath the base has broken, and wastewater is seeping into the subfloor with every flush.",
+          "Never simply tighten the closet bolts with a wrench—over-tightening will crack the porcelain base! The toilet must be unbolted, the wax ring replaced, the closet flange inspected for cracks, and the base properly shimmed and caulked.",
         ],
       },
     ],
-    takeaway:
-      "Simple parts are worth trying yourself. For anything involving the flange, the drain line, or water where it should not be, call (480) 681-3808 to hire a local professional.",
+    documentedExample: {
+      title: "Field Case: Cracked Closet Flange Repair in Alta Mesa",
+      scenario: "Homeowner noticed soft flooring and a slight sewer odor around a rocking master bathroom toilet. Previous handyman had tried to caulk over the gap.",
+      resolution: "We pulled the toilet, discovered a rotted wax ring and cracked cast-iron closet flange, installed a stainless steel flange repair ring, set a heavy-duty reinforced wax seal, and leveled the base with plastic shims.",
+      technicalTakeaway: "Never caulk around a rocking toilet base without verifying the wax seal. Caulking traps leaking water beneath the porcelain, rotting subfloors and drywall ceilings below.",
+    },
+    takeaway: "Leaking toilets waste thousands of gallons of water and can destroy subflooring. Prestige Plumbing Company provides expert toilet repair, rebuilds, and replacements across Mesa and the East Valley. Call (480) 681-3808 for upfront flat-rate service.",
   },
   {
     slug: "water-heater-maintenance-checklist",
-    title: "Water Heater Maintenance Checklist For Arizona Homes",
-    metaTitle: "Water Heater Maintenance Checklist AZ | Plumbing Company Mesa",
-    metaDescription:
-      "Step-by-step water heater maintenance for hard-water Arizona homes: flushing, anode inspection, relief valve testing and tankless descaling.",
-    excerpt:
-      "Arizona water is brutal on water heaters. This checklist is what we recommend to every customer to get years of extra service life.",
-    date: "2026-02-26",
-    readTime: "6 min read",
+    title: "Step-by-Step Water Heater Maintenance Checklist for Arizona Homeowners",
+    metaTitle: "Water Heater Maintenance Checklist Mesa AZ | Prestige Plumbing Company",
+    metaDescription: "Step-by-step DIY guide: flushing water heater sediment, testing T&P relief valves, checking anode rods & tankless descaling in Arizona's hard water.",
+    excerpt: "With Arizona's severe mineral hardness, regular water heater maintenance isn't optional—it's essential to avoid early tank replacement. Here is your step-by-step maintenance guide.",
+    author: "Jesse Leyva (Founder & Master Plumber)",
+    technicalReviewer: "Jesse Leyva, Master Plumber (AZ ROC #347689)",
+    date: "2026-07-28",
+    updatedDate: "2026-10-18",
+    readTime: "8 min read",
     category: "Water Heaters",
-    image: "leakOld",
+    image: "waterHeaters",
     sections: [
       {
-        heading: "Why The Standard Schedule Is Not Enough Here",
+        heading: "Step 1: How to Safely Flush Your Water Heater Tank",
         body: [
-          "Manufacturer maintenance intervals assume average water quality. Arizona's mineral load is well above average, so sediment accumulates faster and anode rods are consumed sooner than the manual anticipates.",
-          "Following the printed schedule in the Valley usually means arriving at the tank's failure point several years early. Our recommended schedule is more frequent and the difference in equipment life is substantial.",
+          "Flushing your tank purges calcified mineral sediment before it bakes into solid rock:",
+        ],
+        list: [
+          "Turn off power to the water heater (shut off circuit breaker for electric models; turn gas valve to 'PILOT')",
+          "Shut off the cold water inlet valve on top of the heater",
+          "Attach a heavy-duty garden hose to the brass drain valve at the base of the tank, running the opposite end to an exterior drain or driveway",
+          "Open the drain valve and open a hot water faucet inside the house to break vacuum suction",
+          "Allow the tank to drain completely; then open the cold water supply valve in short bursts to stir up and flush remaining sediment until the water runs completely clear",
+          "Close the drain valve, disconnect the hose, refill the tank completely with water, and only then restore power or relight the burner",
         ],
       },
       {
-        heading: "Annual: Flush The Tank",
+        heading: "Step 2: Testing the Temperature & Pressure (T&P) Relief Valve",
         body: [
-          "Flushing removes the mineral layer that insulates the burner from the water and eventually cracks the tank lining. It is the highest-value annual task on the list.",
-          "The process: shut off power or gas, close the cold inlet, attach a hose to the drain valve, open a hot fixture to break vacuum, and drain until the water runs clear. Refill fully before restoring power to an electric unit — dry-firing destroys elements instantly.",
-          "If you have no water softener, do this twice a year. Homes on well water may need it even more often.",
+          "The T&P valve is your water heater's primary safety device, designed to open automatically if internal pressure exceeds 150 PSI or temperature exceeds 210°F.",
+          "Lift the small metal test lever briefly. Water should discharge rapidly into the drain pipe. Release the lever; the valve should snap shut and stop dripping immediately. If it continues to leak, replace the valve immediately.",
         ],
       },
       {
-        heading: "Every Two To Three Years: Inspect The Anode Rod",
+        heading: "Step 3: Checking the Sacrificial Anode Rod",
         body: [
-          "The anode rod corrodes so the tank does not. When it is consumed, the tank becomes the sacrificial element and the countdown to failure begins.",
-          "In Mesa, Gilbert and Chandler water, an anode can be fully depleted in three to four years. Inspect at year three and replace when more than half the core wire is exposed. This single item can add five or more years to a heater's life.",
+          "Turn off water and relieve tank pressure. Use a 1-1/16\" socket wrench on the hex nut on top of the heater to unscrew the anode rod.",
+          "If the rod is coated in thick calcium crust or worn down to its thin center steel core wire, replace it with a new magnesium or aluminum anode rod immediately.",
         ],
       },
       {
-        heading: "Annual: Test The Relief Valve",
+        heading: "Step 4: Annual Descaling for Tankless Water Heaters",
         body: [
-          "The temperature and pressure relief valve is the appliance's primary safety device, protecting against catastrophic tank rupture.",
-          "Lift the test lever and allow a short discharge into the drain line, then release. It should stop cleanly. A valve that continues dripping afterward has debris or corrosion on the seat and should be replaced — not plugged, not ignored.",
-        ],
-      },
-      {
-        heading: "Annual: Verify Pressure And Expansion",
-        body: [
-          "Measure static water pressure at a hose bibb. It should read between 55 and 70 PSI. Above 80, a pressure reducing valve is required by code and by common sense.",
-          "If your system has a pressure reducing valve or check valve, it is closed and requires a thermal expansion tank. Verify the tank's air charge matches incoming water pressure; a waterlogged expansion tank offers no protection at all.",
-        ],
-      },
-      {
-        heading: "Tankless: Descale Every Twelve Months",
-        body: [
-          "Tankless units have no tank to flush, but their compact heat exchangers scale rapidly in hard water. Annual descaling circulates a food-grade solution through the exchanger to dissolve mineral buildup.",
-          "If your unit was installed with isolation valves, the process takes under an hour. If it was not, we recommend adding them during the first service — it converts an awkward job into a routine one for the life of the appliance.",
+          "Tankless water heaters require annual descaling to remove mineral scale from the copper or stainless steel heat exchanger. Close the service isolation valves, connect a submersible utility pump to 4 gallons of food-grade virgin white vinegar, and circulate the vinegar through the unit for 45 minutes to dissolve calcification.",
         ],
       },
     ],
-    takeaway:
-      "Local our licensed contractors can perform the full checklist in one visit, including anode inspection and relief valve testing. Book residential water heater service by calling (480) 681-3808.",
+    documentedExample: {
+      title: "Field Case: Tankless Error Code 027 Flush in Gilbert",
+      scenario: "Homeowner's Navien tankless unit displayed error code 027 (water overheating) and shut down mid-shower due to heavy hard water scale in the heat exchanger.",
+      resolution: "We connected our descaling circulation kit with a 1/6 HP pump and virgin white vinegar, circulating for 60 minutes. Flushed out over 2 cups of dissolved calcium carbonates, clearing error codes.",
+      technicalTakeaway: "Tankless units in Arizona must have isolation service valves installed. Without annual descaling, hard water scale invalidates manufacturer warranties.",
+    },
+    takeaway: "Proper annual maintenance doubles water heater life and lowers utility bills. Prestige Plumbing Company provides professional water heater flushes, anode replacements, and tankless descaling across Mesa, Gilbert, Chandler, and Phoenix. Call (480) 681-3808.",
   },
   {
     slug: "how-to-detect-hidden-leaks",
-    title: "How To Detect Hidden Water Leaks In Your Home",
-    metaTitle: "How To Detect Hidden Water Leaks | Slab Leak Signs | Plumbing Company",
-    metaDescription:
-      "Find hidden leaks before they cause damage. Meter tests, slab leak symptoms and the detection methods professionals use in Mesa AZ homes.",
-    excerpt:
-      "A hidden leak can run for months before you see a drop. Here is how to test for one yourself, and how professionals pinpoint it without demolition.",
-    date: "2026-02-10",
+    title: "How to Detect Hidden Plumbing Leaks Behind Walls and Under Concrete Slabs",
+    metaTitle: "Detect Hidden Leaks Mesa AZ | Slab Leak Guide | Prestige Plumbing",
+    metaDescription: "Learn how to use your water meter to detect hidden leaks, recognize slab leak symptoms, and understand modern non-invasive acoustic detection technology.",
+    excerpt: "Hidden plumbing leaks quietly destroy structural framing, cause mold, and drive water bills through the roof. Here is how to test for leaks and pinpoint them non-invasively.",
+    author: "Jesse Leyva (Founder & Master Plumber)",
+    technicalReviewer: "Jesse Leyva, Master Plumber (AZ ROC #347689)",
+    date: "2026-08-05",
+    updatedDate: "2026-10-18",
     readTime: "7 min read",
-    category: "Leaks",
-    image: "bathroomOld",
+    category: "Leak Detection",
+    image: "leakDetection",
     sections: [
       {
-        heading: "The Meter Test: Ten Minutes, Definitive Answer",
+        heading: "1. The 15-Minute Water Meter Leak Test",
         body: [
-          "This is one of the most effective diagnostics a homeowner can perform, and it costs nothing. Turn off every water-using fixture and appliance in the home, including ice makers and irrigation.",
-          "Locate your water meter and note the reading, or watch the small leak-indicator dial or triangle. Wait thirty minutes without using any water and read it again.",
-          "Any movement means water is escaping somewhere in your system. To narrow it down, close the main shut-off at the house and repeat: if the meter still moves, the leak is between the meter and the house; if it stops, the leak is inside.",
-        ],
-      },
-      {
-        heading: "Symptoms Of A Slab Leak",
-        body: [
-          "Slab leaks are the most expensive hidden leaks in Arizona homes because water escapes beneath concrete where nothing is visible until damage surfaces.",
+          "The fastest way to confirm whether your home has a pressurized water leak is using your municipal water meter:",
         ],
         list: [
-          "A warm or hot spot on tile or hardwood flooring",
-          "The sound of running water with everything shut off",
-          "Unexplained increases in the water bill",
-          "New cracks in drywall, tile grout or the foundation",
-          "Damp carpet or buckling flooring in one area",
-          "A musty odor with no visible source",
+          "Ensure all water fixtures inside and outside the home are completely turned off (toilets, ice maker, washing machine, irrigation)",
+          "Locate your water meter box near the street curb and lift the lid",
+          "Observe the small triangular or star-shaped low-flow leak indicator dial (or digital flow register). If the dial is spinning even slowly, water is escaping somewhere in your system",
+          "If the dial appears still, write down the exact reading, wait 15 minutes without using any water, and check again. Any change in the reading confirms a leak",
         ],
       },
       {
-        heading: "Checking For Leaks You Can Reach",
+        heading: "2. Symptoms of an Under-Slab Foundation Leak",
         body: [
-          "Before assuming the worst, rule out the accessible suspects. Toilets are the most common silent water waster in a home.",
-          "Add food coloring to each toilet tank and wait fifteen minutes without flushing. Color in the bowl means a leaking flapper. Then inspect under every sink for moisture and corrosion, check the water heater pan, examine washing machine hose services, and walk your irrigation zones looking for unusually green or soggy patches.",
+          "In the East Valley, soft copper lines embedded in caliche soil beneath concrete slabs are prone to pinhole ruptures. Symptoms include:",
+        ],
+        list: [
+          "Unexplained warm or hot spots on tile, laminate, or carpeted flooring",
+          "The sound of running water behind walls or under the floor when all taps are closed",
+          "Baseboards warping, discoloring, or separating from drywall",
+          "Musty odors or unexplained localized humidity in carpeted bedrooms",
+          "A dramatic unexplained jump in your monthly municipal water utility bill",
         ],
       },
       {
-        heading: "How Professionals Locate What You Cannot See",
+        heading: "3. Professional Acoustic & Thermal Leak Pinpointing",
         body: [
-          "When the leak is inside a wall, under a slab, or beneath a yard, professional detection replaces guesswork with precision.",
-          "Acoustic equipment amplifies the high-frequency sound of pressurized water escaping a pipe, which transmits through concrete and soil. An experienced technician localizes it to within inches. Thermal imaging then confirms the finding by revealing the temperature signature of a hot-line leak beneath flooring.",
-          "For drain-side leaks where there is no pressure to produce sound, tracer gas is introduced into the line and detected at the surface where it escapes. Pool and irrigation lines are pressure-isolated and tested individually.",
+          "Never allow a contractor to guess where a leak is by jackhammering exploratory holes through your flooring. Licensed leak detection specialists use non-invasive technology:",
+          "We isolate hot and cold lines with digital pressure gauges, then use ultrasonic ground microphones to listen to pipe friction frequencies through the concrete slab. FLIR thermal infrared cameras visually map the heat signature of hot water migrating under the floor, pinpointing the leak to a tiny footprint.",
         ],
       },
       {
-        heading: "Why Speed Matters",
+        heading: "4. The Overhead PEX Attic Reroute Solution",
         body: [
-          "Hidden leaks compound. Water saturates subfloor and framing, microbial growth begins within 24 to 48 hours, and soil beneath a foundation can wash out and create settlement.",
-          "The cost curve is steep. A leak located in week one is a repair. The same leak found in month six is a repair plus remediation plus flooring plus drywall — frequently ten times the number.",
+          "Once an under-slab leak is confirmed, breaking the slab to repair a single pinhole is rarely the best choice. Aging copper will likely develop another leak nearby.",
+          "Our recommended solution is an overhead PEX-A attic reroute. We abandon the compromised line under the foundation completely, routing new Uponor PEX-A through your attic space. Your concrete and tile remain undisturbed, and the fix is permanent.",
         ],
       },
     ],
-    takeaway:
-      "If your meter is moving with everything off, do not wait. We can dispatch expert plumbers who locate hidden and slab leaks across Mesa and the Phoenix metro — call (480) 681-3808.",
+    documentedExample: {
+      title: "Field Case: Acoustic Slab Leak Pinpoint in Ahwatukee Foothills",
+      scenario: "Homeowner experienced warm tile in the master closet and a $220 water bill increase. Water meter dial was spinning continuously at 1.2 GPM.",
+      resolution: "We connected digital pressure gauges to verify a hot water loop failure, used ultrasonic ground microphones to pinpoint the rupture under the closet slab, and completed an overhead Uponor PEX-A reroute in 24 hours.",
+      technicalTakeaway: "Non-invasive electronic leak detection saves homeowners thousands by eliminating destructive exploratory floor demolition.",
+    },
+    takeaway: "If you suspect a hidden leak, prompt action prevents catastrophic structural damage. Prestige Plumbing Company provides non-invasive acoustic leak detection and overhead PEX reroutes across Mesa, Gilbert, Chandler, and Phoenix. Call (480) 681-3808 for immediate assistance.",
   },
 ];
 

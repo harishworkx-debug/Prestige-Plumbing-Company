@@ -1,13 +1,12 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { Phone, Mail, MapPin, Clock } from "lucide-react";
+import { Phone, Mail, MapPin, Clock, ShieldCheck } from "lucide-react";
 import { business, homeFaqs } from "@/data/site";
 import { Reveal } from "@/components/Reveal";
 import { CTAButtons, FAQList, MapEmbed, SectionHeading } from "@/components/ui-kit";
 import { meta, breadcrumbSchema, webPageSchema, faqSchema, abs } from "@/lib/seo";
 
-const title = "Contact Plumbing Company | Licensed Contractor | (480) 681-3808";
-const description =
-  "Contact Plumbing Company for licensed, family-owned plumbing services in Mesa, AZ and the East Valley. Call (480) 681-3808.";
+const title = `Contact Prestige Plumbing Company | Mesa, AZ`;
+const description = `Need a plumber in Mesa, AZ? Contact Prestige Plumbing Company (AZ ROC #347689) at 1120 E Jarvis Ave for flat-rate estimates and 24/7 emergency service. Call (480) 681-3808.`;
 
 export const Route = createFileRoute("/contact")({
   head: () => ({
@@ -35,11 +34,17 @@ const details = [
   { icon: Mail, label: "Email", value: business.email, href: `mailto:${business.email}` },
   {
     icon: MapPin,
-    label: "Address",
+    label: "Business Location",
     value: `${business.street}, ${business.city}, ${business.state} ${business.zip}`,
     href: business.mapLink,
   },
   { icon: Clock, label: "Hours", value: business.hours },
+  {
+    icon: ShieldCheck,
+    label: "State Contractor License",
+    value: `${business.rocLicense} (Commercial & Residential)`,
+    href: business.rocLicenseUrl,
+  },
 ];
 
 function ContactPage() {
@@ -48,13 +53,13 @@ function ContactPage() {
       <section className="surface-panel py-16 lg:py-24">
         <div className="mx-auto max-w-7xl px-4 lg:px-8">
           <SectionHeading
-            eyebrow="Contact"
+            eyebrow="Contact Us"
             center={false}
-            title="Contact A Mesa Plumbing Professional Right Now"
-            text="Call, message or email us any hour of the day to get expert plumbing service from our family-owned team."
+            title={`Contact ${business.name} in Mesa, AZ`}
+            text="Call, email, or request service online. Our dispatch center is located at 1120 E Jarvis Ave in Mesa, serving homeowners across the East Valley 24 hours a day."
           />
-          <div className="mt-8">
-            <CTAButtons label="Call Now" />
+          <div className="mt-8 flex flex-wrap gap-4">
+            <CTAButtons label="Call (480) 681-3808" />
           </div>
         </div>
       </section>

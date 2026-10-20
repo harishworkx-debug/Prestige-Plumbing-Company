@@ -15,6 +15,7 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { FloatingCTAs } from "@/components/FloatingCTAs";
 import { localBusinessSchema } from "@/lib/seo";
+import { business } from "@/data/site";
 
 function NotFoundComponent() {
   return (
@@ -76,14 +77,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Plumbing Company | Licensed Plumbers in Mesa, AZ" },
+      { title: `${business.name} | Licensed Plumbers in Mesa, AZ` },
       {
         name: "description",
         content:
           "Licensed, bonded and insured plumbing contractor serving Mesa & the Phoenix metro. 24/7 emergency plumbing. Call (480) 681-3808.",
       },
-      { name: "author", content: "Plumbing Company" },
-      { property: "og:site_name", content: "Plumbing Company" },
+      { name: "author", content: business.name },
+      { property: "og:site_name", content: business.name },
       { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [

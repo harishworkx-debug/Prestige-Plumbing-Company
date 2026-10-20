@@ -1,19 +1,20 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
+import { CheckCircle2, ShieldCheck, Phone, Wrench, ArrowRight } from "lucide-react";
 import { images } from "@/data/images";
 import { services } from "@/data/services";
-import { allServices } from "@/data/site";
+import { allServices, business } from "@/data/site";
 import { Reveal } from "@/components/Reveal";
 import { CTABand, SectionHeading } from "@/components/ui-kit";
-import { meta, breadcrumbSchema } from "@/lib/seo";
+import { meta, breadcrumbSchema, abs } from "@/lib/seo";
 
 export const Route = createFileRoute("/services/")({
   head: () => ({
     meta: meta(
-      "Plumbing Services Mesa AZ | Licensed Contractor | Plumbing Company",
-      "Full-service plumbing in Mesa & Phoenix: emergency plumbing, water heaters, drain cleaning, hydro jetting, leak detection, gas lines & repiping. Call (480) 681-3808.",
+      `Plumbing Services Mesa AZ | Licensed Contractor | ${business.name}`,
+      `Full-service plumbing in Mesa & Phoenix: emergency plumbing, water heaters, drain cleaning, hydro jetting, leak detection, gas lines & repiping by ${business.name} (AZ ${business.rocLicense}). Call ${business.phoneDisplay}.`,
       "/services",
     ),
-    links: [{ rel: "canonical", href: "/services" }],
+    links: [{ rel: "canonical", href: abs("/services") }],
     scripts: [
       {
         type: "application/ld+json",
@@ -37,36 +38,84 @@ function ServicesIndex() {
           <SectionHeading
             eyebrow="Our Plumbing Services"
             center={false}
-            title="Every Plumbing Service Your Home Or Business Needs"
-            text="Plumbing Company has served Mesa and the Phoenix metro as a licensed, bonded and insured contractor. Whatever the fixture, pipe, drain or appliance, one company handles it — with flat-rate pricing quoted before work begins and a documented workmanship warranty afterward."
+            title="Complete Plumbing Solutions for Mesa & East Valley Homes"
+            text={`${business.name} delivers master plumbing craftsmanship under AZ ${business.rocLicense}. Whatever the fixture, pipe, drain, or gas line, our licensed technicians provide upfront flat-rate pricing in writing and documented workmanship warranties.`}
           />
+
+          <div className="mt-8 flex flex-wrap gap-4 text-xs font-semibold text-muted-foreground">
+            <span className="inline-flex items-center gap-1.5 rounded-full border border-border bg-card px-4 py-2">
+              <ShieldCheck className="h-4 w-4 text-primary" /> Licensed AZ {business.rocLicense}
+            </span>
+            <span className="inline-flex items-center gap-1.5 rounded-full border border-border bg-card px-4 py-2">
+              <CheckCircle2 className="h-4 w-4 text-primary" /> Upfront Flat-Rate Written Pricing
+            </span>
+            <span className="inline-flex items-center gap-1.5 rounded-full border border-border bg-card px-4 py-2">
+              <Phone className="h-4 w-4 text-primary" /> 24/7 Live Emergency Dispatch
+            </span>
+          </div>
         </div>
       </section>
 
       <section className="py-16">
         <div className="mx-auto max-w-7xl px-4 lg:px-8">
-          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             {services.map((s, i) => (
               <Reveal key={s.slug} delay={(i % 3) * 0.06}>
-                <Link
-                  to="/$slug"
-                  params={{ slug: s.slug }}
-                  className="group block h-full overflow-hidden rounded-2xl border border-border bg-card shadow-card hover-lift"
-                >
-                  <img
-                    src={images[s.image]}
-                    alt={`${s.name} in Mesa AZ`}
-                    width={1280}
-                    height={853}
-                    loading="lazy"
-                    className="h-48 w-full object-cover transition-transform duration-700 group-hover:scale-105"
-                  />
-                  <div className="p-6">
-                    <h2 className="font-display text-xl font-bold">{s.name}</h2>
-                    <p className="mt-2 text-sm text-muted-foreground">{s.tagline}</p>
-                    <p className="mt-4 text-sm font-bold text-primary">{s.name} →</p>
+                <div className="group flex h-full flex-col justify-between overflow-hidden rounded-2xl border border-border bg-card shadow-card hover-lift">
+                  <div>
+                    <Link to="/$slug" params={{ slug: s.slug }} className="block overflow-hidden">
+                      <img
+                        src={images[s.image]}
+                        alt={`${s.name} in Mesa AZ by ${business.name}`}
+                        width={1280}
+                        height={853}
+                        loading="lazy"
+                        className="h-48 w-full object-cover transition-transform duration-700 group-hover:scale-105"
+                      />
+                    </Link>
+                    <div className="p-6">
+                      <div className="flex items-center justify-between text-xs font-semibold text-primary">
+                        <span>Residential & Commercial</span>
+                        <span>Mesa, AZ</span>
+                      </div>
+                      <h2 className="mt-2 font-display text-xl font-bold">
+                        <Link to="/$slug" params={{ slug: s.slug }} className="hover:text-primary">
+                          {s.name}
+                        </Link>
+                      </h2>
+                      <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{s.tagline}</p>
+
+                      {/* SERVICE SCOPE PREVIEW */}
+                      <ul className="mt-4 space-y-1.5 border-t border-border/60 pt-3 text-xs text-muted-foreground">
+                        {s.benefits.slice(0, 2).map((b) => (
+                          <li key={b} className="flex items-start gap-1.5">
+                            <CheckCircle2 className="mt-0.5 h-3.5 w-3.5 shrink-0 text-primary" />
+                            <span>{b}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
                   </div>
-                </Link>
+
+                  {/* DEDICATED CALL & DETAILS CTA */}
+                  <div className="flex items-center justify-between border-t border-border bg-muted/30 px-6 py-4">
+                    <Link
+                      to="/$slug"
+                      params={{ slug: s.slug }}
+                      className="inline-flex items-center gap-1 text-xs font-bold text-primary hover:underline"
+                    >
+                      <span>Explore Scope & Details</span>
+                      <ArrowRight className="h-3.5 w-3.5" />
+                    </Link>
+                    <a
+                      href={business.phoneHref}
+                      className="inline-flex items-center gap-1 rounded-full gradient-brand px-3 py-1.5 text-xs font-bold text-primary-foreground shadow-sm"
+                    >
+                      <Phone className="h-3 w-3" />
+                      <span>Call Now</span>
+                    </a>
+                  </div>
+                </div>
               </Reveal>
             ))}
           </div>

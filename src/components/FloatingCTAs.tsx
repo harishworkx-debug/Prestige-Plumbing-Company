@@ -8,7 +8,7 @@ export function FloatingCTAs() {
       <div className="fixed right-5 bottom-6 z-50 hidden flex-col gap-3 md:flex">
         <a
           href={business.phoneHref}
-          aria-label="Call Plumbing Company now"
+          aria-label={`Call ${business.name} now`}
           className="group flex items-center gap-3 rounded-full gradient-brand px-5 py-4 text-primary-foreground shadow-float transition-transform hover:scale-105"
         >
           <Phone className="h-5 w-5" />

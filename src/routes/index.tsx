@@ -9,22 +9,22 @@ import {
   MapPin,
 } from "lucide-react";
 import { images } from "@/data/images";
-import { business, homeFaqs, process, whyChoose, testimonials } from "@/data/site";
+import { business, homeFaqs, process, whyChoose, testimonials, stats } from "@/data/site";
 import { services } from "@/data/services";
 import { areas } from "@/data/areas";
 import { posts } from "@/data/blog";
 import { Reveal } from "@/components/Reveal";
 import { CTAButtons, CTABand, SectionHeading, FAQList } from "@/components/ui-kit";
-import { faqSchema, meta, breadcrumbSchema, reviewsSchema } from "@/lib/seo";
+import { abs, faqSchema, meta, breadcrumbSchema, reviewsSchema } from "@/lib/seo";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: meta(
-      "Residential Plumbing Contractor Mesa AZ | 24/7 Service",
-      "Family-owned plumbing contractor in Mesa & Phoenix. Emergency plumbing, water heaters, drain cleaning, leak detection & repiping. Call (480) 681-3808.",
+      `Plumber in Mesa, AZ | 24/7 Emergency Plumbing | Prestige Plumbing`,
+      `Need a licensed plumber in Mesa, AZ? Prestige Plumbing Company (AZ ROC #347689) provides 24/7 emergency repairs, water heaters, drain cleaning & slab leaks. Call (480) 681-3808.`,
       "/",
     ),
-    links: [{ rel: "canonical", href: "/" }],
+    links: [{ rel: "canonical", href: abs("/") }],
     scripts: [
       { type: "application/ld+json", children: JSON.stringify(faqSchema(homeFaqs)) },
       { type: "application/ld+json", children: JSON.stringify(reviewsSchema(testimonials)) },
@@ -44,7 +44,7 @@ function Home() {
       <section className="relative isolate overflow-hidden">
         <img
           src={images.hero}
-          alt="Licensed plumbing technician repairing copper pipes under a kitchen sink in Mesa, Arizona"
+          alt={`Licensed plumbing technician from ${business.name} repairing copper pipes under a sink in Mesa, Arizona`}
           width={1920}
           height={1280}
           fetchPriority="high"
@@ -59,46 +59,72 @@ function Home() {
             className="max-w-3xl text-secondary-foreground"
           >
             <span className="inline-flex items-center gap-2 rounded-full border border-white/25 bg-white/10 px-4 py-2 text-xs font-bold tracking-[0.18em] uppercase backdrop-blur">
-              <ShieldCheck className="h-4 w-4 text-accent" /> Licensed & Insured
+              <ShieldCheck className="h-4 w-4 text-accent" /> AZ {business.rocLicense} · Licensed & Insured
             </span>
             <h1 className="mt-6 font-display text-4xl leading-[1.05] font-bold sm:text-5xl lg:text-6xl">
-              Trusted Family-Owned Plumbing Contractor Serving Mesa & Phoenix
+              Mesa's Trusted Family-Owned Plumbing Contractor
             </h1>
             <p className="mt-6 max-w-2xl text-lg leading-relaxed text-secondary-foreground/80">
-              Expert plumbing services from a licensed, bonded, and insured contractor. Fast, reliable, and available 24/7 for all your residential plumbing needs.
+              Expert residential and commercial plumbing by master technicians based at 1120 E Jarvis Ave in Mesa. Flat-rate written pricing, 24/7 emergency dispatch, and guaranteed craftsmanship across the East Valley.
             </p>
-            <div className="mt-9">
-              <CTAButtons dark label="Call Now" />
+            <div className="mt-9 flex flex-wrap items-center gap-4">
+              <CTAButtons dark label="Call (480) 681-3808" />
+              <Link
+                to="/services"
+                className="inline-flex items-center justify-center rounded-full border border-white/30 bg-white/10 px-6 py-3.5 text-sm font-bold text-white backdrop-blur transition-colors hover:bg-white/20"
+              >
+                View Services & Pricing
+              </Link>
             </div>
           </motion.div>
         </div>
       </section>
 
-      {/* STATS REMOVED */}
+      {/* VERIFIED PROOF & STATS BAR */}
+      <section className="border-y border-border bg-card py-6">
+        <div className="mx-auto max-w-7xl px-4 lg:px-8">
+          <div className="grid grid-cols-2 gap-4 sm:grid-cols-4">
+            {stats.map((s) => (
+              <div key={s.label} className="text-center">
+                <div className="font-display text-2xl font-extrabold text-primary sm:text-3xl">
+                  {s.value}
+                </div>
+                <div className="mt-1 text-xs font-medium text-muted-foreground">{s.label}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
 
-      {/* INTRO */}
+      {/* INTRO: MESA CONTRACTOR POSITIONING */}
       <section className="py-20">
         <div className="mx-auto grid max-w-7xl gap-12 px-4 lg:grid-cols-1 lg:px-8">
           <Reveal>
             <span className="text-xs font-bold tracking-[0.22em] text-primary uppercase">
-              Residential Plumbing Services
+              Mesa Plumbing Contractor
             </span>
             <h2 className="mt-3 font-display text-3xl font-bold sm:text-4xl">
-              Serving The East Valley With Trusted Plumbing Excellence
+              Family-Owned Plumbing Excellence Grounded In Mesa, Arizona
             </h2>
             <div className="mt-5 space-y-4 leading-relaxed text-muted-foreground">
               <p>
-                Plumbing Company is a family-owned plumbing contractor dedicated to helping Arizona homeowners with all their plumbing needs. Based in Mesa, we are the trusted team thousands of families rely on when water is where it should not be.
+                {business.name} is a family-owned plumbing contractor dedicated to protecting Arizona homes and commercial properties. Based at 1120 E Jarvis Ave in Mesa, our team is who local families rely on when water is where it shouldn’t be.
               </p>
               <p>
-                Our licensed, bonded, and insured plumbers handle every residential discipline — emergency plumbing, water heaters, drain and sewer work, leak detection, repiping, and gas lines.
+                Arizona plumbing presents unique local challenges: heavy municipal water hardness that destroys water heater tanks, aggressive caliche soils that stress underground sewer lines, and concrete slab foundations that require precision acoustic detection rather than destructive digging.
               </p>
               <p>
-                What genuinely separates our team is our commitment to providing upfront flat-rate pricing and honest guidance about which repairs matter now and which can wait.
+                Every service truck we dispatch is equipped as a complete mobile workshop with color sewer inspection cameras, 4,000 PSI hydro-jetters, and calibrated diagnostic tools. We provide upfront, flat-rate pricing in writing before any work begins.
               </p>
             </div>
-            <div className="mt-8">
+            <div className="mt-8 flex flex-wrap gap-4">
               <CTAButtons label="Schedule Service" />
+              <Link
+                to="/about"
+                className="inline-flex items-center justify-center rounded-full border border-border px-6 py-3.5 text-sm font-semibold hover:bg-muted"
+              >
+                Learn About Our Team & License
+              </Link>
             </div>
           </Reveal>
         </div>
@@ -108,7 +134,7 @@ function Home() {
       <section className="surface-panel py-20">
         <div className="mx-auto max-w-7xl px-4 lg:px-8">
           <SectionHeading
-            eyebrow="Why Use Our Plumbing Company"
+            eyebrow="Why Choose Prestige Plumbing"
             title="The Difference Between A Corporate Chain And A Family-Owned Contractor"
             text="We provide expert plumbing solutions tailored to your home, backed by our commitment to excellent service."
           />
@@ -248,8 +274,8 @@ function Home() {
             {posts.slice(0, 3).map((p, i) => (
               <Reveal key={p.slug} delay={i * 0.07}>
                 <Link
-                  to="/blog/$slug"
-                  params={{ slug: p.slug }}
+                  to="/blog/$postSlug"
+                  params={{ postSlug: p.slug }}
                   className="group block h-full overflow-hidden rounded-2xl border border-border bg-card shadow-card hover-lift"
                 >
                   <img

@@ -31,7 +31,7 @@ const areaServed = [
 
 export const localBusinessSchema = {
   "@context": "https://schema.org",
-  "@type": ["LocalBusiness", "ProfessionalService" as string],
+  "@type": ["Plumber", "LocalBusiness", "HomeAndConstructionBusiness"],
   "@id": `${SITE_URL}/#localbusiness`,
   name: business.name,
   image: abs("/favicon.ico"),
@@ -40,6 +40,16 @@ export const localBusinessSchema = {
   url: abs("/"),
   hasMap: business.mapLink,
   priceRange: "$$",
+  currenciesAccepted: "USD",
+  paymentAccepted: "Cash, Credit Card, Check",
+  identifier: business.rocLicense,
+  hasCredential: {
+    "@type": "EducationalOccupationalCredential",
+    credentialCategory: "State Contractor License",
+    name: "Arizona Registrar of Contractors (ROC) License",
+    identifier: "347689",
+    url: business.rocLicenseUrl,
+  },
 
   sameAs: socials.map((s) => s.href),
   address: postalAddress,
@@ -157,14 +167,27 @@ export const breadcrumbSchema = (items: { name: string; path: string }[]) => ({
   })),
 });
 
-export const articleSchema = (title: string, description: string, path: string, date: string) => ({
+export const articleSchema = (
+  title: string,
+  description: string,
+  path: string,
+  date: string,
+  author = "Jesse Leyva",
+  dateModified = "2026-10-18",
+) => ({
   "@context": "https://schema.org",
   "@type": "Article",
   headline: title,
   description,
   datePublished: date,
+  dateModified,
   mainEntityOfPage: abs(path),
-  author: { "@type": "Organization", name: business.name },
+  author: {
+    "@type": "Person",
+    name: author,
+    jobTitle: "Founder & Master Plumber (AZ ROC #347689)",
+    worksFor: { "@id": `${SITE_URL}/#organization` },
+  },
   publisher: { "@id": `${SITE_URL}/#organization` },
 });
 

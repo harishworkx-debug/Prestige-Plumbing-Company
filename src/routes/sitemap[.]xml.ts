@@ -9,17 +9,19 @@ export const Route = createFileRoute("/sitemap.xml")({
   server: {
     handlers: {
       GET: async () => {
-        const entries: { path: string; changefreq: string; priority: string }[] = [
-          { path: "/", changefreq: "weekly", priority: "1.0" },
-          { path: "/services", changefreq: "weekly", priority: "0.9" },
-          { path: "/service-areas", changefreq: "weekly", priority: "0.9" },
-          { path: "/about", changefreq: "monthly", priority: "0.7" },
-          { path: "/reviews", changefreq: "monthly", priority: "0.7" },
-          { path: "/contact", changefreq: "monthly", priority: "0.8" },
-          { path: "/blog", changefreq: "weekly", priority: "0.7" },
-          ...posts.map((p) => ({ path: `/blog/${p.slug}`, changefreq: "monthly", priority: "0.6" })),
-          ...services.map((s) => ({ path: `/${s.slug}`, changefreq: "monthly", priority: "0.8" })),
-          ...areas.map((a) => ({ path: `/${a.slug}`, changefreq: "monthly", priority: "0.8" })),
+        const currentDate = "2026-10-20";
+
+        const entries: { path: string; lastmod: string }[] = [
+          { path: "/", lastmod: currentDate },
+          { path: "/services", lastmod: currentDate },
+          { path: "/service-areas", lastmod: currentDate },
+          { path: "/about", lastmod: currentDate },
+          { path: "/reviews", lastmod: currentDate },
+          { path: "/contact", lastmod: currentDate },
+          { path: "/blog", lastmod: currentDate },
+          ...posts.map((p) => ({ path: `/blog/${p.slug}`, lastmod: p.date || currentDate })),
+          ...services.map((s) => ({ path: `/${s.slug}`, lastmod: currentDate })),
+          ...areas.map((a) => ({ path: `/${a.slug}`, lastmod: currentDate })),
         ];
 
         const xml = [
@@ -28,9 +30,8 @@ export const Route = createFileRoute("/sitemap.xml")({
           ...entries.map((e) =>
             [
               `  <url>`,
-              `    <loc>${SITE_URL}${e.path}</loc>`,
-              `    <changefreq>${e.changefreq}</changefreq>`,
-              `    <priority>${e.priority}</priority>`,
+              `    <loc>${SITE_URL}${e.path === "/" ? "/" : e.path}</loc>`,
+              `    <lastmod>${e.lastmod}</lastmod>`,
               `  </url>`,
             ].join("\n"),
           ),
@@ -38,7 +39,7 @@ export const Route = createFileRoute("/sitemap.xml")({
         ].join("\n");
 
         return new Response(xml, {
-          headers: { "Content-Type": "application/xml", "Cache-Control": "public, max-age=3600" },
+          headers: { "Content-Type": "application/xml; charset=utf-8", "Cache-Control": "public, max-age=3600" },
         });
       },
     },

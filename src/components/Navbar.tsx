@@ -37,10 +37,10 @@ export function Navbar() {
             </span>
             <span className="min-w-0">
               <span className="block truncate font-display text-lg leading-tight font-bold">
-                Plumbing Company
+                {business.name}
               </span>
               <span className="block text-[11px] tracking-[0.18em] text-muted-foreground uppercase">
-                Mesa
+                Mesa, AZ · {business.rocLicense}
               </span>
             </span>
           </Link>
@@ -62,13 +62,14 @@ export function Navbar() {
                       <div className="absolute left-0 top-full hidden w-64 pt-2 group-hover:block">
                         <div className="rounded-xl border border-border bg-card p-2 shadow-xl">
                           {services.map((service) => (
-                            <a
+                            <Link
                               key={service.slug}
-                              href={`/${service.slug}/`}
+                              to="/$slug"
+                              params={{ slug: service.slug }}
                               className="block rounded-lg px-4 py-2 text-sm font-medium text-muted-foreground hover:bg-muted hover:text-primary"
                             >
                               {service.name}
-                            </a>
+                            </Link>
                           ))}
                         </div>
                       </div>
@@ -90,13 +91,14 @@ export function Navbar() {
                       <div className="absolute left-0 top-full hidden w-48 pt-2 group-hover:block">
                         <div className="rounded-xl border border-border bg-card p-2 shadow-xl">
                           {areas.map((area) => (
-                            <a
+                            <Link
                               key={area.slug}
-                              href={`/${area.slug}/`}
+                              to="/$slug"
+                              params={{ slug: area.slug }}
                               className="block rounded-lg px-4 py-2 text-sm font-medium text-muted-foreground hover:bg-muted hover:text-primary"
                             >
                               {area.city}
-                            </a>
+                            </Link>
                           ))}
                         </div>
                       </div>
@@ -149,14 +151,15 @@ export function Navbar() {
                     </Link>
                     <div className="pl-4">
                       {services.map((service) => (
-                        <a
+                        <Link
                           key={service.slug}
-                          href={`/${service.slug}/`}
+                          to="/$slug"
+                          params={{ slug: service.slug }}
                           onClick={() => setOpen(false)}
                           className="block border-b border-border py-3 text-sm font-medium text-muted-foreground"
                         >
                           {service.name}
-                        </a>
+                        </Link>
                       ))}
                     </div>
                   </div>
@@ -175,14 +178,15 @@ export function Navbar() {
                     </Link>
                     <div className="pl-4">
                       {areas.map((area) => (
-                        <a
+                        <Link
                           key={area.slug}
-                          href={`/${area.slug}/`}
+                          to="/$slug"
+                          params={{ slug: area.slug }}
                           onClick={() => setOpen(false)}
                           className="block border-b border-border py-3 text-sm font-medium text-muted-foreground"
                         >
                           {area.city}
-                        </a>
+                        </Link>
                       ))}
                     </div>
                   </div>
